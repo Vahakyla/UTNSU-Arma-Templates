@@ -3,7 +3,7 @@
 briefingName = "Under the North Star";
 
 //Mission Maker
-author = "Airgoons";
+author = "Air Goons Wargames";
 
 //Overview text and picture for the mission list (admin sees when selecting missions, also shown when slotting in)
 overviewText = "FDF Reservists in action.";
