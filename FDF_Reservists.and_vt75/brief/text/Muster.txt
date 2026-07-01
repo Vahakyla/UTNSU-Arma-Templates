@@ -1,0 +1,12 @@
+<font color='#FFA500' size='18'>Muster Zone</font>
+<br/>
+<br/>The Muster Zone allows you to return back to the front line without having to wait for transport.
+<br/>
+<br/><font color='#99cc00'>How it works:</font>
+<br/>
+<br/>Stand next to the Land Rover with the sign and select the "Deploy to Transport Turck" hold action to be moved over to the vehicle once the progress bar is completed.
+<br/>
+<br/><font color='#99cc00'>Notes:</font>
+<br/>
+<br/>Try not to crowd the deployment point during a mass cas event, to ensure that everyone gets there.
+<br/>
