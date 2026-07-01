@@ -26,7 +26,7 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["CUP_30Rnd_762x39_AK47_M", 35];
 		_vehicle addItemCargoGlobal ["CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_M", 10];
 		_vehicle addItemCargoGlobal ["NFCW_100Rnd_762x39_KK62_Mag", 5];
-		_vehicle addItemCargoGlobal ["NFCW_66_KES_88", 4];
+		_vehicle addItemCargoGlobal ["CUP_launch_M72A6", 4];
 		_vehicle addItemCargoGlobal ["NFCW_M43Grenade", 10];
 		_vehicle addItemCargoGlobal ["NFCW_M61SmokeGrenade", 10];
 		_vehicle addItemCargoGlobal ["SmokeShellGreen", 10];

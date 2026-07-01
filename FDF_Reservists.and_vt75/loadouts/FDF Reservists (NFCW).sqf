@@ -389,14 +389,14 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
 		_unit addBackpack "CFP_Kitbag_M81";
-		_unit addItemToBackpack "NFCW_66_KES_88";
+		_unit addItemToBackpack "CUP_launch_M72A6";
 		_unit addItemToBackpack "ACE_EntrenchingTool";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
-		_unit addWeapon "NFCW_66_KES_88";
+		_unit addWeapon "CUP_launch_M72A6";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
