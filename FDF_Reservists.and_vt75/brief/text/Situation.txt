@@ -1,32 +1,29 @@
 <font color='#FFA500' size='18'>Ground and Prelims:</font>
 <br/>
-<br/>Ground in the Area of Operations (AO) is predominantly flat and interspersed with light wooded areas, open fields, highways, and dirt roads. Center of 1COY Tactical Area of Responsibility (TAOR) is dominated by the towns of Klinze and Belsdorf
+<br/>Company area of operations is the length of and surroundings of highway 941 stretching between the intersection with highway 863 and battalion headquarters at Lapiosalmi. Local Terrain is rough and heavily forested.
+<br/>There are no relevant civilian considerations.
 <br/>
-<br/>Weather: Dusk
+<br/>Weather: Dawn
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – En Forces:</font>
 <br/>
-<br/>Enemy VANGUARD of 9th Panzer Division NVA
+<br/>Exact enemy force composition is unknown, Battalion G-2 suspects Russian marine or motor rifle units with attached or organic armour vehicles up to and including MBT’s in addition to extensive indirect fire support and aviation.
 <br/>
-<br/>Enemy forces are approaching our position from the north east, with an expected large concentration of mechanized and armored units.
+<br/><br/>Enemy forces are approaching our position from the north east, with an expected large concentration of mechanized and armored units.
 <br/>
 <br/>Air Threat: Med.
 <br/>CBRN Threat: Neg.
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – FF</font>
 <br/>
-<br/>1Coy Ribbensdorf
-<br/>
-<br/>2Coy Hödingen
-<br/>
-<br/>3Coy N of Weferlingen
+<br/>Friendly Forces consist of ‘A’ Company 1st Battalion, supported by the battalion mortar battery
 <br/>
 <br/>Combat Support: 
-<br/>120mm mortars (HE, Smoke, Illum), 105mm Howitzers (HE, Smoke, WP, Guided)
+<br/>2x Batteries of 155mm Howitzers (HE, Smoke, WP, Guided)
 <br/>
-<br/>Nitro Flight: 2x F-4F Phantom (LGB, AGM-65 Maverick)
+<br/>Detachment from Brigade Anti-Tank company.
 <br/>
 <br/><font color='#FFA500' size='18'>Mission</font>
 <br/>
-<br/>ADVANCE INTO CONTACT. FIX the enemy & destroy it.
+<br/>Battalion Headquarter’s intention is to repel initial enemy offensive effort and to attrit or delay subsequent attacks to enable a fighting withdrawal in good order should the battalion prove incapable of repelling enemy assaults.
 <br/>

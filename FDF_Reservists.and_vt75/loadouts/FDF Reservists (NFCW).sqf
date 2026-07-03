@@ -1,49 +1,49 @@
 	_uniform = [
 	"U_NFCW_FIN_M62_Uniform",
-	"U_NFCW_FIN_M62_Uniform_2",
-	"U_NFCW_FIN_M62_Uniform_3",
-	"U_NFCW_FIN_M62_Uniform_4",
 	"FIN_Combat_Uniform_Alt",
+	"U_NFCW_FIN_M62_Uniform_2",
 	"FIN_Combat_Uniform",
+	"U_NFCW_FIN_M62_Uniform_3",
 	"FIN_Combat_Uniform_Rolled",
+	"U_NFCW_FIN_M62_Uniform_4",	
 	"FIN_Combat_Uniform_Alt_Rolled"
 	] select floor random 8;
 	
 	_helmet = [
 	"H_NFCW_FIN_M62_Helmet_Cover",
-	"H_NFCW_FIN_M62_Helmet_Cover_2",
-	"H_NFCW_FIN_M62_Fieldcap",
-	"H_NFCW_FIN_M62_Fieldcap_2",
 	"Flex_CUP_FIN_Boonie_Wood",
+	"H_NFCW_FIN_M62_Helmet_Cover_2",
 	"Flex_CUP_FIN_Patrol_cap",
+	"H_NFCW_FIN_M62_Fieldcap",
 	"Flex_CUP_FIN_PASGT",
+	"H_NFCW_FIN_M62_Fieldcap_2",	
 	"SP_PASGTHelmet_Green1"
 	] select floor random 8;
 	
 	_offhat = [
 	"H_NFCW_FIN_M62_Fieldcap_Officer",
-	"H_NFCW_FIN_M62_Fieldcap_Officer_2",
 	"Flex_CUP_FIN_Boonie_Wood",
+	"H_NFCW_FIN_M62_Fieldcap_Officer_2",
 	"Flex_CUP_FIN_Patrol_cap"
 	] select floor random 4;
 	
 	_hat = [
 	"H_NFCW_FIN_M62_Fieldcap",
-	"H_NFCW_FIN_M62_Fieldcap_2",
 	"Flex_CUP_FIN_Boonie_Wood",
+	"H_NFCW_FIN_M62_Fieldcap_2",
 	"Flex_CUP_FIN_Patrol_cap"
 	] select floor random 4;
 	
 	_vest = [
 	"V_NFCW_M85_Webbing",
-	"V_NFCW_M85_Webbing_Empty",
 	"Flex_CUP_FIN_V_CPC_Fast",
-	"Flex_CUP_FIN_V_CPC_Fastbelt",
-	"Flex_CUP_FIN_V_CPC_lightbelt",
-	"Flex_CUP_FIN_V_CPC_light",
+	"V_NFCW_M85_Webbing_Empty",
 	"CUP_V_B_PASGT",
+	"Flex_CUP_FIN_V_CPC_Fastbelt",
 	"CUP_V_B_PASGT_no_bags",
+	"Flex_CUP_FIN_V_CPC_lightbelt",
 	"CUP_V_B_PASGT_OD",
+	"Flex_CUP_FIN_V_CPC_light",	
 	"CUP_V_B_PASGT_no_bags_OD"
 	] select floor random 10;
 	
@@ -65,8 +65,8 @@
 	
 	_rifle = [
 	"tob_rifle_RK62",
-	"KAR_RIFLE_RK62",
 	"CUP_arifle_AKM_Early",
+	"KAR_RIFLE_RK62",	
 	"CUP_arifle_TYPE_56_2_Early"
 	] select floor random 4;
 
