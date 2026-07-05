@@ -40,11 +40,11 @@
 	"V_NFCW_M85_Webbing_Empty",
 	"CUP_V_B_PASGT",
 	"Flex_CUP_FIN_V_CPC_Fastbelt",
-	"CUP_V_B_PASGT_no_bags",
+	"CFP_US_pasgt_alice_Rifleman_ERDL",
 	"Flex_CUP_FIN_V_CPC_lightbelt",
 	"CUP_V_B_PASGT_OD",
 	"Flex_CUP_FIN_V_CPC_light",	
-	"CUP_V_B_PASGT_no_bags_OD"
+	"CFP_US_pasgt_alice_SAW_Assistant_ERDL"
 	] select floor random 10;
 	
 	_assbackpack = [
