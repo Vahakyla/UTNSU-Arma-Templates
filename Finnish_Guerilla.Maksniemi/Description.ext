@@ -1,0 +1,56 @@
+
+//Mission name
+briefingName = "Under the North Star";
+
+//Mission Maker
+author = "Airgoons";
+
+//Overview text and picture for the mission list (admin sees when selecting missions, also shown when slotting in)
+overviewText = "FDF Reservists in action.";
+
+//Loading screen texts and picture for loading the mission
+OnLoadName = "UTNS: Uprising";
+OnLoadMission = "Perkele";
+loadscreen = "fdf.jpg";
+
+saving = 0; //Set saving to 0 so that you can exit the mission without saving and causing dumb bugs when reloading
+disabledai = 1; //Disable AI taking over un-taken player slots
+
+//gametype
+class Header {
+        gameType = COOP;
+        minPlayers = 2;
+        maxPlayers = 104;
+};
+
+disableChannels[]=  // allow text only on side chat
+{
+	{0, true, true},	// Global, text, voice
+	{1, true, true},	// Side, text, voice
+	{2, true, true},	// Command, text, voice
+	{3, true, true},	// Group, text, voice
+	{4, true, true},	// Vehicle, text, voice
+	{5, true, true}		// Direct, voice only
+};
+
+//Gearscript
+class CfgFunctions {
+
+  class Gib {
+    class Gear {
+      class gearScript {};
+      class vehGearScript {};
+    };
+  };
+  
+  class KS
+	{
+		class ceaseFireFunctions
+		{
+			file = "functions";
+			class ceaseFire {};
+			class ceaseFireEH_onFiredMan {};
+			class ceaseFireEH_blockMuzzles {};
+		};
+	};
+};
