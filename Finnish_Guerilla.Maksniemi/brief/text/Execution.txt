@@ -2,28 +2,28 @@
 <br/>
 <br/><font color='#99cc00'>Commander's Intent</font>
 <br/>
-<br/>Battalion is conducting advance to contact with 1st company in the center.
 <br/>
-<br/>Once contact is made, determine enemy strength, fix it in position and destroy it. If enemy force is overwhelming, conduct delaying operation towards Ribbensdorf
+<br/>
+<br/>
 <br/>
 <br/><font color='#99cc00'>Scheme of Maneuvers</font>
 <br/>
-<br/>All forces will move to their assigned sectors, advancing into contact with 1st PLT Klinze
-<br/>2PLT Belsdorf 
 <br/>
-<br/>Battalion fire support will be available for covering (Smoke) or effective (HE) fire.
+<br/>
+<br/>
+<br/>
 <br/>
 <br/><font color='#99cc00'>Main Effort</font>
 <br/>
-<br/>Advance to contact along both MSRs into Spitzer Berg, be prepared to fight in Klinze and Belsdorf.
+<br/>
 <br/>
 <br/><font color='#99cc00'>Tasks</font>
 <br/>
-<br/>1PL: Go Klinze and proceed into Spitzer Berg, destroy possible enemy screening element and prepare hasty defense inside the forest. Be prepared to do small counter attacks into other platoons area (flank into enemy)
 <br/>
-<br/>2PL: Go Belsdorf and proceed into Spitzer Berg, destroy possible enemy screening element and prepare hasty defense inside the forest. Secure ASR into NE and be aware of ASR in the west
 <br/>
-<br/>1COY logistics platoon is holding at Klinzen.
+<br/>
+<br/>
+<br/>
 <br/>
 <font color='#FFA500' size='18'>Co-ord Instructions</font>
 <br/>
@@ -33,25 +33,21 @@
 <br/>
 <br/><font color='#99cc00'>Locations:</font>
 <br/>
-<br/>COY ADMIN AREA: Ribbensdorf
 <br/>
-<br/>Coy HQ: KLINZE
+<br/>
+<br/>
 <br/>
 <br/><font color='#99cc00'>Routes, Boundaries and Report Lines:</font>
 <br/>
-<br/>As marked.
+<br/>
 <br/>
 <br/><font color='#99cc00'>Combat Support:</font>
 <br/>
-<br/>120mm mortar (HE and Smoke), 105mm Howitzers, CAS strikes. ALL FIRES to be coord by via 1COY FO.
+<br/>
 <br/>
 <br/><font color='#99cc00'>Action on:</font>
 <br/>
-<br/>Lost/Lost Comms, send runner to CCP. KLINZEN
+<br/>Lost/Lost Comms, send runner to CCP.
 <br/>MASCAS: Contact COY to coordinate medical support
 <br/>CASEVAC: Extract to current CCP
-<br/>
-<br/><font color='#99cc00'>SIGNALS (ALL PLTs):</font>
-<br/>
-<br/>SLEDGEHAMMER: COY starts the operation.
 <br/>

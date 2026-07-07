@@ -21,19 +21,3 @@
     };
     //"Cardiac Arrest Ended?" remoteExec ["hint"];
 }] call CBA_fnc_addEventHandler;
-
-[ muster_flag,   
-"Deploy to Assembly Area.", 
-"\a3\data_f_destroyer\data\UI\IGUI\Cfg\holdactions\holdAction_loadVehicle_ca.paa",  
- "\a3\data_f_destroyer\data\UI\IGUI\Cfg\holdactions\holdAction_loadVehicle_ca.paa",  
- "_this distance _target < 5",  
- "_caller distance _target < 5",  
- {},  
- {},  
- {[player moveInCargo spawnbus];},  
- {},  
- [],  
- 10,  
- 0,  
- false,  
- true] remoteExec ["BIS_fnc_holdActionAdd",[0,-2] select isDedicated,true];

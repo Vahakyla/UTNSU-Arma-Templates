@@ -1,5 +1,5 @@
 <font color='#FFA500' size='18'>Summary and Questions</font>
 <br/>
-<br/>Mission starts at Company admin area.
+<br/>
 <br/>Refer to SOP doc for details of BCR (Respawn)
 <br/>

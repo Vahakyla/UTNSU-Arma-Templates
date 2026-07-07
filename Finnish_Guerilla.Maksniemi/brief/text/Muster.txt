@@ -4,7 +4,7 @@
 <br/>
 <br/><font color='#99cc00'>How it works:</font>
 <br/>
-<br/>Stand next to the Land Rover with the sign and select the "Deploy to Transport Turck" hold action to be moved over to the vehicle once the progress bar is completed.
+<br/>Stand next to the car with the sign and select the "Deploy to Assembly Area" hold action to be moved over to the location once the progress bar is completed.
 <br/>
 <br/><font color='#99cc00'>Notes:</font>
 <br/>

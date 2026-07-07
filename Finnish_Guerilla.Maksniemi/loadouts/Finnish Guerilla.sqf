@@ -356,7 +356,7 @@
 		_unit addItemToUniform "ACE_MapTools";
 		_unit addVest _vest;
 		for "_i" from 1 to 4 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
-		_unit addBackpack "TFAR_anprc155_coyote";
+		_unit addBackpack "TFAR_rt1523g_big_bwmod";
 		_unit addHeadgear "SP_PatrolCap_Green";
 
 		comment "Add weapons";
@@ -405,22 +405,21 @@
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};		
 		_unit addItemToUniform "ACE_Flashlight_XL50";
 		_unit addVest "V_NFCW_M30_Belt";
-		_unit addBackpack "CUP_C_PHOENIX_FIRSTAID";;
-		for "_i" from 1 to 40 do {_unit addItemToBackpack "ACE_fieldDressing";};
-		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_epinephrine";};
-		for "_i" from 1 to 20 do {_unit addItemToBackpack "ACE_morphine";};
-		for "_i" from 1 to 12 do {_unit addItemToBackpack "ACE_tourniquet";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_bloodIV";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_bloodIV_500";};
-		_unit addItemToBackpack "ACE_painkillers";
-		_unit addItemToBackpack "ACE_personalAidKit";
+		for "_i" from 1 to 40 do {_unit addItemToVest "ACE_fieldDressing";};
+		for "_i" from 1 to 10 do {_unit addItemToVest "ACE_epinephrine";};
+		for "_i" from 1 to 20 do {_unit addItemToVest "ACE_morphine";};
+		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_tourniquet";};
+		for "_i" from 1 to 4 do {_unit addItemToVest "ACE_bloodIV";};
+		for "_i" from 1 to 4 do {_unit addItemToVest "ACE_bloodIV_500";};
+		_unit addItemToVest "ACE_painkillers";
+		_unit addItemToVest "ACE_personalAidKit";
+		_unit addBackpack "TFAR_rt1523g_bwmod";;
 		_unit addHeadgear _hat;
 			
 		// "Add items";
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
-		_unit linkItem "TFAR_anprc148";
 	};
 	
 	case "CM": {
@@ -474,7 +473,7 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
-		_unit linkItem "TFAR_anprc148";
+		_unit linkItem "TFAR_anprc152";
 	};
 		
 	case "RFL": {

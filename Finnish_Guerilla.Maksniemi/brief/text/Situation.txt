@@ -1,32 +1,32 @@
 <font color='#FFA500' size='18'>Ground and Prelims:</font>
 <br/>
-<br/>Ground in the Area of Operations (AO) is predominantly flat and interspersed with light wooded areas, open fields, highways, and dirt roads. Center of 1COY Tactical Area of Responsibility (TAOR) is dominated by the towns of Klinze and Belsdorf
 <br/>
-<br/>Weather: Dusk
+<br/>
+<br/>Weather: 
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – En Forces:</font>
 <br/>
-<br/>Enemy VANGUARD of 9th Panzer Division NVA
 <br/>
-<br/>Enemy forces are approaching our position from the north east, with an expected large concentration of mechanized and armored units.
+<br/>
+<br/>
 <br/>
 <br/>Air Threat: Med.
 <br/>CBRN Threat: Neg.
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – FF</font>
 <br/>
-<br/>1Coy Ribbensdorf
 <br/>
-<br/>2Coy Hödingen
 <br/>
-<br/>3Coy N of Weferlingen
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>Combat Support: 
-<br/>120mm mortars (HE, Smoke, Illum), 105mm Howitzers (HE, Smoke, WP, Guided)
 <br/>
-<br/>Nitro Flight: 2x F-4F Phantom (LGB, AGM-65 Maverick)
+<br/>
+<br/>
 <br/>
 <br/><font color='#FFA500' size='18'>Mission</font>
 <br/>
-<br/>ADVANCE INTO CONTACT. FIX the enemy & destroy it.
+<br/>
 <br/>
