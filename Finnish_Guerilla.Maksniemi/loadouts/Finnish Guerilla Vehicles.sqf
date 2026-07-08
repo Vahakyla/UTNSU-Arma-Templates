@@ -26,9 +26,9 @@ switch (_type) do {
 	case "VAN": {
 		comment "AMBULANCE";
 		_vehicle addItemCargoGlobal ["ACE_fieldDressing", 100];
-		_vehicle addItemCargoGlobal ["ACE_epinephrine", 50];
+		_vehicle addItemCargoGlobal ["ACE_epinephrine", 30];
 		_vehicle addItemCargoGlobal ["ACE_morphine", 50];
-		_vehicle addItemCargoGlobal ["ACE_tourniquet", 100];
+		_vehicle addItemCargoGlobal ["ACE_tourniquet", 50];
 		_vehicle addItemCargoGlobal ["ACE_bloodIV", 20];
 		_vehicle addItemCargoGlobal ["ACE_bloodIV_500", 20];
 		_vehicle addItemCargoGlobal ["ACE_painkillers", 20];

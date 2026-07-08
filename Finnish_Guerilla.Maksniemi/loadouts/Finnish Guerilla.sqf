@@ -510,10 +510,8 @@
 		_unit addVest _vest;
 		_unit addBackpack "CUP_B_SLA_Medicbag";
 		for "_i" from 1 to 40 do {_unit addItemToBackpack "ACE_fieldDressing";};
-		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_epinephrine";};
-		for "_i" from 1 to 20 do {_unit addItemToBackpack "ACE_morphine";};
-		for "_i" from 1 to 12 do {_unit addItemToBackpack "ACE_tourniquet";};
-		_unit addItemToBackpack "ACE_painkillers";
+		for "_i" from 1 to 20 do {_unit addItemToBackpack "ACE_tourniquet";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_painkillers";};
 		_unit addItemToBackpack "ACE_EntrenchingTool";
 		_unit addHeadgear _hat;
 			
