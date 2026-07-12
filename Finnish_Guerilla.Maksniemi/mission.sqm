@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=13322;
+		nextID=13332;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=486;
+		nextID=522;
 	};
 	class Camera
 	{
-		pos[]={1577.5439,77.057236,5159.6431};
-		dir[]={-0.2841911,-0.72912198,-0.62260038};
-		up[]={-0.30276582,0.6843797,-0.66329485};
-		aside[]={-0.90972012,-7.7474397e-08,0.41524762};
+		pos[]={2787.6646,19.120344,7103.4355};
+		dir[]={0.76091927,-0.63644922,-0.12633027};
+		up[]={0.62787181,0.77130467,-0.10424124};
+		aside[]={-0.16378337,9.0803951e-08,-0.98650938};
 	};
 };
 binarizationWanted=0;
@@ -138,7 +138,6 @@ addons[]=
 	"A3_Structures_F_EPB_Items_Military",
 	"A3_Structures_F_Enoch_Civilian_Camps",
 	"A3_Structures_F_Exp_Civilian_Accessories",
-	"A3_Characters_F_Enoch_Headgear",
 	"A3_Props_F_Enoch_Military_Decontamination",
 	"A3_Weapons_F_Ammoboxes",
 	"A3_Structures_F_Items_Gadgets",
@@ -161,7 +160,6 @@ addons[]=
 	"cigs_lucky_strike",
 	"cigs_baja_blast",
 	"cigs_nil",
-	"A3_Characters_F_Orange",
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Signs_F",
 	"ace_interaction",
@@ -218,7 +216,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=112;
+		items=111;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -637,286 +635,279 @@ class AddonsMetaData
 		};
 		class Item63
 		{
-			className="A3_Characters_F_Enoch";
-			name="Arma 3 Contact Platform - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item64
-		{
 			className="A3_Weapons_F_Enoch";
 			name="Arma 3 Contact Platform - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item65
+		class Item64
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item66
+		class Item65
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item67
+		class Item66
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item68
+		class Item67
 		{
 			className="SA_INT_1980_Vehicles";
 			name="SA_INT_1980_Vehicles";
 			author="vuo";
 		};
-		class Item69
+		class Item68
 		{
 			className="cigs_core";
 			name="Immersion Cigs - Rewrite - Core";
 			author="Immersion Cigs - Rewrite Team";
 			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
 		};
-		class Item70
+		class Item69
 		{
 			className="cigs_lucky_strike";
 			name="Immersion Cigs - Rewrite - Lucky Strike Cigarettes (WW2 Edition)";
 			author="Immersion Cigs - Rewrite Team";
 			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
 		};
-		class Item71
+		class Item70
 		{
 			className="cigs_baja_blast";
 			name="Immersion Cigs - Rewrite - Newport Mtn Dew Baja Blast Cigarettes";
 			author="Immersion Cigs - Rewrite Team";
 			url="https://github.com/OverlordZorn/immersion-cigs-rewrite";
 		};
-		class Item72
+		class Item71
 		{
 			className="cigs_nil";
 			name="Immersion Cigs - Rewrite - NIL Cigarettes";
 			author="OverlordZorn";
 			url="https://github.com/";
 		};
-		class Item73
+		class Item72
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item74
+		class Item73
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item75
+		class Item74
 		{
 			className="emr_main";
 			name="Enhanced Movement Rework";
 			author="Simplex Team";
 			url="https://github.com/SceptreOfficial/Enhanced-Movement-Rework";
 		};
-		class Item76
+		class Item75
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item77
+		class Item76
 		{
 			className="CUP_Weapons_AmmoBoxes";
 			name="CUP_Weapons_AmmoBoxes";
 		};
-		class Item78
+		class Item77
 		{
 			className="CFP_O_WAGNER_WIN";
 			name="CFP_O_WAGNER_WIN";
 			author="Drew";
 		};
-		class Item79
+		class Item78
 		{
 			className="CUP_Creatures_Military_Russia";
 			name="CUP_Creatures_Military_Russia";
 		};
-		class Item80
+		class Item79
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item81
+		class Item80
 		{
 			className="CUP_Weapons_AK";
 			name="CUP_Weapons_AK";
 		};
-		class Item82
+		class Item81
 		{
 			className="CUP_Weapons_East_Attachments";
 			name="CUP_Weapons_East_Attachments";
 		};
-		class Item83
+		class Item82
 		{
 			className="ace_compat_cup_weapons";
 			name="ACE3 - CUP Weapons Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item84
+		class Item83
 		{
 			className="CUP_Weapons_Ammunition";
 			name="CUP_Weapons_Ammunition";
 		};
-		class Item85
+		class Item84
 		{
 			className="CUP_Weapons_Makarov";
 			name="CUP_Weapons_Makarov";
 		};
-		class Item86
+		class Item85
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item87
+		class Item86
 		{
 			className="CUP_Weapons_Grenades";
 			name="CUP_Weapons_Grenades";
 		};
-		class Item88
+		class Item87
 		{
 			className="CUP_Weapons_RPG7";
 			name="CUP_Weapons_RPG7";
 		};
-		class Item89
+		class Item88
 		{
 			className="CUP_WheeledVehicles_GAZTigr";
 			name="CUP_WheeledVehicles_GAZTigr";
 		};
-		class Item90
+		class Item89
 		{
 			className="CUP_Weapons_SVD";
 			name="CUP_Weapons_SVD";
 		};
-		class Item91
+		class Item90
 		{
 			className="CUP_Weapons_PB_6P9";
 			name="CUP_Weapons_PB_6P9";
 		};
-		class Item92
+		class Item91
 		{
 			className="CUP_Weapons_PK";
 			name="CUP_Weapons_PK";
 		};
-		class Item93
+		class Item92
 		{
 			className="A3_Structures_F_Argo";
 			name="Arma 3 Malden - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item94
+		class Item93
 		{
 			className="CUP_Creatures_StaticWeapons";
 			name="CUP_Creatures_StaticWeapons";
 		};
-		class Item95
+		class Item94
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item96
+		class Item95
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item97
+		class Item96
 		{
 			className="CUP_WheeledVehicles_BTR80";
 			name="CUP_WheeledVehicles_BTR80";
 		};
-		class Item98
+		class Item97
 		{
 			className="CUP_Weapons_RPG18";
 			name="CUP_Weapons_RPG18";
 		};
-		class Item99
+		class Item98
 		{
 			className="CUP_TrackedVehicles_MTLB";
 			name="CUP_TrackedVehicles_MTLB";
 		};
-		class Item100
+		class Item99
 		{
 			className="CUP_Editor_Structures_Config";
 			name="CUP_Editor_Structures_Config";
 		};
-		class Item101
+		class Item100
 		{
 			className="CUP_WheeledVehicles_Ural";
 			name="CUP_WheeledVehicles_Ural";
 		};
-		class Item102
+		class Item101
 		{
 			className="A3_Props_F_Jets";
 			name="Arma 3 Jets - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item103
+		class Item102
 		{
 			className="CUP_WheeledVehicles_Kamaz";
 			name="CUP_WheeledVehicles_Kamaz";
 		};
-		class Item104
+		class Item103
 		{
 			className="CUP_AirVehicles_Su25";
 			name="CUP_AirVehicles_Su25";
 		};
-		class Item105
+		class Item104
 		{
 			className="CUP_AirVehicles_SU34";
 			name="CUP_AirVehicles_SU34";
 			author="Sabre[Dust], Community Upgrade Project";
 		};
-		class Item106
+		class Item105
 		{
 			className="CUP_WheeledVehicles_TowingTractor";
 			name="CUP_WheeledVehicles_TowingTractor";
 		};
-		class Item107
+		class Item106
 		{
 			className="CUP_AirVehicles_Mi8";
 			name="CUP_AirVehicles_Mi8";
 		};
-		class Item108
+		class Item107
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item109
+		class Item108
 		{
 			className="NFCW_weapons_cfg";
 			name="Northern Fronts Cold War - Weapons";
 			author="Northern Fronts Cold War Mod";
 		};
-		class Item110
+		class Item109
 		{
 			className="nfcw_cfg_explosives";
 			name="Northern Fronts - Cold War - Cfg. Explosives";
 			author="Northern Fronts Cold War Mod";
 		};
-		class Item111
+		class Item110
 		{
 			className="CUP_Weapons_Curator";
 			name="CUP_Weapons_Curator";
@@ -963,18 +954,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -983,6 +962,18 @@ class CustomAttributes
 				{
 					singleType="SCALAR";
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
 				};
 			};
 		};
@@ -1541,7 +1532,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=29;
+		items=30;
 		class Item0
 		{
 			dataType="Logic";
@@ -20966,7 +20957,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={2820.8669,10.678101,7117.4619};
-								angles[]={-0,3.228843,0};
+								angles[]={0,3.228843,0};
 							};
 							side="Empty";
 							flags=4;
@@ -20976,7 +20967,7 @@ class Mission
 							};
 							id=13258;
 							type="CUP_B_S1203_Ambulance_CR";
-							atlOffset=0.0004863739;
+							atlOffset=0.17714024;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21069,7 +21060,7 @@ class Mission
 						};
 					};
 					id=4794;
-					atlOffset=0.26252556;
+					atlOffset=0.26227951;
 				};
 				class Item7
 				{
@@ -21365,7 +21356,7 @@ class Mission
 				};
 			};
 			id=3523;
-			atlOffset=0.042840004;
+			atlOffset=0.04258585;
 		};
 		class Item19
 		{
@@ -36422,55 +36413,6 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7363.4043,3.9493182,4807.3545};
-								angles[]={0,4.3669071,0};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								createAsLocalObject=1;
-								disableSimulation=1;
-							};
-							id=12964;
-							type="Headgear_H_Booniehat_mgrn";
-							atlOffset=4.7683716e-07;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="SR_StaticRadioFrequency";
-									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=50;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=0;
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item15
-						{
-							dataType="Object";
-							class PositionInfo
-							{
 								position[]={7363.2534,4.5292149,4810.2764};
 								angles[]={0,4.3669071,0};
 							};
@@ -36515,7 +36457,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item16
+						class Item15
 						{
 							dataType="Object";
 							class PositionInfo
@@ -36564,7 +36506,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item17
+						class Item16
 						{
 							dataType="Object";
 							class PositionInfo
@@ -36614,7 +36556,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item18
+						class Item17
 						{
 							dataType="Object";
 							class PositionInfo
@@ -36664,7 +36606,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item19
+						class Item18
 						{
 							dataType="Object";
 							class PositionInfo
@@ -36714,7 +36656,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item20
+						class Item19
 						{
 							dataType="Object";
 							class PositionInfo
@@ -36764,7 +36706,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item21
+						class Item20
 						{
 							dataType="Object";
 							class PositionInfo
@@ -36814,7 +36756,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item22
+						class Item21
 						{
 							dataType="Object";
 							class PositionInfo
@@ -36864,7 +36806,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item23
+						class Item22
 						{
 							dataType="Object";
 							class PositionInfo
@@ -36914,7 +36856,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item24
+						class Item23
 						{
 							dataType="Object";
 							class PositionInfo
@@ -36963,7 +36905,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item25
+						class Item24
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37012,7 +36954,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item26
+						class Item25
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37061,7 +37003,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item27
+						class Item26
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37111,7 +37053,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item28
+						class Item27
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37161,7 +37103,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item29
+						class Item28
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37211,7 +37153,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item30
+						class Item29
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37261,7 +37203,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item31
+						class Item30
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37311,7 +37253,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item32
+						class Item31
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37361,7 +37303,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item33
+						class Item32
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37411,7 +37353,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item34
+						class Item33
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37461,7 +37403,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item35
+						class Item34
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37497,7 +37439,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item36
+						class Item35
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37547,7 +37489,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item37
+						class Item36
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37580,7 +37522,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item38
+						class Item37
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37630,7 +37572,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item39
+						class Item38
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37679,7 +37621,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item40
+						class Item39
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37729,7 +37671,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item41
+						class Item40
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37778,7 +37720,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item42
+						class Item41
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37828,7 +37770,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item43
+						class Item42
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37876,7 +37818,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item44
+						class Item43
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37924,7 +37866,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item45
+						class Item44
 						{
 							dataType="Object";
 							class PositionInfo
@@ -37972,7 +37914,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item46
+						class Item45
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38020,7 +37962,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item47
+						class Item46
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38068,7 +38010,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item48
+						class Item47
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38116,7 +38058,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item49
+						class Item48
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38164,7 +38106,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item50
+						class Item49
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38200,7 +38142,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item51
+						class Item50
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38249,7 +38191,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item52
+						class Item51
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38297,7 +38239,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item53
+						class Item52
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38345,7 +38287,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item54
+						class Item53
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38393,7 +38335,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item55
+						class Item54
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38443,7 +38385,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item56
+						class Item55
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38491,7 +38433,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item57
+						class Item56
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38540,7 +38482,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item58
+						class Item57
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38590,7 +38532,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item59
+						class Item58
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38640,7 +38582,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item60
+						class Item59
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38689,7 +38631,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item61
+						class Item60
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38738,7 +38680,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item62
+						class Item61
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38774,7 +38716,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item63
+						class Item62
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38810,7 +38752,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item64
+						class Item63
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38860,7 +38802,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item65
+						class Item64
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38909,7 +38851,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item66
+						class Item65
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38958,7 +38900,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item67
+						class Item66
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39007,7 +38949,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item68
+						class Item67
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39057,7 +38999,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item69
+						class Item68
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39107,7 +39049,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item70
+						class Item69
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39157,7 +39099,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item71
+						class Item70
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39192,7 +39134,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item72
+						class Item71
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39242,7 +39184,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item73
+						class Item72
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39292,7 +39234,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item74
+						class Item73
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39342,7 +39284,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item75
+						class Item74
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39392,7 +39334,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item76
+						class Item75
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39441,7 +39383,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item77
+						class Item76
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39490,7 +39432,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item78
+						class Item77
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39539,7 +39481,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item79
+						class Item78
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39588,7 +39530,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item80
+						class Item79
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39637,7 +39579,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item81
+						class Item80
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39687,7 +39629,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item82
+						class Item81
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39736,7 +39678,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item83
+						class Item82
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39786,7 +39728,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item84
+						class Item83
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39835,7 +39777,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item85
+						class Item84
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39870,7 +39812,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item86
+						class Item85
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39905,7 +39847,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item87
+						class Item86
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39941,7 +39883,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item88
+						class Item87
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39991,7 +39933,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item89
+						class Item88
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40041,7 +39983,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item90
+						class Item89
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40091,7 +40033,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item91
+						class Item90
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40141,7 +40083,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item92
+						class Item91
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40190,7 +40132,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item93
+						class Item92
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40239,7 +40181,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item94
+						class Item93
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40289,7 +40231,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item95
+						class Item94
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40338,7 +40280,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item96
+						class Item95
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40388,7 +40330,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item97
+						class Item96
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40437,7 +40379,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item98
+						class Item97
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40486,7 +40428,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item99
+						class Item98
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40522,7 +40464,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item100
+						class Item99
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40558,7 +40500,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item101
+						class Item100
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40607,7 +40549,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item102
+						class Item101
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40657,7 +40599,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item103
+						class Item102
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40705,7 +40647,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item104
+						class Item103
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40753,7 +40695,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item105
+						class Item104
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40788,7 +40730,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item106
+						class Item105
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40837,7 +40779,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item107
+						class Item106
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40885,7 +40827,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item108
+						class Item107
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40934,7 +40876,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item109
+						class Item108
 						{
 							dataType="Object";
 							class PositionInfo
@@ -40983,7 +40925,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item110
+						class Item109
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41032,7 +40974,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item111
+						class Item110
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41082,7 +41024,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item112
+						class Item111
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41132,7 +41074,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item113
+						class Item112
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41182,7 +41124,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item114
+						class Item113
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41232,7 +41174,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item115
+						class Item114
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41282,7 +41224,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item116
+						class Item115
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41332,7 +41274,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item117
+						class Item116
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41382,7 +41324,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item118
+						class Item117
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41432,7 +41374,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item119
+						class Item118
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41482,7 +41424,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item120
+						class Item119
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41532,7 +41474,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item121
+						class Item120
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41582,7 +41524,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item122
+						class Item121
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41632,7 +41574,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item123
+						class Item122
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41667,7 +41609,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item124
+						class Item123
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41717,7 +41659,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item125
+						class Item124
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41767,7 +41709,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item126
+						class Item125
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41817,7 +41759,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item127
+						class Item126
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41867,7 +41809,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item128
+						class Item127
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41903,7 +41845,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item129
+						class Item128
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41939,7 +41881,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item130
+						class Item129
 						{
 							dataType="Object";
 							class PositionInfo
@@ -41975,7 +41917,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item131
+						class Item130
 						{
 							dataType="Object";
 							class PositionInfo
@@ -42010,7 +41952,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item132
+						class Item131
 						{
 							dataType="Object";
 							class PositionInfo
@@ -42060,7 +42002,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item133
+						class Item132
 						{
 							dataType="Object";
 							class PositionInfo
@@ -42109,7 +42051,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item134
+						class Item133
 						{
 							dataType="Object";
 							class PositionInfo
@@ -42159,9 +42101,57 @@ class Mission
 								nAttributes=2;
 							};
 						};
+						class Item134
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={7363.4038,3.8775494,4807.354};
+								angles[]={0,4.3669009,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsLocalObject=1;
+								disableSimulation=1;
+							};
+							id=13326;
+							type="Headgear_H_Booniehat_khk";
+							atlOffset=0.70894313;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="SR_StaticRadioFrequency";
+									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=50;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
 					};
 					id=12677;
-					atlOffset=0.65531158;
+					atlOffset=0.37468958;
 				};
 				class Item4
 				{
@@ -42392,7 +42382,7 @@ class Mission
 					type="";
 					a=15.047204;
 					b=17.487843;
-					angle=308.94547;
+					angle=308.94543;
 					id=12996;
 					atlOffset=-0.057582378;
 					class CustomAttributes
@@ -42661,7 +42651,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10150.845,12.211029,4671.9858};
-								angles[]={0,2.631237,-0};
+								angles[]={0,2.631237,0};
 							};
 							side="Empty";
 							flags=4;
@@ -42711,7 +42701,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10150.04,12.211763,4671.4854};
-								angles[]={0,2.4085331,-0};
+								angles[]={0,2.4085331,0};
 							};
 							side="Empty";
 							flags=4;
@@ -42761,7 +42751,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10150.34,12.209934,4672.5693};
-								angles[]={0,5.612093,-0};
+								angles[]={0,5.612093,0};
 							};
 							side="Empty";
 							class Attributes
@@ -42810,7 +42800,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10149.589,12.210278,4672.1724};
-								angles[]={0,5.8171949,-0};
+								angles[]={0,5.8171949,0};
 							};
 							side="Empty";
 							flags=4;
@@ -42860,7 +42850,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10150.226,12.655227,4672.1162};
-								angles[]={-0,5.7339497,0};
+								angles[]={0,5.7339497,0};
 							};
 							side="Empty";
 							flags=4;
@@ -42909,7 +42899,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10148.671,14.400923,4668.6768};
-								angles[]={0,4.1355457,-0};
+								angles[]={0,4.1355457,0};
 							};
 							side="Empty";
 							class Attributes
@@ -42944,7 +42934,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10151.156,14.23544,4672.7632};
-								angles[]={0,1.0058966,-0};
+								angles[]={0,1.0058966,0};
 							};
 							side="Empty";
 							class Attributes
@@ -42989,7 +42979,7 @@ class Mission
 							};
 							id=13284;
 							type="GalleryFrame_02_square_F";
-							atlOffset=2.6385031;
+							atlOffset=2.6385021;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -43029,7 +43019,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10148.404,13.379963,4669.6387};
-								angles[]={0,1.4722564,-0};
+								angles[]={0,1.4722564,0};
 							};
 							side="Empty";
 							class Attributes
@@ -43093,10 +43083,9 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10148.377,12.991261,4669.5679};
-								angles[]={-0,4.1359196,0};
+								angles[]={0,4.1359196,0};
 							};
 							side="Empty";
-							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -43105,6 +43094,7 @@ class Mission
 							};
 							id=13280;
 							type="Land_OfficeCabinet_02_F";
+							atlOffset=5.270906;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -43142,7 +43132,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10148.474,12.221445,4671.46};
-								angles[]={-0,5.7170005,0};
+								angles[]={0,5.7170005,0};
 							};
 							side="Empty";
 							flags=4;
@@ -43177,7 +43167,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10151.132,12.708868,4669.3281};
-								angles[]={-0,5.7148581,0};
+								angles[]={0,5.7148581,0};
 							};
 							side="Empty";
 							flags=4;
@@ -43226,7 +43216,7 @@ class Mission
 				};
 			};
 			id=3533;
-			atlOffset=10.474901;
+			atlOffset=10.474928;
 		};
 		class Item20
 		{
@@ -43234,14 +43224,14 @@ class Mission
 			side="Civilian";
 			class Entities
 			{
-				items=4;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2796.937,9.0488348,7101.6108};
-						angles[]={0.01977458,4.7892709,0.0030368727};
+						position[]={2799.4861,9.0524368,7102.5327};
+						angles[]={0.01261873,4.823287,0.010192723};
 					};
 					side="Civilian";
 					flags=6;
@@ -43250,31 +43240,10 @@ class Mission
 						init="[this, ""CML""] call Gib_fnc_Gearscript;";
 						description="Paramedic Unit Leader@EMS";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Paramedic_01_F";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=3;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							gps="ItemGPS";
-						};
 					};
-					id=4806;
-					type="C_Man_Paramedic_01_F";
+					id=13327;
+					type="C_man_polo_2_F";
+					atlOffset=-9.5367432e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -43292,19 +43261,6 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.5;
-								};
-							};
-						};
-						class Attribute2
-						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -43316,7 +43272,59 @@ class Mission
 								};
 							};
 						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male01GRE";
+								};
+							};
+						};
 						class Attribute3
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_medic";
+							expression="if !(isClass (configFile >> 'CfgPatches' >> 'ace_common')) then {[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.5;
+								};
+							};
+						};
+						class Attribute6
 						{
 							property="SR_StaticRadioFrequency";
 							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
@@ -43329,7 +43337,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=7;
 					};
 				};
 				class Item1
@@ -43337,8 +43345,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2799.3533,9.077734,7100.4707};
-						angles[]={0.0073079406,4.7892752,0.0030297067};
+						position[]={2801.9719,9.0800438,7102.3062};
+						angles[]={0.0027186358,4.8232894,0.013931111};
 					};
 					side="Civilian";
 					flags=4;
@@ -43347,34 +43355,39 @@ class Mission
 						init="[this, ""CM""] call Gib_fnc_Gearscript;";
 						description="Paramedic";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Paramedic_01_F";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=3;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							gps="ItemGPS";
-						};
 					};
-					id=4810;
-					type="C_Man_Paramedic_01_F";
+					id=13328;
+					type="C_man_polo_2_F";
+					atlOffset=1.9073486e-06;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="ENH_unitTraits_medic";
+							expression="if !(isClass (configFile >> 'CfgPatches' >> 'ace_common')) then {[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -43387,7 +43400,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute3
 						{
 							property="ace_advanced_fatigue_performanceFactor";
 							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
@@ -43400,7 +43413,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -43413,7 +43426,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute5
 						{
 							property="SR_StaticRadioFrequency";
 							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
@@ -43426,210 +43439,17 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2799.5071,9.0534534,7102.4658};
-						angles[]={0.01261873,4.7892709,0.0040317108};
-					};
-					side="Civilian";
-					flags=4;
-					class Attributes
-					{
-						init="[this, ""CML""] call Gib_fnc_Gearscript;";
-						description="Paramedic Team Leader";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Paramedic_01_F";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=3;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							gps="ItemGPS";
-						};
-					};
-					id=4808;
-					type="C_Man_Paramedic_01_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.5;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=50;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2801.9231,9.0821571,7101.2759};
-						angles[]={0.0027186358,4.7892742,0.013931111};
-					};
-					side="Civilian";
-					flags=4;
-					class Attributes
-					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
-						description="Paramedic";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Paramedic_01_F";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=3;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							gps="ItemGPS";
-						};
-					};
-					id=4812;
-					type="C_Man_Paramedic_01_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.5;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=50;
-								};
-							};
-						};
-						nAttributes=4;
+						nAttributes=6;
 					};
 				};
 			};
 			class Attributes
 			{
 				behaviour="SAFE";
-				formation="DIAMOND";
+				formation="FILE";
 			};
 			id=4805;
+			atlOffset=-9.5367432e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -43641,7 +43461,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="EMS";
+							value="EMS Unit 1";
 						};
 					};
 				};
@@ -46929,14 +46749,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -46955,14 +46775,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -46988,14 +46808,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47014,14 +46834,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47048,14 +46868,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47074,14 +46894,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47107,14 +46927,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47133,14 +46953,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47167,14 +46987,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47193,14 +47013,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47307,14 +47127,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47333,14 +47153,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47366,14 +47186,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47392,14 +47212,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47424,14 +47244,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47450,14 +47270,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47483,14 +47303,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47509,14 +47329,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47543,14 +47363,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47569,14 +47389,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47620,14 +47440,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47646,14 +47466,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47717,14 +47537,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47743,14 +47563,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47776,14 +47596,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47802,14 +47622,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47835,14 +47655,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47861,14 +47681,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47894,14 +47714,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47920,14 +47740,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47953,14 +47773,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47979,14 +47799,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -48012,14 +47832,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -48038,14 +47858,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -48071,14 +47891,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -48097,14 +47917,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -50575,14 +50395,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -50627,14 +50447,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -50860,14 +50680,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -50912,14 +50732,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -52487,14 +52307,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -52539,14 +52359,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -52653,14 +52473,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -52705,14 +52525,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58398,7 +58218,7 @@ class Mission
 						{
 							dataType="Trigger";
 							position[]={9332.9609,10.506425,7973.4868};
-							angle=1.7419426;
+							angle=1.7419424;
 							class Attributes
 							{
 								onActivation="checkpoint_charlie_gate animate [""Door_1_rot"", 1];";
@@ -58496,14 +58316,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58522,14 +58342,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58556,14 +58376,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58582,14 +58402,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58616,14 +58436,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58642,14 +58462,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58676,14 +58496,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58702,14 +58522,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58736,14 +58556,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58762,14 +58582,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58796,14 +58616,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58822,14 +58642,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58856,14 +58676,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58882,14 +58702,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58930,14 +58750,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58956,14 +58776,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58989,14 +58809,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -59015,14 +58835,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -59048,14 +58868,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -59074,14 +58894,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -59108,14 +58928,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -59134,14 +58954,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -59285,14 +59105,14 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_doStop";
-									expression="if (!is3DEN && _value) then {doStop _this}";
+									property="SR_StaticRadioFrequency";
+									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 									class Value
 									{
 										class data
 										{
-											singleType="BOOL";
-											value=1;
+											singleType="SCALAR";
+											value=50;
 										};
 									};
 								};
@@ -59324,14 +59144,14 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="SR_StaticRadioFrequency";
-									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+									property="ENH_doStop";
+									expression="if (!is3DEN && _value) then {doStop _this}";
 									class Value
 									{
 										class data
 										{
-											singleType="SCALAR";
-											value=50;
+											singleType="BOOL";
+											value=1;
 										};
 									};
 								};
@@ -61083,14 +60903,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61109,14 +60929,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -61143,14 +60963,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61195,14 +61015,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -61229,14 +61049,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61255,14 +61075,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -61289,14 +61109,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61315,14 +61135,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -61349,14 +61169,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61375,14 +61195,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -61409,14 +61229,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61435,14 +61255,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -68641,14 +68461,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -68693,14 +68513,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -69127,14 +68947,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -69179,14 +68999,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -71807,7 +71627,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9716.2705,20.039059,9269.8271};
-						angles[]={-0,4.8966846,0};
+						angles[]={0,4.8966846,0};
 					};
 					side="Empty";
 					flags=4;
@@ -71888,6 +71708,7 @@ class Mission
 					};
 					id=13318;
 					type="CUP_O_Mi8_RU";
+					atlOffset=-7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -71912,7 +71733,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9709.915,19.945127,9228.0215};
-						angles[]={-0,4.8820868,0.012534748};
+						angles[]={0,4.8820868,0.012534748};
 					};
 					side="Empty";
 					flags=4;
@@ -71943,7 +71764,7 @@ class Mission
 				};
 			};
 			id=8633;
-			atlOffset=-0.021741867;
+			atlOffset=-0.021734238;
 		};
 		class Item27
 		{
@@ -72257,7 +72078,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={10149.03,12.421291,4668.7764};
-						angles[]={-0,4.1043859,0};
+						angles[]={0,4.1043859,0};
 					};
 					side="Empty";
 					flags=4;
@@ -72386,7 +72207,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10150.933,12.210762,4669.0601};
-								angles[]={-0,1.0096124,0};
+								angles[]={0,1.0096124,0};
 							};
 							side="Empty";
 							flags=4;
@@ -72479,7 +72300,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10152.185,12.257589,4669.2974};
-								angles[]={-0,5.7386079,0};
+								angles[]={0,5.7386079,0};
 							};
 							side="Empty";
 							flags=4;
@@ -72496,7 +72317,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10152.129,12.257959,4669.3896};
-								angles[]={-0,5.7660103,0};
+								angles[]={0,5.7660103,0};
 							};
 							side="Empty";
 							flags=4;
@@ -72513,7 +72334,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10150.862,12.210762,4668.5269};
-								angles[]={-0,5.6819706,0};
+								angles[]={0,5.6819706,0};
 							};
 							side="Empty";
 							flags=4;
@@ -72662,6 +72483,253 @@ class Mission
 					};
 				};
 				nAttributes=7;
+			};
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2799.459,9.080843,7100.0889};
+						angles[]={0.0073129297,4.8419971,0.0030368727};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						init="[this, ""CML""] call Gib_fnc_Gearscript;";
+						description="Paramedic Team Leader@EMS";
+						isPlayable=1;
+					};
+					id=13329;
+					type="C_man_polo_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_medic";
+							expression="if !(isClass (configFile >> 'CfgPatches' >> 'ace_common')) then {[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.5;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=50;
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2801.9412,9.0881729,7099.8154};
+						angles[]={0.0009765625,4.842001,0.004026473};
+					};
+					side="Civilian";
+					flags=4;
+					class Attributes
+					{
+						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						description="Paramedic";
+						isPlayable=1;
+					};
+					id=13330;
+					type="C_man_polo_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_unitTraits_medic";
+							expression="if !(isClass (configFile >> 'CfgPatches' >> 'ace_common')) then {[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.5;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=50;
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+				behaviour="SAFE";
+				formation="FILE";
+			};
+			id=13331;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="EMS Unit 2";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
