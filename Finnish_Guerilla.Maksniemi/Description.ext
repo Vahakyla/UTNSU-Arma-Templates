@@ -25,7 +25,7 @@ class Header {
 
 disableChannels[]=  // allow text only on side chat
 {
-	{0, true, true},	// Global, text, voice
+	{0, false, true},	// Global, text, voice
 	{1, true, true},	// Side, text, voice
 	{2, true, true},	// Command, text, voice
 	{3, true, true},	// Group, text, voice
