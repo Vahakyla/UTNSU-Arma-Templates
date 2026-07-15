@@ -64,11 +64,12 @@
 	] select floor random 5;
 	
 	_rifle = [
-	"tob_rifle_RK62",
+	"NFCW_762_RK_62",
 	"CUP_arifle_AKM_Early",
-	"KAR_RIFLE_RK62",	
-	"CUP_arifle_TYPE_56_2_Early"
-	] select floor random 4;
+	"NFCW_762_RK_62_mid",	
+	"CUP_arifle_TYPE_56_2_Early",
+	"NFCW_762_RK_62_mid_grip"
+	] select floor random 5;
 
 	switch (_type) do {
 	// "HQ";
@@ -88,13 +89,13 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
-		_unit addBackpack "TFAR_anprc155_coyote";
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
+		_unit addBackpack "TFAR_mr3000_bwmod";
 		_unit addHeadgear _offhat;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		_unit addWeapon "Binocular";
 
 		comment "Add items";
@@ -118,13 +119,13 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
-		_unit addBackpack "TFAR_anprc155_coyote";
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
+		_unit addBackpack "TFAR_mr3000_bwmod";
 		_unit addHeadgear _offhat;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		_unit addWeapon "Binocular";
 
 		comment "Add items";
@@ -151,14 +152,14 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
-		_unit addBackpack "TFAR_anprc155_coyote";
-		for "_i" from 1 to 5 do {_unit addItemToBackpack "CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_M";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
+		_unit addBackpack "TFAR_mr3000_bwmod";
+		for "_i" from 1 to 5 do {_unit addItemToBackpack "NFCW_30Rnd_762x39_RK62_Tracer_Mag";};
 		_unit addHeadgear _offhat;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		_unit addWeapon "Binocular";
 
 		comment "Add items";
@@ -181,7 +182,7 @@
 		_unit addVest _vest;
 		for "_i" from 1 to 4 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _backpack;
 		for "_i" from 1 to 40 do {_unit addItemToBackpack "ACE_fieldDressing";};
 		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_epinephrine";};
@@ -195,7 +196,7 @@
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		
 		// "Add items";
 		_unit linkItem "ItemMap";
@@ -221,15 +222,15 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _assbackpack;
-		for "_i" from 1 to 5 do {_unit addItemToBackpack "CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_M";};
+		for "_i" from 1 to 5 do {_unit addItemToBackpack "NFCW_30Rnd_762x39_RK62_Tracer_Mag";};
 		_unit addItemToBackpack "ACE_EntrenchingTool";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		_unit addWeapon "Binocular";
 
 		comment "Add items";
@@ -251,14 +252,14 @@
 		_unit addVest _vest;
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _assbackpack;
 		_unit addItemToBackpack "ACE_EntrenchingTool";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
@@ -279,26 +280,16 @@
 		_unit addVest _vest;
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_100Rnd_762x39_KK62_Mag";};
 		_unit addBackpack _backpack;
+		for "_i" from 1 to 3 do {_unit addItemToBackpack "NFCW_100Rnd_762x39_KK62_Mag";};
 		_unit addItemToBackpack "ACE_EntrenchingTool";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
-		_type = selectRandom ["MG3","KK"];		
-		
-		switch (_type) do {
-			case ("MG3"): {
-					for "_i" from 1 to 2 do {_unit addItemToVest "CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";};
-					for "_i" from 1 to 3 do {_unit addItemToBackpack "CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";};
-					_unit addWeapon "CUP_lmg_MG3";
-				};
-			case ("KK"): {
-					for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_100Rnd_762x39_KK62_Mag";};
-					for "_i" from 1 to 3 do {_unit addItemToBackpack "NFCW_100Rnd_762x39_KK62_Mag";};
-					_unit addWeapon "NFCW_762_KK_62";
-				};
-		};
-		
+		_unit addWeapon "NFCW_762_KK_62";
+		_unit addPrimaryWeaponItem "NFCW_100Rnd_762x39_KK62_Mag";
+
 		
 		comment "Add items";
 		_unit linkItem "ItemMap";
@@ -319,14 +310,14 @@
 		_unit addVest _vest;
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _backpack;
 		_unit addItemToBackpack "ACE_EntrenchingTool";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		_unit addWeapon "Binocular";
 
 		comment "Add items";
@@ -348,7 +339,7 @@
 		_unit addVest _vest;
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _assbackpack;
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "CUP_launch_M72A6";};
 		_unit addItemToBackpack "ACE_EntrenchingTool";
@@ -356,7 +347,7 @@
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		_unit addWeapon "CUP_launch_M72A6";
 
 		comment "Add items";
@@ -383,16 +374,16 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
-		_unit addBackpack "TFAR_anprc155_coyote";
-		for "_i" from 1 to 5 do {_unit addItemToBackpack "CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_M";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
+		_unit addBackpack "TFAR_mr3000_bwmod";
+		for "_i" from 1 to 5 do {_unit addItemToBackpack "NFCW_30Rnd_762x39_RK62_Tracer_Mag";};
 		_unit addItemToBackpack "ACE_RangeTable_82mm";
 		_unit addItemToBackpack "ACE_PlottingBoard";
 		_unit addHeadgear _offhat;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		_unit addWeapon "Binocular";
 
 		comment "Add items";
@@ -415,7 +406,7 @@
 		_unit addVest _vest;
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
-		for "_i" from 1 to 9 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
+		for "_i" from 1 to 9 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _backpack;
 		_unit addItemToBackpack "ACE_EntrenchingTool";
 		_unit addItemToBackpack "ACE_RangeTable_82mm";
@@ -423,7 +414,7 @@
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";		
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";		
 		_unit addWeapon "CUP_m252_carry";
 
 		comment "Add items";
@@ -446,7 +437,7 @@
 		_unit addVest _vest;
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
-		for "_i" from 1 to 8 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _backpack;
 		_unit addItemToBackpack "ACE_EntrenchingTool";
 		_unit addItemToBackpack "ACE_1Rnd_82mm_Mo_HE";
@@ -456,7 +447,7 @@
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		_unit addWeapon "ace_csw_carryMortarBaseplate";
 
 		comment "Add items";
@@ -481,13 +472,13 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellPurple";};
-		for "_i" from 1 to 9 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
-		_unit addBackpack "TFAR_anprc155_coyote";
+		for "_i" from 1 to 9 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
+		_unit addBackpack "TFAR_mr3000_bwmod";
 		_unit addHeadgear _hat;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
@@ -509,17 +500,17 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellPurple";};
-		for "_i" from 1 to 9 do {_unit addItemToVest "CUP_30Rnd_762x39_AK47_M";};
+		for "_i" from 1 to 9 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addHeadgear _hat;
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "CUP_30Rnd_762x39_AK47_M";
+		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
-		_unit linkItem "TFAR_anprc154";
+		_unit linkItem "TFAR_anprc152";
 	};
 };
