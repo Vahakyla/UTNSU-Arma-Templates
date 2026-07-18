@@ -205,6 +205,32 @@
 		_unit linkItem "ItemWatch";
 	};
 	
+	case "COM": {
+
+		// "Company Medic";
+		// "Add containers";
+		_unit forceAddUniform _uniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine";};
+		for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_epinephrine";};
+		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
+		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};		
+		_unit addItemToUniform "ACE_Flashlight_XL50";
+		_unit addItemToUniform "ACE_EntrenchingTool";
+		_unit addItemToUniform "CLV_axeitem";
+		_unit addVest _vest;
+		for "_i" from 1 to 4 do {_unit addItemToVest "NFCW_M43Grenade";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
+		_unit addHeadgear _helmet;
+
+		comment "Add weapons";
+		
+		// "Add items";
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+	};
+	
 	// "Infantry Section";
 	
 	case "SL": {
