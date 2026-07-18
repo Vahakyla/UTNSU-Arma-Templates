@@ -2,42 +2,49 @@
 <br/>
 <br/><font color='#99cc00'>Commander's Intent</font>
 <br/>
-<br/>Commander’s intent is to establish a layered defence along the Northern and Southern sides of highway 941 divided into 3 ‘phaselines’;
+<br/>Commander’s intent is to establish a main life of defense at the marked location on the highway and along the established fortifications running north and south from it (Fig. 2).
+<br/>At this location, the company’s AT units will defend the road, supported by an artillery officer to direct indirect fire.
 <br/>
-<br/>1. A series of light pickets held in fireteam strength to engage and half initial enemy motorized reconnaissance troops before at a distance from proper defences.
+<br/>The MG units will spread out along the fortifications in the woods to maximize covered area and halt enemy infantry advances, aided by the remaining artillery officers.
+<br/>One MG unit should stay close to the road in case of dismounting enemy infantry.
 <br/>
-<br/>2. Mutually supporting strongpoints manned in squad strength behind the picket line to provide supporting fire to the 1st line and to act as the initial line of resistance against the main enemy effort.
+<br/>Rifle units will spread out along the fortifications and the road between them to defend as necessary.
 <br/>
-<br/>3. A heavily fortified final line of resistance defended in platoon strength providing supporting fire to the second line.
+<br/>Prior to engagement, in addition to the existing minefield north of the road, AT mines will be laid on the road and AP mines in the woods east of the fortifications.
+<br/>No friendly advance will be made into this area.
 <br/>
-<br/>Should the third line be breached, whatever units are combat capable will either continue a fighting retreat along the main highway or disperse into the forests and independently make their way to the rally point at Battalion headquarters to the West. 
-<br/>Reference sketch for rough visual representation of intended defensive plan.
+<br/>Should this first line of defence be breached, two more defensible locations are available on the hills along the road west (Fig. 3, Fig. 4).
+<br/>Time permitting, these will be fortified in advance. If this is not possible, existing buildings and natural features may be used.
+<br/>
+<br/>Should the third line be breached, all capable units will execute a fighting retreat and maximize enemy attrition while making their way back to battalion HQ to the west.
 <br/>
 <br/><font color='#99cc00'>Scheme of Maneuvers</font>
 <br/>
-<br/>Alpha Platoon will assume responsibility for the Northern section of the road with Charlie assuming responsibility for the Southern section of the road. Bravo platoon will act as a reserve platoon.
+<br/>Alpha platoon will assume responsibility for the section south of the road. 
 <br/>
-<br/>Alpha and Charlie platoon will each designate up to two squads to hold the strongpoints at phaseline 2 and one of those squads will designate a fireteam to hold the forward outpost. Troops will be pulled back from the first and second phaselines at the 
-<br/>Platoon leader’s discretion or upon the Company CO’s instruction, any withdrawals or significant movements outside of fortifications should be coordinated with other squads within the platoon.
+<br/>Charlie platoon will assume responsibility for the section north of the road. 
+<br/>
+<br/>Bravo platoon will support with MG and medical units as required.
+<br/>Withdrawals will not be executed without coordination with the other platoons and thus require COs approval.
+<br/>
+<br/>Prior to mission start, all available units will begin laying of mines east of the first line of defense, and construction of defensive structures first on the road at the first line of defense, progressing to second and
+<br/>third as time permits. At mission start, all units will rejoin their platoons at the first line of defense.
 <br/>
 <br/><font color='#99cc00'>Fires</font>
 <br/>
-<br/>Platoons will exercise fire discipline and coordinate in order to engage enemy forces decisively and quickly. The spaces ahead of the outpost line and between each phaseline should be marked as target reference points and pre-sighted for battalion mortars 
-<br/>and brigade artillery. The former will be distributed to platoon-level forward observers while the latter will be reserved for the Company Artillery officer.
+<br/>Platoons will engage enemy forces on sight. The spaces ahead of the first line of defense and between lines should be pre-sighted and marked for indirect fire support.
 <br/>
-<br/>The anti tank detachment will deploy its weapons and crews at its own discretion in the positions that most effectively balance survivability and ability to engage mechanized and motorized targets coming down the road.
-<br/>
-<br/>Overall Company ROE is Orange, Hostile forces are not to be engaged until they cross the truce line or open fire or Company CO affirms otherwise.
+<br/>Papa squad will deploy its weapons next to the road at the defense lines at their own discretion with the goal of maximizing their ability to engage heavy enemy forces on the road.
 <br/>
 <font color='#FFA500' size='18'>Co-ord Instructions</font>
 <br/>
-<br/>0345 (GAME) / 1545 (REAL) - Company Briefing
-<br/>0415 (GAME) / 1615 (REAL) - Latest time for Company departure from staging area.
-<br/>0430 (GAME) / 1630 (REAL) - Likely arrival of enemy forces
+<br/>1945 (GAME) / 1545 (REAL) - Company Briefing
+<br/>2015 (GAME) / 1615 (REAL) - Latest time for Company departure from staging area.
+<br/>2030 (GAME) / 1630 (REAL) - Likely arrival of enemy forces
 <br/>
 <br/><font color='#99cc00'>Locations:</font>
 <br/>
-<br/>COY ADMIN AREA: East of Luvelathi
+<br/>COY ADMIN AREA: East of Klementti
 <br/>
 <br/><font color='#99cc00'>Routes, Boundaries and Report Lines:</font>
 <br/>

@@ -1,22 +1,24 @@
 <font color='#FFA500' size='18'>Ground and Prelims:</font>
 <br/>
-<br/>Company area of operations is the length of and surroundings of highway 941 stretching between the intersection with highway 863 and battalion headquarters at Lapiosalmi. Local Terrain is rough and heavily forested.
-<br/>There are no relevant civilian considerations.
+<br/>Area of operations is highway 941 and the surrounding woods, up until the limits imposed by 3rd company area of operations to the north and 2nd company area of operations to the south. The terrain in the woods is rough and hilly.
+<br/>The road itself is mostly flat, save for three notable hills. 
+<br/>There are no civilians in the area.
 <br/>
-<br/>Weather: Dawn
+<br/>Weather: Afternoon
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – En Forces:</font>
 <br/>
-<br/>Exact enemy force composition is unknown, Battalion G-2 suspects Russian marine or motor rifle units with attached or organic armour vehicles up to and including MBT’s in addition to extensive indirect fire support and aviation.
+<br/>Exact force composition is unknown, but heavy enemy forces have been sighted. A large force of tanks and MBTs is expected on the road, while sizeable infantry forces are expected to advance through the woods to the north and south.
+<br/>They will be supported by indirect fire and close air support.
 <br/>
-<br/><br/>Enemy forces are approaching our position from the north east, with an expected large concentration of mechanized and armored units.
+<br/>The enemy is expected to make a frontal assault on our position in an attempt to break through our defenses.
 <br/>
 <br/>Air Threat: Med.
 <br/>CBRN Threat: Neg.
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – FF</font>
 <br/>
-<br/>Friendly Forces consist of ‘A’ Company 1st Battalion, supported by the battalion mortar battery
+<br/>1st company consisting of three rifle platoons Alpha, Bravo and Charlie, supported by AT squad Papa, Mortar squad Tango, Logistics squad Hotel and 155mm battalion artillery.
 <br/>
 <br/>Combat Support: 
 <br/>2x Batteries of 155mm Howitzers (HE, Smoke, WP, Guided)
@@ -25,5 +27,5 @@
 <br/>
 <br/><font color='#FFA500' size='18'>Mission</font>
 <br/>
-<br/>Battalion Headquarter’s intention is to repel initial enemy offensive effort and to attrit or delay subsequent attacks to enable a fighting withdrawal in good order should the battalion prove incapable of repelling enemy assaults.
+<br/>Intent is to halt and repel the enemy offensive in full. In the event of defenses being insufficient, orderly fighting withdrawal should be executed with the goal of maximizing enemy force attrition.
 <br/>
