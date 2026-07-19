@@ -42,15 +42,7 @@ class CfgFunctions {
       class vehGearScript {};
     };
   };
-  
-  class KS
-	{
-		class ceaseFireFunctions
-		{
-			file = "functions";
-			class ceaseFire {};
-			class ceaseFireEH_onFiredMan {};
-			class ceaseFireEH_blockMuzzles {};
-		};
-	};
 };
+
+// Enable CBA settings loading
+cba_settings_hasSettingsFile = 1;

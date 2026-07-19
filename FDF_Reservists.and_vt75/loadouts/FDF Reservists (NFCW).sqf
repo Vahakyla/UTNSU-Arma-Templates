@@ -179,7 +179,6 @@
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};		
 		_unit addItemToUniform "ACE_Flashlight_XL50";
 		_unit addItemToUniform "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addVest _vest;
 		for "_i" from 1 to 4 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
@@ -216,7 +215,6 @@
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};		
 		_unit addItemToUniform "ACE_Flashlight_XL50";
 		_unit addItemToUniform "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addVest _vest;
 		for "_i" from 1 to 4 do {_unit addItemToVest "NFCW_M43Grenade";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "NFCW_M61SmokeGrenade";};
@@ -253,7 +251,6 @@
 		_unit addBackpack _assbackpack;
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "NFCW_30Rnd_762x39_RK62_Tracer_Mag";};
 		_unit addItemToBackpack "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
@@ -283,7 +280,6 @@
 		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _assbackpack;
 		_unit addItemToBackpack "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
@@ -313,7 +309,6 @@
 		_unit addBackpack _backpack;
 		for "_i" from 1 to 3 do {_unit addItemToBackpack "NFCW_100Rnd_762x39_KK62_Mag";};
 		_unit addItemToBackpack "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
@@ -343,7 +338,6 @@
 		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _backpack;
 		_unit addItemToBackpack "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
@@ -374,7 +368,6 @@
 		_unit addBackpack _assbackpack;
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "CUP_launch_M72A6";};
 		_unit addItemToBackpack "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
@@ -412,7 +405,6 @@
 		_unit addItemToBackpack "ACE_RangeTable_82mm";
 		_unit addItemToBackpack "ACE_PlottingBoard";
 		_unit addItemToBackpack "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addHeadgear _offhat;
 
 		comment "Add weapons";
@@ -443,7 +435,6 @@
 		for "_i" from 1 to 9 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _backpack;
 		_unit addItemToBackpack "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addItemToBackpack "ACE_RangeTable_82mm";
 		_unit addHeadgear _helmet;
 
@@ -475,7 +466,6 @@
 		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _backpack;
 		_unit addItemToBackpack "ACE_EntrenchingTool";
-		_unit addItemToUniform "CLV_axeitem";
 		_unit addItemToBackpack "ACE_1Rnd_82mm_Mo_HE";
 		_unit addItemToBackpack "ACE_RangeTable_82mm";
 		_unit addHeadgear _helmet;

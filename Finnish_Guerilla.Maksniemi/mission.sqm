@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=13332;
+		nextID=13333;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=558;
+		nextID=594;
 	};
 	class Camera
 	{
-		pos[]={2761.7229,20.369076,7105.4316};
-		dir[]={0.85330909,-0.51693237,-0.068779245};
-		up[]={0.51529366,0.85600525,-0.041533146};
-		aside[]={-0.080344841,4.8728907e-07,-0.99680471};
+		pos[]={1560.6702,83.949738,5035.8999};
+		dir[]={-0.068526283,-0.70612335,0.70482248};
+		up[]={-0.068330817,0.70806736,0.70282841};
+		aside[]={0.99534482,-6.3133484e-07,0.096773691};
 	};
 };
 binarizationWanted=0;
@@ -949,22 +949,10 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnButton";
 			expression="true";
@@ -977,9 +965,21 @@ class CustomAttributes
 				};
 			};
 		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+				};
+			};
+		};
 		nAttributes=2;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -1253,7 +1253,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -1307,7 +1307,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -1415,7 +1415,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -1442,7 +1442,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -1469,7 +1469,7 @@ class CustomAttributes
 													class data
 													{
 														singleType="SCALAR";
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -16438,7 +16438,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2236.7881,3.4350483,5768.0864};
+								position[]={2236.7881,3.4350486,5768.0864};
 								angles[]={0,5.3896856,0.0064223483};
 							};
 							side="Empty";
@@ -16449,7 +16449,7 @@ class Mission
 							};
 							id=3449;
 							type="NFCW_Ammobox_762";
-							atlOffset=0.74822474;
+							atlOffset=0.74822497;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -16761,7 +16761,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2245.1768,3.6459179,5780.2124};
+								position[]={2245.1768,3.6459181,5780.2124};
 								angles[]={0,5.3631315,0.0009765625};
 							};
 							side="Empty";
@@ -16774,7 +16774,7 @@ class Mission
 							};
 							id=3454;
 							type="Box_C_UAV_06_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17107,7 +17107,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2241.4678,3.6323378,5775.6167};
+								position[]={2241.4678,3.632338,5775.6167};
 								angles[]={0.0010918301,5.4006357,0.001035801};
 							};
 							side="Empty";
@@ -17120,6 +17120,7 @@ class Mission
 							};
 							id=3457;
 							type="Box_C_UAV_06_F";
+							atlOffset=2.3841858e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18234,7 +18235,7 @@ class Mission
 					name="Respawn";
 					class Entities
 					{
-						items=18;
+						items=19;
 						class Item0
 						{
 							dataType="Logic";
@@ -19791,7 +19792,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6798.7466,3.4728014,2846.3242};
+								position[]={6798.7466,3.4728017,2846.3242};
 								angles[]={0,3.2039666,0};
 							};
 							side="Empty";
@@ -19802,7 +19803,7 @@ class Mission
 							};
 							id=3532;
 							type="NFCW_Ammobox_762";
-							atlOffset=0.80982637;
+							atlOffset=0.80982661;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20046,9 +20047,49 @@ class Mission
 								nAttributes=2;
 							};
 						};
+						class Item18
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={1546.892,14.502495,5126.792};
+							};
+							id=13332;
+							type="tunres_respawn_moduleRespawnPoint";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="tunres_respawn_moduleFlagTexture";
+									expression="_this setVariable ['tunres_respawn_flagTexture',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Flex_CUP_FIN_Faction\data\flag\fin_flag_army_co.paa";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="tunres_respawn_module_side";
+									expression="_this setVariable ['tunres_respawn_respawnSide',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_respawn_west";
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
 					};
 					id=3483;
-					atlOffset=13.468832;
+					atlOffset=14.555094;
 				};
 				class Item5
 				{
@@ -21176,7 +21217,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="0";
+									value="1";
 								};
 							};
 						};
@@ -21356,7 +21397,7 @@ class Mission
 				};
 			};
 			id=3523;
-			atlOffset=0.04258585;
+			atlOffset=-0.17159033;
 		};
 		class Item19
 		{
@@ -21378,7 +21419,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2536.1819,3.9056966,5517.646};
+								position[]={2536.1819,3.9056969,5517.646};
 								angles[]={0,1.9081336,0};
 							};
 							side="Empty";
@@ -21387,7 +21428,7 @@ class Mission
 							};
 							id=3257;
 							type="CFP_C_ASIA_Fishing_Boat_01";
-							atlOffset=0.91399992;
+							atlOffset=0.91400027;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21423,7 +21464,7 @@ class Mission
 							};
 							id=3258;
 							type="Land_Nav_Boathouse_PierL";
-							atlOffset=-2.2351742e-07;
+							atlOffset=-1.2665987e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21459,7 +21500,7 @@ class Mission
 							};
 							id=3259;
 							type="Land_PierWooden_03_F";
-							atlOffset=0.91204172;
+							atlOffset=0.91204184;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21495,7 +21536,7 @@ class Mission
 							};
 							id=3261;
 							type="Land_PierWooden_03_F";
-							atlOffset=1.82723;
+							atlOffset=1.8272301;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21530,7 +21571,7 @@ class Mission
 							};
 							id=3262;
 							type="Land_Nav_Boathouse_PierL";
-							atlOffset=1.7728748;
+							atlOffset=1.772875;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21566,7 +21607,7 @@ class Mission
 							};
 							id=3264;
 							type="Land_PierWooden_01_hut_F";
-							atlOffset=7.1525574e-07;
+							atlOffset=8.3446503e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21601,7 +21642,7 @@ class Mission
 							};
 							id=3269;
 							type="Land_Nav_Boathouse_PierL";
-							atlOffset=1.7583488;
+							atlOffset=1.7583489;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21637,7 +21678,7 @@ class Mission
 							};
 							id=3266;
 							type="Land_Nav_Boathouse_PierL";
-							atlOffset=2.9802322e-08;
+							atlOffset=1.3411045e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21673,7 +21714,7 @@ class Mission
 							};
 							id=3267;
 							type="Land_PierWooden_03_F";
-							atlOffset=0.89751601;
+							atlOffset=0.89751613;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21709,7 +21750,7 @@ class Mission
 							};
 							id=3268;
 							type="Land_PierWooden_03_F";
-							atlOffset=1.8127048;
+							atlOffset=1.8127049;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21745,7 +21786,6 @@ class Mission
 							};
 							id=3270;
 							type="Land_PierWooden_01_hut_F";
-							atlOffset=-1.1920929e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21778,7 +21818,7 @@ class Mission
 							};
 							id=3265;
 							type="CFP_C_ASIA_Fishing_Boat_01";
-							atlOffset=0.8989805;
+							atlOffset=0.89898062;
 						};
 						class Item12
 						{
@@ -21797,7 +21837,7 @@ class Mission
 							};
 							id=12672;
 							type="Land_Nav_Boathouse_PierL";
-							atlOffset=0.013586074;
+							atlOffset=0.013586174;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21833,7 +21873,7 @@ class Mission
 							};
 							id=12673;
 							type="Land_PierWooden_03_F";
-							atlOffset=1.1448772;
+							atlOffset=1.1448773;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21868,7 +21908,7 @@ class Mission
 							};
 							id=12675;
 							type="Land_Nav_Boathouse_PierL";
-							atlOffset=1.3237077;
+							atlOffset=1.3237078;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21904,7 +21944,7 @@ class Mission
 							};
 							id=12676;
 							type="Land_PierWooden_01_hut_F";
-							atlOffset=9.5367432e-07;
+							atlOffset=1.0728836e-06;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24930,7 +24970,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5850.1982,3.9914932,5837.8032};
+								position[]={5850.1982,3.9914935,5837.8032};
 								angles[]={0,2.2444613,0};
 							};
 							side="Empty";
@@ -24941,7 +24981,7 @@ class Mission
 							};
 							id=12434;
 							type="GalleryFrame_01_large_v1_F";
-							atlOffset=0.45727134;
+							atlOffset=0.45727158;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26272,7 +26312,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.5298,2.9552608,5832.4019};
+								position[]={5845.5298,2.955261,5832.4019};
 								angles[]={0,5.3866138,0};
 							};
 							side="Empty";
@@ -26285,7 +26325,7 @@ class Mission
 							};
 							id=12462;
 							type="Land_FoodContainer_01_White_F";
-							atlOffset=0.00022220612;
+							atlOffset=0.00022244453;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26322,7 +26362,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.2017,2.9552603,5832.0708};
+								position[]={5845.2017,2.9552605,5832.0708};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -26335,7 +26375,7 @@ class Mission
 							};
 							id=12463;
 							type="Land_FoodContainer_01_White_F";
-							atlOffset=0.00022172928;
+							atlOffset=0.0002219677;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26372,7 +26412,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5844.9189,2.9552603,5831.7041};
+								position[]={5844.9189,2.9552605,5831.7041};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -26385,7 +26425,7 @@ class Mission
 							};
 							id=12464;
 							type="Land_FoodContainer_01_White_F";
-							atlOffset=0.00022172928;
+							atlOffset=0.0002219677;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26422,7 +26462,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5844.6577,2.9344263,5832.2354};
+								position[]={5844.6577,2.9344265,5832.2354};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -26435,7 +26475,7 @@ class Mission
 							};
 							id=12465;
 							type="Land_PaperBox_01_small_closed_brown_food_F";
-							atlOffset=0.00022172928;
+							atlOffset=0.0002219677;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26607,10 +26647,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.3589,3.6336298,5832.0151};
+								position[]={5845.3589,3.63363,5832.0151};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -26619,7 +26660,6 @@ class Mission
 							};
 							id=12469;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26656,10 +26696,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.3042,3.6336298,5832.0718};
+								position[]={5845.3042,3.63363,5832.0718};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -26668,7 +26709,6 @@ class Mission
 							};
 							id=12470;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26705,10 +26745,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.2339,3.6336298,5832.1006};
+								position[]={5845.2339,3.63363,5832.1006};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -26717,7 +26758,6 @@ class Mission
 							};
 							id=12471;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26754,10 +26794,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.1558,3.6336298,5832.1904};
+								position[]={5845.1558,3.63363,5832.1904};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -26766,7 +26807,6 @@ class Mission
 							};
 							id=12472;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26803,10 +26843,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.2158,3.6336298,5832.2725};
+								position[]={5845.2158,3.63363,5832.2725};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -26815,7 +26856,6 @@ class Mission
 							};
 							id=12473;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26852,10 +26892,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.3252,3.6336298,5832.2739};
+								position[]={5845.3252,3.63363,5832.2739};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -26864,7 +26905,6 @@ class Mission
 							};
 							id=12474;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26901,10 +26941,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.4253,3.6336298,5832.1782};
+								position[]={5845.4253,3.63363,5832.1782};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -26913,7 +26954,6 @@ class Mission
 							};
 							id=12475;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26950,10 +26990,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.4766,3.6336298,5832.104};
+								position[]={5845.4766,3.63363,5832.104};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -26962,7 +27003,6 @@ class Mission
 							};
 							id=12476;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26999,10 +27039,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.3804,3.6336298,5832.1001};
+								position[]={5845.3804,3.63363,5832.1001};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27011,7 +27052,6 @@ class Mission
 							};
 							id=12477;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27048,10 +27088,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.3271,3.6336298,5832.1411};
+								position[]={5845.3271,3.63363,5832.1411};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27060,7 +27101,6 @@ class Mission
 							};
 							id=12478;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27097,10 +27137,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.269,3.6336298,5832.1743};
+								position[]={5845.269,3.63363,5832.1743};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27109,7 +27150,6 @@ class Mission
 							};
 							id=12479;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27146,10 +27186,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.2637,3.6336298,5832.2632};
+								position[]={5845.2637,3.63363,5832.2632};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27158,7 +27199,6 @@ class Mission
 							};
 							id=12480;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27195,10 +27235,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.3936,3.6336298,5832.2417};
+								position[]={5845.3936,3.63363,5832.2417};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27207,7 +27248,6 @@ class Mission
 							};
 							id=12481;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27244,10 +27284,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.502,3.6336298,5832.2041};
+								position[]={5845.502,3.63363,5832.2041};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27256,7 +27297,6 @@ class Mission
 							};
 							id=12482;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27293,10 +27333,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.3247,3.6336298,5832.3379};
+								position[]={5845.3247,3.63363,5832.3379};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27305,7 +27346,6 @@ class Mission
 							};
 							id=12483;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27342,10 +27382,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.1904,3.6336298,5832.3696};
+								position[]={5845.1904,3.63363,5832.3696};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27354,7 +27395,6 @@ class Mission
 							};
 							id=12484;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27391,10 +27431,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.1235,3.6336298,5832.2598};
+								position[]={5845.1235,3.63363,5832.2598};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27403,7 +27444,6 @@ class Mission
 							};
 							id=12485;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27440,10 +27480,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.0581,3.6336298,5832.1328};
+								position[]={5845.0581,3.63363,5832.1328};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27452,7 +27493,6 @@ class Mission
 							};
 							id=12486;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27489,10 +27529,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.1997,3.6336298,5832.1455};
+								position[]={5845.1997,3.63363,5832.1455};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -27501,7 +27542,6 @@ class Mission
 							};
 							id=12487;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27538,7 +27578,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.6426,3.6875596,5832.291};
+								position[]={5845.6426,3.6875598,5832.291};
 								angles[]={0,0.70837796,0};
 							};
 							side="Empty";
@@ -27551,7 +27591,7 @@ class Mission
 							};
 							id=12488;
 							type="Land_RiceBox_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27588,7 +27628,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.8174,3.6424847,5832.9058};
+								position[]={5845.8174,3.6424849,5832.9058};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -27601,7 +27641,7 @@ class Mission
 							};
 							id=12489;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27638,7 +27678,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.7241,3.6424847,5832.9741};
+								position[]={5845.7241,3.6424849,5832.9741};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -27651,7 +27691,7 @@ class Mission
 							};
 							id=12490;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27688,7 +27728,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.8901,3.6424847,5832.979};
+								position[]={5845.8901,3.6424849,5832.979};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -27701,7 +27741,7 @@ class Mission
 							};
 							id=12491;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27738,7 +27778,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.8159,3.6424847,5833.0327};
+								position[]={5845.8159,3.6424849,5833.0327};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -27751,7 +27791,7 @@ class Mission
 							};
 							id=12492;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27788,7 +27828,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.6885,3.6424847,5832.9053};
+								position[]={5845.6885,3.6424849,5832.9053};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -27801,7 +27841,7 @@ class Mission
 							};
 							id=12493;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27838,7 +27878,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.7827,3.6424847,5832.8184};
+								position[]={5845.7827,3.6424849,5832.8184};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -27851,7 +27891,7 @@ class Mission
 							};
 							id=12494;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27888,7 +27928,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.7354,3.6424847,5832.7715};
+								position[]={5845.7354,3.6424849,5832.7715};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -27901,7 +27941,7 @@ class Mission
 							};
 							id=12495;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27938,7 +27978,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.6738,3.6424847,5832.8169};
+								position[]={5845.6738,3.6424849,5832.8169};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -27951,7 +27991,7 @@ class Mission
 							};
 							id=12496;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27988,7 +28028,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.8394,3.6424847,5832.7007};
+								position[]={5845.8394,3.6424849,5832.7007};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28001,7 +28041,7 @@ class Mission
 							};
 							id=12497;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28038,7 +28078,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.8979,3.6424847,5832.7803};
+								position[]={5845.8979,3.6424849,5832.7803};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28051,7 +28091,7 @@ class Mission
 							};
 							id=12498;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28088,7 +28128,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.9336,3.6424847,5832.8545};
+								position[]={5845.9336,3.6424849,5832.8545};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28101,7 +28141,7 @@ class Mission
 							};
 							id=12499;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28138,7 +28178,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.9941,3.6424847,5832.9414};
+								position[]={5845.9941,3.6424849,5832.9414};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28151,7 +28191,7 @@ class Mission
 							};
 							id=12500;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28188,7 +28228,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.0938,3.6424847,5832.8926};
+								position[]={5846.0938,3.6424849,5832.8926};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28201,7 +28241,7 @@ class Mission
 							};
 							id=12501;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28238,7 +28278,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.0479,3.6424847,5832.8101};
+								position[]={5846.0479,3.6424849,5832.8101};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28251,7 +28291,7 @@ class Mission
 							};
 							id=12502;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28288,7 +28328,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.9805,3.6424847,5832.728};
+								position[]={5845.9805,3.6424849,5832.728};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28301,7 +28341,7 @@ class Mission
 							};
 							id=12503;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28338,7 +28378,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.9253,3.6424847,5832.6563};
+								position[]={5845.9253,3.6424849,5832.6563};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28351,7 +28391,7 @@ class Mission
 							};
 							id=12504;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28388,7 +28428,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.022,3.6424847,5832.5835};
+								position[]={5846.022,3.6424849,5832.5835};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28401,7 +28441,7 @@ class Mission
 							};
 							id=12505;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28438,7 +28478,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.0898,3.6424847,5832.6753};
+								position[]={5846.0898,3.6424849,5832.6753};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28451,7 +28491,7 @@ class Mission
 							};
 							id=12506;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28488,7 +28528,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.1631,3.6424847,5832.7642};
+								position[]={5846.1631,3.6424849,5832.7642};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28501,7 +28541,7 @@ class Mission
 							};
 							id=12507;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28538,7 +28578,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.21,3.6424847,5832.8369};
+								position[]={5846.21,3.6424849,5832.8369};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28551,7 +28591,7 @@ class Mission
 							};
 							id=12508;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28588,7 +28628,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5844.3906,3.691988,5831.8804};
+								position[]={5844.3906,3.6919882,5831.8804};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28601,7 +28641,7 @@ class Mission
 							};
 							id=12509;
 							type="Land_BottlePlastic_V1_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28638,7 +28678,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5844.3164,3.691988,5831.9419};
+								position[]={5844.3164,3.6919882,5831.9419};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28651,7 +28691,7 @@ class Mission
 							};
 							id=12510;
 							type="Land_BottlePlastic_V1_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28688,7 +28728,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5844.2451,3.691988,5831.9927};
+								position[]={5844.2451,3.6919882,5831.9927};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -28701,7 +28741,7 @@ class Mission
 							};
 							id=12511;
 							type="Land_BottlePlastic_V1_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28738,10 +28778,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.5332,3.6330552,5833.5576};
+								position[]={5845.5332,3.6330554,5833.5576};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -28750,7 +28791,6 @@ class Mission
 							};
 							id=12512;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28787,10 +28827,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.6162,3.6330552,5833.5142};
+								position[]={5845.6162,3.6330554,5833.5142};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -28799,7 +28840,6 @@ class Mission
 							};
 							id=12513;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28836,10 +28876,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.6738,3.6330552,5833.4746};
+								position[]={5845.6738,3.6330554,5833.4746};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -28848,7 +28889,6 @@ class Mission
 							};
 							id=12514;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28885,10 +28925,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.5586,3.6330552,5833.5024};
+								position[]={5845.5586,3.6330554,5833.5024};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -28897,7 +28938,6 @@ class Mission
 							};
 							id=12515;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28934,10 +28974,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.5005,3.6330552,5833.4961};
+								position[]={5845.5005,3.6330554,5833.4961};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -28946,7 +28987,6 @@ class Mission
 							};
 							id=12516;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28983,10 +29023,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.4536,3.6330552,5833.4463};
+								position[]={5845.4536,3.6330554,5833.4463};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -28995,7 +29036,6 @@ class Mission
 							};
 							id=12517;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29032,10 +29072,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.5313,3.6330552,5833.416};
+								position[]={5845.5313,3.6330554,5833.416};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -29044,7 +29085,6 @@ class Mission
 							};
 							id=12518;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29081,10 +29121,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.5815,3.6330552,5833.4429};
+								position[]={5845.5815,3.6330554,5833.4429};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -29093,7 +29134,6 @@ class Mission
 							};
 							id=12519;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29130,10 +29170,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.6641,3.6330552,5833.4146};
+								position[]={5845.6641,3.6330554,5833.4146};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -29142,7 +29183,6 @@ class Mission
 							};
 							id=12520;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29179,10 +29219,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.623,3.6330552,5833.3706};
+								position[]={5845.623,3.6330554,5833.3706};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -29191,7 +29232,6 @@ class Mission
 							};
 							id=12521;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29228,10 +29268,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.5742,3.6330552,5833.333};
+								position[]={5845.5742,3.6330554,5833.333};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -29240,7 +29281,6 @@ class Mission
 							};
 							id=12522;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29277,10 +29317,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.5039,3.6330552,5833.3516};
+								position[]={5845.5039,3.6330554,5833.3516};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -29289,7 +29330,6 @@ class Mission
 							};
 							id=12523;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29326,10 +29366,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.4438,3.6330552,5833.376};
+								position[]={5845.4438,3.6330554,5833.376};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -29338,7 +29379,6 @@ class Mission
 							};
 							id=12524;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29375,10 +29415,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.3926,3.6330552,5833.4126};
+								position[]={5845.3926,3.6330554,5833.4126};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -29387,7 +29428,6 @@ class Mission
 							};
 							id=12525;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29424,10 +29464,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.7266,3.6330552,5833.4302};
+								position[]={5845.7266,3.6330554,5833.4302};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -29436,7 +29477,6 @@ class Mission
 							};
 							id=12526;
 							type="Land_Can_V3_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29473,7 +29513,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.7422,3.6511364,5832.3936};
+								position[]={5845.7422,3.6511366,5832.3936};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -29486,7 +29526,7 @@ class Mission
 							};
 							id=12527;
 							type="Land_BakedBeans_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29523,7 +29563,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.7983,3.6511364,5832.4722};
+								position[]={5845.7983,3.6511366,5832.4722};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -29536,7 +29576,7 @@ class Mission
 							};
 							id=12528;
 							type="Land_BakedBeans_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29573,7 +29613,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.6421,3.6511364,5832.4546};
+								position[]={5845.6421,3.6511366,5832.4546};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -29586,7 +29626,7 @@ class Mission
 							};
 							id=12529;
 							type="Land_BakedBeans_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29623,7 +29663,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.7109,3.6511364,5832.5396};
+								position[]={5845.7109,3.6511366,5832.5396};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -29636,7 +29676,7 @@ class Mission
 							};
 							id=12530;
 							type="Land_BakedBeans_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29673,7 +29713,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.5781,3.6511364,5832.5752};
+								position[]={5845.5781,3.6511366,5832.5752};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -29686,7 +29726,7 @@ class Mission
 							};
 							id=12531;
 							type="Land_BakedBeans_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31409,7 +31449,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5823.3887,2.9946513,5841.8955};
+								position[]={5823.3887,2.9946516,5841.8955};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31421,7 +31461,7 @@ class Mission
 							};
 							id=12567;
 							type="Land_CanisterFuel_Red_F";
-							atlOffset=0.58252239;
+							atlOffset=0.58252263;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31458,7 +31498,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5823.2456,2.9946513,5842.0381};
+								position[]={5823.2456,2.9946516,5842.0381};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31470,7 +31510,7 @@ class Mission
 							};
 							id=12568;
 							type="Land_CanisterFuel_Red_F";
-							atlOffset=0.58327556;
+							atlOffset=0.58327579;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31507,7 +31547,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5823.1255,2.9946513,5842.1421};
+								position[]={5823.1255,2.9946516,5842.1421};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31519,7 +31559,7 @@ class Mission
 							};
 							id=12569;
 							type="Land_CanisterFuel_Red_F";
-							atlOffset=0.58390856;
+							atlOffset=0.5839088;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31556,7 +31596,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5822.999,2.9946513,5842.2393};
+								position[]={5822.999,2.9946516,5842.2393};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31568,7 +31608,7 @@ class Mission
 							};
 							id=12570;
 							type="Land_CanisterFuel_Red_F";
-							atlOffset=0.58457327;
+							atlOffset=0.58457351;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31605,7 +31645,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5822.8701,2.9946513,5842.3403};
+								position[]={5822.8701,2.9946516,5842.3403};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31617,7 +31657,7 @@ class Mission
 							};
 							id=12571;
 							type="Land_CanisterFuel_Red_F";
-							atlOffset=0.58525229;
+							atlOffset=0.58525252;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31654,7 +31694,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5822.0107,3.1063108,5843.3223};
+								position[]={5822.0107,3.1063111,5843.3223};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31666,7 +31706,7 @@ class Mission
 							};
 							id=12572;
 							type="Land_FireExtinguisher_F";
-							atlOffset=0.58977842;
+							atlOffset=0.58977866;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31801,7 +31841,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5823.6069,3.0596914,5846.2192};
+								position[]={5823.6069,3.0596917,5846.2192};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31813,7 +31853,7 @@ class Mission
 							};
 							id=12575;
 							type="Land_GasTank_01_khaki_F";
-							atlOffset=0.59038687;
+							atlOffset=0.59038711;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31850,7 +31890,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5823.2588,3.0596914,5845.9414};
+								position[]={5823.2588,3.0596917,5845.9414};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31862,7 +31902,7 @@ class Mission
 							};
 							id=12576;
 							type="Land_GasTank_01_khaki_F";
-							atlOffset=0.58962727;
+							atlOffset=0.5896275;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31899,7 +31939,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5823.9893,3.0596914,5845.9351};
+								position[]={5823.9893,3.0596917,5845.9351};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31911,7 +31951,7 @@ class Mission
 							};
 							id=12577;
 							type="Land_GasTank_01_khaki_F";
-							atlOffset=0.58961058;
+							atlOffset=0.58961082;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31948,7 +31988,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5823.6011,3.0596914,5845.7134};
+								position[]={5823.6011,3.0596917,5845.7134};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -31960,7 +32000,7 @@ class Mission
 							};
 							id=12578;
 							type="Land_GasTank_01_khaki_F";
-							atlOffset=0.58900523;
+							atlOffset=0.58900547;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32095,7 +32135,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5822.0444,3.6092892,5844.1401};
+								position[]={5822.0444,3.6092894,5844.1401};
 								angles[]={0,6.2067027,0};
 							};
 							side="Empty";
@@ -32108,7 +32148,7 @@ class Mission
 							};
 							id=12581;
 							type="Land_Crowbar_01_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33180,7 +33220,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.3809,2.9344263,5838.9712};
+								position[]={5845.3809,2.9344265,5838.9712};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -33193,7 +33233,7 @@ class Mission
 							};
 							id=12603;
 							type="Land_PaperBox_01_small_closed_brown_F";
-							atlOffset=0.00022172928;
+							atlOffset=0.0002219677;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33230,7 +33270,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.9028,2.9344263,5838.7061};
+								position[]={5845.9028,2.9344265,5838.7061};
 								angles[]={0,3.8198051,0};
 							};
 							side="Empty";
@@ -33243,7 +33283,7 @@ class Mission
 							};
 							id=12604;
 							type="Land_PaperBox_01_small_closed_brown_F";
-							atlOffset=0.00022172928;
+							atlOffset=0.0002219677;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33380,7 +33420,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.7637,3.2292438,5834.105};
+								position[]={5846.7637,3.229244,5834.105};
 								angles[]={0,0.66415268,0};
 							};
 							side="Empty";
@@ -33393,7 +33433,7 @@ class Mission
 							};
 							id=12607;
 							type="Land_ShelvesWooden_khaki_F";
-							atlOffset=0.00022220612;
+							atlOffset=0.00022244453;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33430,7 +33470,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5843.9521,2.7274542,5836.1221};
+								position[]={5843.9521,2.7274544,5836.1221};
 								angles[]={0,0.69098365,0};
 							};
 							side="Empty";
@@ -33443,7 +33483,7 @@ class Mission
 							};
 							id=12608;
 							type="Land_WoodenBox_F";
-							atlOffset=0.00022172928;
+							atlOffset=0.0002219677;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33782,7 +33822,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5826.2607,2.9438725,5844.125};
+								position[]={5826.2607,2.9438727,5844.125};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -33794,7 +33834,7 @@ class Mission
 							};
 							id=12620;
 							type="Land_PlasticBucket_01_closed_F";
-							atlOffset=0.56714749;
+							atlOffset=0.56714773;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33831,7 +33871,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.4624,2.8874617,5838.3398};
+								position[]={5847.4624,2.8874619,5838.3398};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -33843,7 +33883,7 @@ class Mission
 							};
 							id=12621;
 							type="Land_BakedBeans_F";
-							atlOffset=0.10113859;
+							atlOffset=0.10113883;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33880,7 +33920,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.4038,2.8728843,5838.4053};
+								position[]={5847.4038,2.8728845,5838.4053};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -33892,7 +33932,7 @@ class Mission
 							};
 							id=12622;
 							type="Land_Can_V2_F";
-							atlOffset=0.10464191;
+							atlOffset=0.10464215;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33929,7 +33969,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.3569,2.8822746,5838.3208};
+								position[]={5847.3569,2.8822749,5838.3208};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -33941,7 +33981,7 @@ class Mission
 							};
 							id=12623;
 							type="Land_BakedBeans_F";
-							atlOffset=0.095951557;
+							atlOffset=0.095951796;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34028,7 +34068,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.3242,2.9944649,5838.4849};
+								position[]={5847.3242,2.9944651,5838.4849};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34040,7 +34080,7 @@ class Mission
 							};
 							id=12625;
 							type="Land_Canteen_F";
-							atlOffset=0.13694286;
+							atlOffset=0.1369431;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34077,7 +34117,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.2383,2.8738856,5838.5415};
+								position[]={5847.2383,2.8738859,5838.5415};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34089,7 +34129,7 @@ class Mission
 							};
 							id=12626;
 							type="Land_Can_V1_F";
-							atlOffset=0.10662746;
+							atlOffset=0.1066277;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34126,7 +34166,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.1416,3.4369206,5838.5688};
+								position[]={5847.1416,3.4369209,5838.5688};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34138,7 +34178,7 @@ class Mission
 							};
 							id=12627;
 							type="Land_CerealsBox_F";
-							atlOffset=0.55110788;
+							atlOffset=0.55110812;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34175,7 +34215,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.231,2.8664665,5838.6147};
+								position[]={5847.231,2.8664668,5838.6147};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34187,7 +34227,7 @@ class Mission
 							};
 							id=12628;
 							type="Land_Can_V2_F";
-							atlOffset=0.098224163;
+							atlOffset=0.098224401;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34224,7 +34264,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.2817,2.8648925,5838.5581};
+								position[]={5847.2817,2.8648927,5838.5581};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34236,7 +34276,7 @@ class Mission
 							};
 							id=12629;
 							type="Land_Can_V1_F";
-							atlOffset=0.097634315;
+							atlOffset=0.097634554;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34322,7 +34362,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.1875,2.9214993,5838.479};
+								position[]={5847.1875,2.9214995,5838.479};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34334,7 +34374,7 @@ class Mission
 							};
 							id=12631;
 							type="Land_RiceBox_F";
-							atlOffset=0.098752975;
+							atlOffset=0.098753214;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34518,7 +34558,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5847.1343,2.9287086,5838.5991};
+								position[]={5847.1343,2.9287088,5838.5991};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34530,7 +34570,7 @@ class Mission
 							};
 							id=12636;
 							type="Land_BottlePlastic_V1_F";
-							atlOffset=0.10153389;
+							atlOffset=0.10153413;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34714,7 +34754,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.6147,3.6424847,5832.8354};
+								position[]={5845.6147,3.6424849,5832.8354};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34727,7 +34767,7 @@ class Mission
 							};
 							id=12640;
 							type="Land_Tableware_01_cup_F";
-							atlOffset=2.3841858e-07;
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34764,7 +34804,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.9824,2.8684292,5838.7539};
+								position[]={5846.9824,2.8684294,5838.7539};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34776,7 +34816,7 @@ class Mission
 							};
 							id=12641;
 							type="Land_Can_V1_F";
-							atlOffset=0.10117102;
+							atlOffset=0.10117126;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34813,7 +34853,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.9473,2.8674264,5838.8237};
+								position[]={5846.9473,2.8674266,5838.8237};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34825,7 +34865,7 @@ class Mission
 							};
 							id=12642;
 							type="Land_Can_V3_F";
-							atlOffset=0.099184036;
+							atlOffset=0.099184275;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34862,7 +34902,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.8784,2.8651199,5838.8438};
+								position[]={5846.8784,2.8651202,5838.8438};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34874,7 +34914,7 @@ class Mission
 							};
 							id=12643;
 							type="Land_Can_V3_F";
-							atlOffset=0.096877575;
+							atlOffset=0.096877813;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34911,7 +34951,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.9238,2.8662062,5838.7363};
+								position[]={5846.9238,2.8662064,5838.7363};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34923,7 +34963,7 @@ class Mission
 							};
 							id=12644;
 							type="Land_Can_V3_F";
-							atlOffset=0.09796381;
+							atlOffset=0.097964048;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34960,7 +35000,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.8193,2.9289365,5838.9106};
+								position[]={5846.8193,2.9289367,5838.9106};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
@@ -34972,7 +35012,7 @@ class Mission
 							};
 							id=12645;
 							type="Land_BottlePlastic_V1_F";
-							atlOffset=0.10176182;
+							atlOffset=0.10176206;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35402,7 +35442,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5846.6445,2.8328176,5838.9819};
+								position[]={5846.6445,2.8328178,5838.9819};
 								angles[]={0,5.4120736,0};
 							};
 							side="Empty";
@@ -35415,7 +35455,7 @@ class Mission
 							};
 							id=12661;
 							type="Land_Ammobox_rounds_F";
-							atlOffset=0.0002219677;
+							atlOffset=0.00022220612;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35502,10 +35542,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5845.2681,3.6336298,5832.3755};
+								position[]={5845.2681,3.63363,5832.3755};
 								angles[]={0,5.3812599,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -35514,7 +35555,6 @@ class Mission
 							};
 							id=12663;
 							type="Land_TacticalBacon_F";
-							atlOffset=0.86481333;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35625,6 +35665,7 @@ class Mission
 									};
 									id=12829;
 									type="Land_Camp_House_01_brown_F";
+									atlOffset=1.1920929e-07;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -35688,7 +35729,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={7337.6211,1.8491004,4815.813};
+										position[]={7337.6211,1.8491008,4815.813};
 										angles[]={0,4.3674946,0};
 									};
 									side="Empty";
@@ -35698,7 +35739,7 @@ class Mission
 									};
 									id=12833;
 									type="NFCW_stove";
-									atlOffset=0.49199998;
+									atlOffset=0.49200046;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -35777,14 +35818,14 @@ class Mission
 								};
 							};
 							id=12837;
-							atlOffset=0.81343865;
+							atlOffset=0.81343889;
 						};
 						class Item1
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7354.4863,4.1375232,4810.7974};
+								position[]={7354.4863,4.1375237,4810.7974};
 								angles[]={0,2.6959248,0};
 							};
 							side="Empty";
@@ -35797,7 +35838,7 @@ class Mission
 							};
 							id=12897;
 							type="Land_DrillAku_F";
-							atlOffset=9.0837479e-05;
+							atlOffset=9.1552734e-05;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36095,7 +36136,7 @@ class Mission
 							};
 							id=12949;
 							type="Land_BakedBeans_F";
-							atlOffset=0.00040578842;
+							atlOffset=0.00040531158;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36611,7 +36652,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7353.7827,4.1268477,4810.4849};
+								position[]={7353.7827,4.1268482,4810.4849};
 								angles[]={0,3.9618063,0};
 							};
 							side="Empty";
@@ -36624,7 +36665,7 @@ class Mission
 							};
 							id=12899;
 							type="Land_ButaneTorch_F";
-							atlOffset=8.4161758e-05;
+							atlOffset=8.4877014e-05;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36724,7 +36765,7 @@ class Mission
 							};
 							id=12956;
 							type="Land_Can_V3_F";
-							atlOffset=0.00028085709;
+							atlOffset=0.00028038025;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36811,7 +36852,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7356.5146,3.5265098,4811.6587};
+								position[]={7356.5146,3.52651,4811.6587};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -36824,7 +36865,7 @@ class Mission
 							};
 							id=12901;
 							type="Land_CanisterPlastic_F";
-							atlOffset=0.0011081696;
+							atlOffset=0.001108408;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37725,7 +37766,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7357.4009,3.6078382,4809.9233};
+								position[]={7357.4009,3.6078384,4809.9233};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -37738,7 +37779,7 @@ class Mission
 							};
 							id=12873;
 							type="Land_FireExtinguisher_F";
-							atlOffset=0.0011897087;
+							atlOffset=0.0011899471;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37775,7 +37816,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7361.8643,3.5128946,4805.4463};
+								position[]={7361.8643,3.5128949,4805.4463};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -37786,7 +37827,7 @@ class Mission
 							};
 							id=12983;
 							type="FirePlace_burning_F";
-							atlOffset=0.83499527;
+							atlOffset=0.83499551;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37834,7 +37875,7 @@ class Mission
 							};
 							id=12984;
 							type="FirePlace_burning_F";
-							atlOffset=2.572711;
+							atlOffset=2.5727108;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37871,7 +37912,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7361.8521,3.5286655,4805.4668};
+								position[]={7361.8521,3.5286658,4805.4668};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -37882,7 +37923,7 @@ class Mission
 							};
 							id=12985;
 							type="FirePlace_burning_F";
-							atlOffset=0.25843525;
+							atlOffset=0.25843549;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37919,7 +37960,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7361.8901,3.4769449,4805.4028};
+								position[]={7361.8901,3.4769452,4805.4028};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -37930,7 +37971,7 @@ class Mission
 							};
 							id=12986;
 							type="FirePlace_burning_F";
-							atlOffset=0.79858756;
+							atlOffset=0.7985878;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37978,7 +38019,7 @@ class Mission
 							};
 							id=12987;
 							type="FirePlace_burning_F";
-							atlOffset=2.5712516;
+							atlOffset=2.5712514;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38026,7 +38067,7 @@ class Mission
 							};
 							id=12988;
 							type="FirePlace_burning_F";
-							atlOffset=2.5717754;
+							atlOffset=2.5717752;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38074,7 +38115,7 @@ class Mission
 							};
 							id=12989;
 							type="FirePlace_burning_F";
-							atlOffset=2.5733595;
+							atlOffset=2.5733593;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38438,7 +38479,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.2607,3.4483304,4812.3643};
+								position[]={7359.2607,3.4483306,4812.3643};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -38450,7 +38491,7 @@ class Mission
 							};
 							id=12950;
 							type="Land_FoodContainer_01_F";
-							atlOffset=0.56560302;
+							atlOffset=0.56560326;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38487,7 +38528,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7358.4277,3.3972344,4814.2529};
+								position[]={7358.4277,3.3972347,4814.2529};
 								angles[]={0,5.892303,0};
 							};
 							side="Empty";
@@ -38500,7 +38541,7 @@ class Mission
 							};
 							id=12954;
 							type="Land_FoodSack_01_dmg_brown_F";
-							atlOffset=0.082568645;
+							atlOffset=0.082568884;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -39004,7 +39045,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7358.856,3.6450853,4813.2144};
+								position[]={7358.856,3.6450856,4813.2144};
 								angles[]={0,1.2312043,0};
 							};
 							side="Empty";
@@ -39017,7 +39058,7 @@ class Mission
 							};
 							id=12947;
 							type="OfficeTable_01_old_F";
-							atlOffset=0.0032353401;
+							atlOffset=0.0032355785;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -39441,7 +39482,6 @@ class Mission
 								angles[]={0,5.636745,0};
 							};
 							side="Empty";
-							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -39450,6 +39490,7 @@ class Mission
 							};
 							id=12951;
 							type="Land_PowderedMilk_F";
+							atlOffset=0.84514832;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -39852,7 +39893,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7357.3115,3.6199546,4810.5527};
+								position[]={7357.3115,3.6199548,4810.5527};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -39864,7 +39905,7 @@ class Mission
 							};
 							id=12939;
 							type="Land_Sack_F";
-							atlOffset=0.00034093857;
+							atlOffset=0.00034117699;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -39951,7 +39992,7 @@ class Mission
 							};
 							id=12912;
 							type="Land_Screwdriver_V1_F";
-							atlOffset=1.168251e-05;
+							atlOffset=1.1920929e-05;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -40137,7 +40178,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7356.7466,3.6594028,4814.687};
+								position[]={7356.7466,3.6594031,4814.687};
 								angles[]={5.3014412,3.6916695,1.162273};
 							};
 							side="Empty";
@@ -40149,7 +40190,7 @@ class Mission
 							};
 							id=12913;
 							type="Land_Shovel_F";
-							atlOffset=0.46015978;
+							atlOffset=0.46016002;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -40433,7 +40474,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7352.8066,3.3120508,4813.3569};
+								position[]={7352.8066,3.3120511,4813.3569};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -40445,7 +40486,7 @@ class Mission
 							};
 							id=12879;
 							type="Land_TentSolar_01_folded_olive_F";
-							atlOffset=0.00034117699;
+							atlOffset=0.00034141541;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -40554,7 +40595,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7353.1973,3.6582365,4812.5654};
+								position[]={7353.1973,3.6582367,4812.5654};
 								angles[]={0,2.8597705,0};
 							};
 							side="Empty";
@@ -40567,7 +40608,7 @@ class Mission
 							};
 							id=12914;
 							type="Land_ToolTrolley_02_F";
-							atlOffset=0.0031425953;
+							atlOffset=0.0031428337;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -40934,7 +40975,6 @@ class Mission
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
-							flags=4;
 							class Attributes
 							{
 								createAsSimpleObject=1;
@@ -40943,6 +40983,7 @@ class Mission
 							};
 							id=12952;
 							type="Land_BottlePlastic_V2_F";
+							atlOffset=0.84514832;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -40979,7 +41020,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.6792,3.3534646,4811.6406};
+								position[]={7359.6792,3.3534648,4811.6406};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -40992,7 +41033,7 @@ class Mission
 							};
 							id=12925;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41029,7 +41070,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.7339,3.3534646,4811.4678};
+								position[]={7359.7339,3.3534648,4811.4678};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41042,7 +41083,7 @@ class Mission
 							};
 							id=12926;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41079,7 +41120,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.7852,3.3534646,4811.3057};
+								position[]={7359.7852,3.3534648,4811.3057};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41092,7 +41133,7 @@ class Mission
 							};
 							id=12927;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41129,7 +41170,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.8384,3.3534646,4811.1343};
+								position[]={7359.8384,3.3534648,4811.1343};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41142,7 +41183,7 @@ class Mission
 							};
 							id=12928;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41179,7 +41220,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.8896,3.3534646,4810.9634};
+								position[]={7359.8896,3.3534648,4810.9634};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41192,7 +41233,7 @@ class Mission
 							};
 							id=12929;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41229,7 +41270,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.9492,3.3534646,4810.7998};
+								position[]={7359.9492,3.3534648,4810.7998};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41242,7 +41283,7 @@ class Mission
 							};
 							id=12930;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41279,7 +41320,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.4126,3.3534651,4811.542};
+								position[]={7359.4126,3.3534653,4811.542};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41292,7 +41333,7 @@ class Mission
 							};
 							id=12931;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093460083;
+							atlOffset=0.00093483925;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41329,7 +41370,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.4731,3.3534646,4811.3599};
+								position[]={7359.4731,3.3534648,4811.3599};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41342,7 +41383,7 @@ class Mission
 							};
 							id=12932;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41379,7 +41420,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.5522,3.3534646,4811.2002};
+								position[]={7359.5522,3.3534648,4811.2002};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41392,7 +41433,7 @@ class Mission
 							};
 							id=12933;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41429,7 +41470,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.623,3.3534646,4811.0444};
+								position[]={7359.623,3.3534648,4811.0444};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41442,7 +41483,7 @@ class Mission
 							};
 							id=12934;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41479,7 +41520,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.6821,3.3534646,4810.8638};
+								position[]={7359.6821,3.3534648,4810.8638};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41492,7 +41533,7 @@ class Mission
 							};
 							id=12935;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41529,7 +41570,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7359.1704,3.3534646,4811.4658};
+								position[]={7359.1704,3.3534648,4811.4658};
 								angles[]={0,4.3669071,0};
 							};
 							side="Empty";
@@ -41542,7 +41583,7 @@ class Mission
 							};
 							id=12936;
 							type="Land_WaterBottle_01_pack_F";
-							atlOffset=0.00093412399;
+							atlOffset=0.00093436241;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -46749,14 +46790,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -46775,14 +46816,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -46808,14 +46849,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -46834,14 +46875,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -46868,14 +46909,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -46894,14 +46935,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -46927,14 +46968,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -46953,14 +46994,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -46987,14 +47028,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47013,14 +47054,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47033,7 +47074,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={1134.8091,4.897438,4209.3257};
-										angles[]={6.2291369,1.2023122,6.2273059};
+										angles[]={6.2291369,0.95480663,6.2273059};
 									};
 									side="East";
 									flags=4;
@@ -47127,14 +47168,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47153,14 +47194,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47186,14 +47227,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47212,14 +47253,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47244,14 +47285,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47270,14 +47311,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47303,14 +47344,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47329,14 +47370,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47363,14 +47404,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47389,14 +47430,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47409,7 +47450,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={1116.504,5.3455009,4219.4805};
-										angles[]={0.023798952,0,6.2640986};
+										angles[]={0.018698953,4.0090637,6.2721553};
 									};
 									side="East";
 									flags=4;
@@ -47440,14 +47481,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47466,14 +47507,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47537,14 +47578,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47563,14 +47604,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47596,14 +47637,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47622,14 +47663,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47655,14 +47696,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47681,14 +47722,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47714,14 +47755,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47740,14 +47781,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47773,14 +47814,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47799,14 +47840,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47832,14 +47873,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47858,14 +47899,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -47891,14 +47932,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -47917,14 +47958,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -50012,7 +50053,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={4133.501,5.3751168,6621.5957};
-										angles[]={6.2814593,1.2985667,6.2826972};
+										angles[]={6.2816806,1.2985667,0.0009134906};
 									};
 									side="East";
 									flags=4;
@@ -50084,7 +50125,7 @@ class Mission
 									};
 									id=6406;
 									type="CUP_O_RU_Soldier_EMR";
-									atlOffset=4.7683716e-07;
+									atlOffset=-3.3378601e-06;
 								};
 								class Item3
 								{
@@ -50395,14 +50436,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -50447,14 +50488,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -50680,14 +50721,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -50732,14 +50773,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -51083,7 +51124,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={4091.4734,5.4481325,6638.4077};
-										angles[]={0.019504074,3.5875864,0.0061376099};
+										angles[]={0.015382948,3.5875864,0.0016194459};
 									};
 									side="East";
 									flags=4;
@@ -51155,7 +51196,7 @@ class Mission
 									};
 									id=6416;
 									type="CUP_O_RU_Soldier_EMR";
-									atlOffset=4.7683716e-07;
+									atlOffset=-0.00027894974;
 								};
 								class Item3
 								{
@@ -51806,7 +51847,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={4100.8198,5.2794008,6608.8428};
-										angles[]={6.2464194,2.4365127,0.017152717};
+										angles[]={6.2511506,2.4365127,0.017152717};
 									};
 									side="East";
 									flags=4;
@@ -51878,7 +51919,7 @@ class Mission
 									};
 									id=6428;
 									type="CUP_O_RU_Soldier_EMR";
-									atlOffset=4.7683716e-07;
+									atlOffset=-6.7710876e-05;
 								};
 								class Item3
 								{
@@ -52307,14 +52348,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -52359,14 +52400,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -52473,14 +52514,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -52525,14 +52566,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -55063,6 +55104,7 @@ class Mission
 										angles[]={0,4.8610954,0.010901965};
 									};
 									side="East";
+									flags=4;
 									class Attributes
 									{
 										class Inventory
@@ -55131,7 +55173,7 @@ class Mission
 									};
 									id=7182;
 									type="CUP_O_RU_Soldier_EMR";
-									atlOffset=0.46167612;
+									atlOffset=-5.1021576e-05;
 								};
 								class Item3
 								{
@@ -55783,6 +55825,7 @@ class Mission
 										angles[]={6.2823396,3.1399553,0.012638931};
 									};
 									side="East";
+									flags=4;
 									class Attributes
 									{
 										class Inventory
@@ -55851,7 +55894,7 @@ class Mission
 									};
 									id=7192;
 									type="CUP_O_RU_Soldier_EMR";
-									atlOffset=0.75666714;
+									atlOffset=-0.00023794174;
 								};
 								class Item3
 								{
@@ -56502,6 +56545,7 @@ class Mission
 										angles[]={6.2767262,1.7342695,0.010901965};
 									};
 									side="East";
+									flags=4;
 									class Attributes
 									{
 										class Inventory
@@ -56570,7 +56614,7 @@ class Mission
 									};
 									id=7200;
 									type="CUP_O_RU_Soldier_EMR";
-									atlOffset=1.2318087;
+									atlOffset=-0.0039811134;
 								};
 								class Item3
 								{
@@ -58316,14 +58360,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58342,14 +58386,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58376,14 +58420,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58402,14 +58446,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58436,14 +58480,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58462,14 +58506,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58496,14 +58540,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58522,14 +58566,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58556,14 +58600,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58582,14 +58626,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58616,14 +58660,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58642,14 +58686,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58676,14 +58720,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58702,14 +58746,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58750,14 +58794,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58776,14 +58820,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58809,14 +58853,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58835,14 +58879,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58868,14 +58912,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58894,14 +58938,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58928,14 +58972,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -58954,14 +58998,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -58990,7 +59034,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={9317.5156,10.632051,7974.1157};
-										angles[]={6.2699027,0,6.2794828};
+										angles[]={6.2775331,3.2895751,6.2739339};
 									};
 									side="East";
 									flags=4;
@@ -58999,6 +59043,7 @@ class Mission
 									};
 									id=11872;
 									type="CUP_O_RU_Soldier_GL_EMR";
+									atlOffset=-4.7683716e-06;
 								};
 								class Item6
 								{
@@ -59006,7 +59051,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={9321.8926,10.564316,7967.2432};
-										angles[]={6.2762456,3.2787886,6.2786703};
+										angles[]={6.2826972,3.3147295,6.2728333};
 									};
 									side="East";
 									flags=4;
@@ -59015,6 +59060,7 @@ class Mission
 									};
 									id=11873;
 									type="CUP_O_RU_Soldier_LAT_EMR";
+									atlOffset=-1.1444092e-05;
 								};
 							};
 							class Attributes
@@ -59105,14 +59151,14 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_doStop";
-									expression="if (!is3DEN && _value) then {doStop _this}";
+									property="SR_StaticRadioFrequency";
+									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 									class Value
 									{
 										class data
 										{
-											singleType="BOOL";
-											value=1;
+											singleType="SCALAR";
+											value=50;
 										};
 									};
 								};
@@ -59144,14 +59190,14 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="SR_StaticRadioFrequency";
-									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+									property="ENH_doStop";
+									expression="if (!is3DEN && _value) then {doStop _this}";
 									class Value
 									{
 										class data
 										{
-											singleType="SCALAR";
-											value=50;
+											singleType="BOOL";
+											value=1;
 										};
 									};
 								};
@@ -60903,14 +60949,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -60929,14 +60975,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -60963,14 +61009,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61015,14 +61061,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -61049,14 +61095,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61075,14 +61121,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -61109,14 +61155,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61135,14 +61181,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -61169,14 +61215,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61195,14 +61241,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -61229,14 +61275,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -61255,14 +61301,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -64390,7 +64436,7 @@ class Mission
 								angles[]={6.262826,0,6.2583303};
 							};
 							side="East";
-							flags=2;
+							flags=6;
 							class Attributes
 							{
 								class Inventory
@@ -64491,7 +64537,7 @@ class Mission
 							};
 							id=4862;
 							type="CUP_O_RU_Soldier_SL_EMR";
-							atlOffset=3.6505194;
+							atlOffset=-0.00099945068;
 						};
 						class Item1
 						{
@@ -64502,6 +64548,7 @@ class Mission
 								angles[]={6.262826,0,6.2583303};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -64601,7 +64648,7 @@ class Mission
 							};
 							id=4863;
 							type="CUP_O_RU_Soldier_AT_EMR";
-							atlOffset=3.6505194;
+							atlOffset=-0.00099945068;
 						};
 						class Item2
 						{
@@ -64612,6 +64659,7 @@ class Mission
 								angles[]={6.262826,0,6.2583303};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -64698,7 +64746,7 @@ class Mission
 							};
 							id=4864;
 							type="CUP_O_RU_Soldier_AAT_MSV_VSR93";
-							atlOffset=3.6505194;
+							atlOffset=-0.00099945068;
 						};
 						class Item3
 						{
@@ -64709,6 +64757,7 @@ class Mission
 								angles[]={6.262826,0,6.2583303};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -64799,7 +64848,7 @@ class Mission
 							};
 							id=4865;
 							type="CUP_O_RU_Soldier_MG_EMR";
-							atlOffset=3.6505194;
+							atlOffset=-0.00099945068;
 						};
 						class Item4
 						{
@@ -64810,6 +64859,7 @@ class Mission
 								angles[]={6.262826,0,6.2583303};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -64918,7 +64968,7 @@ class Mission
 							};
 							id=4866;
 							type="CUP_O_RU_Soldier_TL_EMR";
-							atlOffset=3.6505194;
+							atlOffset=-0.00099945068;
 						};
 						class Item5
 						{
@@ -64929,6 +64979,7 @@ class Mission
 								angles[]={6.262826,0,6.2583303};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -65013,7 +65064,7 @@ class Mission
 							};
 							id=4867;
 							type="CUP_O_RU_Soldier_GL_EMR";
-							atlOffset=3.6505194;
+							atlOffset=-0.00099945068;
 						};
 						class Item6
 						{
@@ -65024,6 +65075,7 @@ class Mission
 								angles[]={6.262826,0,6.2583303};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -65096,7 +65148,7 @@ class Mission
 							};
 							id=4868;
 							type="CUP_O_RU_Soldier_LAT_EMR";
-							atlOffset=3.6505194;
+							atlOffset=-0.00099945068;
 						};
 						class Item7
 						{
@@ -65107,6 +65159,7 @@ class Mission
 								angles[]={6.262826,0,6.2583303};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -65165,7 +65218,7 @@ class Mission
 							};
 							id=4869;
 							type="CUP_O_RU_Crew_EMR";
-							atlOffset=3.6505194;
+							atlOffset=-0.00099945068;
 						};
 						class Item8
 						{
@@ -65176,6 +65229,7 @@ class Mission
 								angles[]={6.262826,0,6.2583303};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -65234,7 +65288,7 @@ class Mission
 							};
 							id=4870;
 							type="CUP_O_RU_Crew_EMR";
-							atlOffset=3.6505194;
+							atlOffset=-0.00099945068;
 						};
 					};
 					class Attributes
@@ -65722,7 +65776,7 @@ class Mission
 								angles[]={0.003088163,0,6.271111};
 							};
 							side="East";
-							flags=2;
+							flags=6;
 							class Attributes
 							{
 								class Inventory
@@ -65823,7 +65877,7 @@ class Mission
 							};
 							id=4881;
 							type="CUP_O_RU_Soldier_SL_EMR";
-							atlOffset=3.2083921;
+							atlOffset=-0.010313988;
 						};
 						class Item1
 						{
@@ -65834,6 +65888,7 @@ class Mission
 								angles[]={0.003088163,0,6.271111};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -65892,7 +65947,7 @@ class Mission
 							};
 							id=4882;
 							type="CUP_O_RU_Crew_EMR";
-							atlOffset=3.2083921;
+							atlOffset=-0.010313988;
 						};
 						class Item2
 						{
@@ -65903,6 +65958,7 @@ class Mission
 								angles[]={0.003088163,0,6.271111};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -66002,7 +66058,7 @@ class Mission
 							};
 							id=4883;
 							type="CUP_O_RU_Soldier_AT_EMR";
-							atlOffset=3.2083921;
+							atlOffset=-0.010313988;
 						};
 						class Item3
 						{
@@ -66013,6 +66069,7 @@ class Mission
 								angles[]={0.003088163,0,6.271111};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -66103,7 +66160,7 @@ class Mission
 							};
 							id=4884;
 							type="CUP_O_RU_Soldier_MG_EMR";
-							atlOffset=3.2083921;
+							atlOffset=-0.010313988;
 						};
 						class Item4
 						{
@@ -66114,6 +66171,7 @@ class Mission
 								angles[]={0.003088163,0,6.271111};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -66182,7 +66240,7 @@ class Mission
 							};
 							id=4885;
 							type="CUP_O_RU_Soldier_EMR";
-							atlOffset=3.2083921;
+							atlOffset=-0.010313988;
 						};
 						class Item5
 						{
@@ -66193,6 +66251,7 @@ class Mission
 								angles[]={0.003088163,0,6.271111};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -66261,7 +66320,7 @@ class Mission
 							};
 							id=4886;
 							type="CUP_O_RU_Soldier_EMR";
-							atlOffset=3.2083921;
+							atlOffset=-0.010313988;
 						};
 						class Item6
 						{
@@ -66272,6 +66331,7 @@ class Mission
 								angles[]={0.003088163,0,6.271111};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -66340,7 +66400,7 @@ class Mission
 							};
 							id=4887;
 							type="CUP_O_RU_Soldier_EMR";
-							atlOffset=3.2083921;
+							atlOffset=-0.010313988;
 						};
 						class Item7
 						{
@@ -66351,6 +66411,7 @@ class Mission
 								angles[]={0.003088163,0,6.271111};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -66459,7 +66520,7 @@ class Mission
 							};
 							id=4888;
 							type="CUP_O_RU_Soldier_TL_EMR";
-							atlOffset=3.2083921;
+							atlOffset=-0.010313988;
 						};
 						class Item8
 						{
@@ -66470,6 +66531,7 @@ class Mission
 								angles[]={0.003088163,0,6.271111};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 								class Inventory
@@ -66578,7 +66640,7 @@ class Mission
 							};
 							id=4889;
 							type="CUP_O_RU_Soldier_TL_EMR";
-							atlOffset=3.2083921;
+							atlOffset=-0.010313988;
 						};
 					};
 					class Attributes
@@ -68461,14 +68523,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -68513,14 +68575,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -68947,14 +69009,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -68999,14 +69061,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};

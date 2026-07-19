@@ -13,9 +13,9 @@ force tfar_radioCodesDisabled = true;
 force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
 force TFAR_setting_defaultFrequencies_lr_east = "30,31,32,33,34,35,36,37,38";
-force TFAR_setting_defaultFrequencies_sr_east = "61.1,61.2,61.3,61.4,61.5,61.6,61.7,61.8,61.9";
+force TFAR_setting_defaultFrequencies_sr_east = "60,61,62,63,64,65,66,67,68";
 force TFAR_setting_defaultFrequencies_lr_independent = "30,31,32,33,34,35,36,37,38";
-force TFAR_setting_defaultFrequencies_sr_independent = "61.1,61.2,61.3,61.4,61.5,61.6,61.7,61.8,61.9";
+force TFAR_setting_defaultFrequencies_sr_independent = "60,61,62,63,64,65,66,67,68";
 force TFAR_setting_defaultFrequencies_sr_west = "30,31,32,33,34,35,36,37,38";
 force TFAR_setting_defaultFrequencies_lr_west = "60,61,62,63,64,65,66,67,68";
 
