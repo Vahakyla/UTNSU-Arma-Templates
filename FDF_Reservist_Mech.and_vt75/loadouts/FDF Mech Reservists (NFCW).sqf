@@ -463,6 +463,7 @@
 		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack "CFP_Kitbag_Olive";
 		_unit addItemToBackpack "ACE_EntrenchingTool";
+		_unit addItemToBackpack "CUP_launch_APILAS";
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";

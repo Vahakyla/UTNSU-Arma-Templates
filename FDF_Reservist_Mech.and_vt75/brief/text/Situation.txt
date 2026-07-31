@@ -1,17 +1,13 @@
 <font color='#FFA500' size='18'>Ground and Prelims:</font>
 <br/>
-<br/>Area of operations is highway 941 and the surrounding woods, up until the limits imposed by 3rd company area of operations to the north and 2nd company area of operations to the south. The terrain in the woods is rough and hilly.
-<br/>The road itself is mostly flat, save for three notable hills. 
-<br/>There are no civilians in the area.
+<br/>
 <br/>
 <br/>Weather: Afternoon
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – En Forces:</font>
 <br/>
-<br/>Exact force composition is unknown, but heavy enemy forces have been sighted. A large force of tanks and MBTs is expected on the road, while sizeable infantry forces are expected to advance through the woods to the north and south.
-<br/>They will be supported by indirect fire and close air support.
-<br/>
-<br/>The enemy is expected to make a frontal assault on our position in an attempt to break through our defenses.
+<br/>Enemy airborne forces inserted within the last eight hours. Estimated strength: reinforced company to battalion with BMD-series vehicles (represented as BMP-1s). 
+<br/>Expect consolidation, reconnaissance, anti-armor ambushes, and delay operations.
 <br/>
 <br/>Air Threat: Med.
 <br/>CBRN Threat: Neg.

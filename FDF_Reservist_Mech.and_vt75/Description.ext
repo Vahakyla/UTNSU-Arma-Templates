@@ -1,6 +1,6 @@
 
 //Mission name
-briefingName = "Under the North Star";
+briefingName = "Under the North Star: Uprising";
 
 //Mission Maker
 author = "Air Goons Wargames";
@@ -20,7 +20,7 @@ disabledai = 1; //Disable AI taking over un-taken player slots
 class Header {
         gameType = COOP;
         minPlayers = 2;
-        maxPlayers = 104;
+        maxPlayers = 130;
 };
 disableChannels[]=  // allow text only on side chat
 {
