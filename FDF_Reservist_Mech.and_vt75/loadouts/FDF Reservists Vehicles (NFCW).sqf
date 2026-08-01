@@ -53,6 +53,8 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["ACE_epinephrine", 10];
 		_vehicle addItemCargoGlobal ["ACE_morphine", 20];
 		_vehicle addItemCargoGlobal ["ACE_tourniquet", 10];
+		_vehicle addItemCargoGlobal ["ACE_rope12", 1];
+		_vehicle addItemCargoGlobal ["ACE_rope6", 1];
 	};
 	
 	case "PLT": {
@@ -71,6 +73,8 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["ACE_epinephrine", 10];
 		_vehicle addItemCargoGlobal ["ACE_morphine", 20];
 		_vehicle addItemCargoGlobal ["ACE_tourniquet", 10];
+		_vehicle addItemCargoGlobal ["ACE_rope12", 1];
+		_vehicle addItemCargoGlobal ["ACE_rope6", 1];
 	};
 	
 	case "SQUAD": {
@@ -89,6 +93,8 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["ACE_epinephrine", 10];
 		_vehicle addItemCargoGlobal ["ACE_morphine", 20];
 		_vehicle addItemCargoGlobal ["ACE_tourniquet", 10];
+		_vehicle addItemCargoGlobal ["ACE_rope12", 1];
+		_vehicle addItemCargoGlobal ["ACE_rope6", 1];
 	};
 	
 	// "Support";
@@ -108,6 +114,8 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["ACE_epinephrine", 10];
 		_vehicle addItemCargoGlobal ["ACE_morphine", 20];
 		_vehicle addItemCargoGlobal ["ACE_tourniquet", 10];
+		_vehicle addItemCargoGlobal ["ACE_rope12", 1];
+		_vehicle addItemCargoGlobal ["ACE_rope6", 1];
 	};
 	
 	case "SUPPORT": {

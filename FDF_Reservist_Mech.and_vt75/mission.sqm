@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=7030;
+		nextID=7039;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=676;
+		nextID=732;
 	};
 	class Camera
 	{
-		pos[]={3340.0649,54.642315,8879.4678};
-		dir[]={0.20956908,-0.56611431,0.79735184};
-		up[]={0.14391865,0.82428747,0.5475716};
-		aside[]={0.96724403,-8.5628562e-07,-0.25422329};
+		pos[]={3359.2275,66.46666,8874.8447};
+		dir[]={0.15827808,-0.5905019,0.79151225};
+		up[]={0.11581571,0.8069427,0.57914346};
+		aside[]={0.98070025,-3.8955477e-07,-0.19611037};
 	};
 };
 binarizationWanted=0;
@@ -673,19 +673,6 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
-			property="cba_settings_hasSettingsFile";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="ENH_introText";
 			expression="                if (!is3DEN && (_value # 0) > 0 && hasInterface) then                {                    _value spawn                    {                        scriptName 'ENH_Attribute_IntroText';                        params ['_delay', '_l1', '_l2', '_l3', '_type'];                        _l1 = _l1 call BIS_fnc_localize;                        _l2 = _l2 call BIS_fnc_localize;                        _l3 = _l3 call BIS_fnc_localize;                        uiSleep _delay;                        switch _type do                        {                            case 0:                            {                                private _text = parseText format                                [                                    ""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",                                    _l1,                                    _l2,                                    _l3                                ];                                [_text, true] spawn BIS_fnc_textTiles;                            };                            case 1:                            {                                [_l1, _l2, _l3] spawn BIS_fnc_infoText;                            };                            case 2:                            {                                [_l1, _l2, _l3] spawn BIS_fnc_EXP_camp_SITREP;                            };                        };                    };                }";
 			class Value
@@ -740,7 +727,564 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		class Attribute1
+		{
+			property="cba_settings_hash";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="#CBA_HASH#";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=14;
+									class Item0
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_clasnameseast";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_clasnameswest";
+										};
+									};
+									class Item2
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_clasnamesresistance";
+										};
+									};
+									class Item3
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_clasnamescivilian";
+										};
+									};
+									class Item4
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_allowcheckticketsmsp";
+										};
+									};
+									class Item5
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_reportenemiesenabledeast";
+										};
+									};
+									class Item6
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_reportenemiesenabledresistance";
+										};
+									};
+									class Item7
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_reportenemiesenabledcivilian";
+										};
+									};
+									class Item8
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_reportenemiesrangewest";
+										};
+									};
+									class Item9
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_contestedradiusmaxwest";
+										};
+									};
+									class Item10
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_contestedradiusminwest";
+										};
+									};
+									class Item11
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_setupnotification";
+										};
+									};
+									class Item12
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_contestednotification";
+										};
+									};
+									class Item13
+									{
+										class data
+										{
+											singleType="STRING";
+											value="tunres_msp_reportenemiesnotification";
+										};
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=14;
+									class Item0
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="NFCW_FIN_80_SA150";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item2
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item3
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item4
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item5
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item6
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item7
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item8
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=200;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item9
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=200;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item10
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=100;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item11
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item12
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item13
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								singleType="ANY";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		nAttributes=3;
 	};
 };
 class Mission
@@ -1180,6 +1724,7 @@ class Mission
 					};
 					id=1607;
 					type="SAINT80_BMP2";
+					atlOffset=9.5367432e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1228,7 +1773,7 @@ class Mission
 					};
 					id=1608;
 					type="SAINT80_BMP2";
-					atlOffset=-0.0039997101;
+					atlOffset=-0.0040006638;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1411,372 +1956,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3244.7097,16.042435,9028.5615};
-						angles[]={0,4.8856397,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-						init="[this, ""TRUCK""] call Gib_fnc_vehGearscript;";
-						textures="Guerilla_05";
-					};
-					id=1393;
-					type="NFCW_FIN_80_SA150";
-					atlOffset=0.32637119;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="VehicleCustomization";
-							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_repair_editorLoadedWheels";
-							expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=2;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_cargo_space";
-							expression="[_this, _value] call ace_cargo_fnc_setSpace";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=22;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_arsenal_attribute";
-							expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=30;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ToolKit";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_wirecutter";
-														};
-													};
-													class Item2
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_EntrenchingTool";
-														};
-													};
-													class Item3
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope12";
-														};
-													};
-													class Item4
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope15";
-														};
-													};
-													class Item5
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope18";
-														};
-													};
-													class Item6
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope27";
-														};
-													};
-													class Item7
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope3";
-														};
-													};
-													class Item8
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope36";
-														};
-													};
-													class Item9
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope6";
-														};
-													};
-													class Item10
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ItemMap";
-														};
-													};
-													class Item11
-													{
-														class data
-														{
-															singleType="STRING";
-															value="acex_intelitems_notepad";
-														};
-													};
-													class Item12
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_M14";
-														};
-													};
-													class Item13
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellBlue";
-														};
-													};
-													class Item14
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellGreen";
-														};
-													};
-													class Item15
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellOrange";
-														};
-													};
-													class Item16
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellPurple";
-														};
-													};
-													class Item17
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellRed";
-														};
-													};
-													class Item18
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellYellow";
-														};
-													};
-													class Item19
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShell";
-														};
-													};
-													class Item20
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_RangeTable_82mm";
-														};
-													};
-													class Item21
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Flashlight_XL50";
-														};
-													};
-													class Item22
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_M26_Clacker";
-														};
-													};
-													class Item23
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Clacker";
-														};
-													};
-													class Item24
-													{
-														class data
-														{
-															singleType="STRING";
-															value="Chemlight_blue";
-														};
-													};
-													class Item25
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Chemlight_HiBlue";
-														};
-													};
-													class Item26
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Chemlight_IR";
-														};
-													};
-													class Item27
-													{
-														class data
-														{
-															singleType="STRING";
-															value="B_IR_Grenade";
-														};
-													};
-													class Item28
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ItemWatch";
-														};
-													};
-													class Item29
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ItemCompass";
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="SCALAR";
-												value=0;
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=50;
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item14
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={3241.0154,15.6551,8974.0703};
 						angles[]={6.255693,3.3840714,0.019996032};
 					};
@@ -1789,6 +1968,7 @@ class Mission
 					};
 					id=1394;
 					type="NFCW_FIN_80_SA150";
+					atlOffset=-8.1062317e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2177,741 +2357,7 @@ class Mission
 						nAttributes=8;
 					};
 				};
-				class Item15
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3261.4185,16.559185,9025.2861};
-						angles[]={0.034984674,4.8980651,6.2806959};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="[this, ""TRUCK""] call Gib_fnc_vehGearscript;";
-						textures="White";
-					};
-					id=1395;
-					type="NFCW_FIN_80_SA150";
-					atlOffset=-0.00029373169;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="VehicleCustomization";
-							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_repair_editorLoadedWheels";
-							expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=2;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_cargo_space";
-							expression="[_this, _value] call ace_cargo_fnc_setSpace";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=22;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_arsenal_attribute";
-							expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=30;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ToolKit";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_wirecutter";
-														};
-													};
-													class Item2
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_EntrenchingTool";
-														};
-													};
-													class Item3
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope12";
-														};
-													};
-													class Item4
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope15";
-														};
-													};
-													class Item5
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope18";
-														};
-													};
-													class Item6
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope27";
-														};
-													};
-													class Item7
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope3";
-														};
-													};
-													class Item8
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope36";
-														};
-													};
-													class Item9
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope6";
-														};
-													};
-													class Item10
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ItemMap";
-														};
-													};
-													class Item11
-													{
-														class data
-														{
-															singleType="STRING";
-															value="acex_intelitems_notepad";
-														};
-													};
-													class Item12
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_M14";
-														};
-													};
-													class Item13
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellBlue";
-														};
-													};
-													class Item14
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellGreen";
-														};
-													};
-													class Item15
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellOrange";
-														};
-													};
-													class Item16
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellPurple";
-														};
-													};
-													class Item17
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellRed";
-														};
-													};
-													class Item18
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellYellow";
-														};
-													};
-													class Item19
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShell";
-														};
-													};
-													class Item20
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_RangeTable_82mm";
-														};
-													};
-													class Item21
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Flashlight_XL50";
-														};
-													};
-													class Item22
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_M26_Clacker";
-														};
-													};
-													class Item23
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Clacker";
-														};
-													};
-													class Item24
-													{
-														class data
-														{
-															singleType="STRING";
-															value="Chemlight_blue";
-														};
-													};
-													class Item25
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Chemlight_HiBlue";
-														};
-													};
-													class Item26
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Chemlight_IR";
-														};
-													};
-													class Item27
-													{
-														class data
-														{
-															singleType="STRING";
-															value="B_IR_Grenade";
-														};
-													};
-													class Item28
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ItemWatch";
-														};
-													};
-													class Item29
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ItemCompass";
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="SCALAR";
-												value=0;
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=50;
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item16
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3253.7339,16.379612,9026.7363};
-						angles[]={0.032487731,4.8934674,0.034984674};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="[this, ""TRUCK""] call Gib_fnc_vehGearscript;";
-						textures="Guerilla_07";
-					};
-					id=1396;
-					type="NFCW_FIN_80_SA150";
-					atlOffset=-0.0012149811;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="VehicleCustomization";
-							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_repair_editorLoadedWheels";
-							expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=2;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_cargo_space";
-							expression="[_this, _value] call ace_cargo_fnc_setSpace";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=22;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_arsenal_attribute";
-							expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=30;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ToolKit";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_wirecutter";
-														};
-													};
-													class Item2
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_EntrenchingTool";
-														};
-													};
-													class Item3
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope12";
-														};
-													};
-													class Item4
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope15";
-														};
-													};
-													class Item5
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope18";
-														};
-													};
-													class Item6
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope27";
-														};
-													};
-													class Item7
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope3";
-														};
-													};
-													class Item8
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope36";
-														};
-													};
-													class Item9
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_rope6";
-														};
-													};
-													class Item10
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ItemMap";
-														};
-													};
-													class Item11
-													{
-														class data
-														{
-															singleType="STRING";
-															value="acex_intelitems_notepad";
-														};
-													};
-													class Item12
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_M14";
-														};
-													};
-													class Item13
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellBlue";
-														};
-													};
-													class Item14
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellGreen";
-														};
-													};
-													class Item15
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellOrange";
-														};
-													};
-													class Item16
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellPurple";
-														};
-													};
-													class Item17
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellRed";
-														};
-													};
-													class Item18
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShellYellow";
-														};
-													};
-													class Item19
-													{
-														class data
-														{
-															singleType="STRING";
-															value="SmokeShell";
-														};
-													};
-													class Item20
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_RangeTable_82mm";
-														};
-													};
-													class Item21
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Flashlight_XL50";
-														};
-													};
-													class Item22
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_M26_Clacker";
-														};
-													};
-													class Item23
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Clacker";
-														};
-													};
-													class Item24
-													{
-														class data
-														{
-															singleType="STRING";
-															value="Chemlight_blue";
-														};
-													};
-													class Item25
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Chemlight_HiBlue";
-														};
-													};
-													class Item26
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACE_Chemlight_IR";
-														};
-													};
-													class Item27
-													{
-														class data
-														{
-															singleType="STRING";
-															value="B_IR_Grenade";
-														};
-													};
-													class Item28
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ItemWatch";
-														};
-													};
-													class Item29
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ItemCompass";
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="SCALAR";
-												value=0;
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=50;
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item17
+				class Item14
 				{
 					dataType="Object";
 					class PositionInfo
@@ -2959,7 +2405,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item18
+				class Item15
 				{
 					dataType="Object";
 					class PositionInfo
@@ -2994,7 +2440,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item19
+				class Item16
 				{
 					dataType="Object";
 					class PositionInfo
@@ -3029,7 +2475,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item20
+				class Item17
 				{
 					dataType="Object";
 					class PositionInfo
@@ -3064,9 +2510,1227 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item18
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3244.843,15.726215,9028.6826};
+						angles[]={0.010574467,4.885848,0.062418513};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="[this, ""TRUCK""] call Gib_fnc_vehGearscript;";
+						textures="Black";
+					};
+					id=7032;
+					type="NFCW_FIN_80_SA150";
+					atlOffset=-8.1062317e-05;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_repair_editorLoadedWheels";
+							expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="VehicleCustomization";
+							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_arsenal_attribute";
+							expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=30;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ToolKit";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_wirecutter";
+														};
+													};
+													class Item2
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_EntrenchingTool";
+														};
+													};
+													class Item3
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope12";
+														};
+													};
+													class Item4
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope15";
+														};
+													};
+													class Item5
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope18";
+														};
+													};
+													class Item6
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope27";
+														};
+													};
+													class Item7
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope3";
+														};
+													};
+													class Item8
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope36";
+														};
+													};
+													class Item9
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope6";
+														};
+													};
+													class Item10
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ItemMap";
+														};
+													};
+													class Item11
+													{
+														class data
+														{
+															singleType="STRING";
+															value="acex_intelitems_notepad";
+														};
+													};
+													class Item12
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_M14";
+														};
+													};
+													class Item13
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellBlue";
+														};
+													};
+													class Item14
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellGreen";
+														};
+													};
+													class Item15
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellOrange";
+														};
+													};
+													class Item16
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellPurple";
+														};
+													};
+													class Item17
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellRed";
+														};
+													};
+													class Item18
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellYellow";
+														};
+													};
+													class Item19
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShell";
+														};
+													};
+													class Item20
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_RangeTable_82mm";
+														};
+													};
+													class Item21
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Flashlight_XL50";
+														};
+													};
+													class Item22
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_M26_Clacker";
+														};
+													};
+													class Item23
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Clacker";
+														};
+													};
+													class Item24
+													{
+														class data
+														{
+															singleType="STRING";
+															value="Chemlight_blue";
+														};
+													};
+													class Item25
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Chemlight_HiBlue";
+														};
+													};
+													class Item26
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Chemlight_IR";
+														};
+													};
+													class Item27
+													{
+														class data
+														{
+															singleType="STRING";
+															value="B_IR_Grenade";
+														};
+													};
+													class Item28
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ItemWatch";
+														};
+													};
+													class Item29
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ItemCompass";
+														};
+													};
+												};
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1200;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_isRepairVehicle";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ace_cargo_space";
+							expression="[_this, _value] call ace_cargo_fnc_setSpace";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=22;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_tagging_stencilVehicle";
+							expression="[_this, _value] call ace_tagging_fnc_stencilVehicle";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Hotel";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=50;
+								};
+							};
+						};
+						nAttributes=8;
+					};
+				};
+				class Item19
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3254.0273,16.410376,9026.1396};
+						angles[]={0.032487731,4.9028792,0.034984674};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="[this, ""TRUCK""] call Gib_fnc_vehGearscript;";
+						textures="Black";
+					};
+					id=7033;
+					type="NFCW_FIN_80_SA150";
+					atlOffset=-0.00011444092;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_repair_editorLoadedWheels";
+							expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="VehicleCustomization";
+							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_arsenal_attribute";
+							expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=30;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ToolKit";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_wirecutter";
+														};
+													};
+													class Item2
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_EntrenchingTool";
+														};
+													};
+													class Item3
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope12";
+														};
+													};
+													class Item4
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope15";
+														};
+													};
+													class Item5
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope18";
+														};
+													};
+													class Item6
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope27";
+														};
+													};
+													class Item7
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope3";
+														};
+													};
+													class Item8
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope36";
+														};
+													};
+													class Item9
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope6";
+														};
+													};
+													class Item10
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ItemMap";
+														};
+													};
+													class Item11
+													{
+														class data
+														{
+															singleType="STRING";
+															value="acex_intelitems_notepad";
+														};
+													};
+													class Item12
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_M14";
+														};
+													};
+													class Item13
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellBlue";
+														};
+													};
+													class Item14
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellGreen";
+														};
+													};
+													class Item15
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellOrange";
+														};
+													};
+													class Item16
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellPurple";
+														};
+													};
+													class Item17
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellRed";
+														};
+													};
+													class Item18
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellYellow";
+														};
+													};
+													class Item19
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShell";
+														};
+													};
+													class Item20
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_RangeTable_82mm";
+														};
+													};
+													class Item21
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Flashlight_XL50";
+														};
+													};
+													class Item22
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_M26_Clacker";
+														};
+													};
+													class Item23
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Clacker";
+														};
+													};
+													class Item24
+													{
+														class data
+														{
+															singleType="STRING";
+															value="Chemlight_blue";
+														};
+													};
+													class Item25
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Chemlight_HiBlue";
+														};
+													};
+													class Item26
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Chemlight_IR";
+														};
+													};
+													class Item27
+													{
+														class data
+														{
+															singleType="STRING";
+															value="B_IR_Grenade";
+														};
+													};
+													class Item28
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ItemWatch";
+														};
+													};
+													class Item29
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ItemCompass";
+														};
+													};
+												};
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1200;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_isRepairVehicle";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ace_cargo_space";
+							expression="[_this, _value] call ace_cargo_fnc_setSpace";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=22;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_tagging_stencilVehicle";
+							expression="[_this, _value] call ace_tagging_fnc_stencilVehicle";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Hotel";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=50;
+								};
+							};
+						};
+						nAttributes=8;
+					};
+				};
+				class Item20
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3262.8574,16.594868,9024.1699};
+						angles[]={0.034984674,4.9377317,6.2806959};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="[this, ""TRUCK""] call Gib_fnc_vehGearscript;";
+						textures="Black";
+					};
+					id=7034;
+					type="NFCW_FIN_80_SA150";
+					atlOffset=-8.1062317e-05;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_repair_editorLoadedWheels";
+							expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="VehicleCustomization";
+							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_arsenal_attribute";
+							expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=30;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ToolKit";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_wirecutter";
+														};
+													};
+													class Item2
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_EntrenchingTool";
+														};
+													};
+													class Item3
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope12";
+														};
+													};
+													class Item4
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope15";
+														};
+													};
+													class Item5
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope18";
+														};
+													};
+													class Item6
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope27";
+														};
+													};
+													class Item7
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope3";
+														};
+													};
+													class Item8
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope36";
+														};
+													};
+													class Item9
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_rope6";
+														};
+													};
+													class Item10
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ItemMap";
+														};
+													};
+													class Item11
+													{
+														class data
+														{
+															singleType="STRING";
+															value="acex_intelitems_notepad";
+														};
+													};
+													class Item12
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_M14";
+														};
+													};
+													class Item13
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellBlue";
+														};
+													};
+													class Item14
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellGreen";
+														};
+													};
+													class Item15
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellOrange";
+														};
+													};
+													class Item16
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellPurple";
+														};
+													};
+													class Item17
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellRed";
+														};
+													};
+													class Item18
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShellYellow";
+														};
+													};
+													class Item19
+													{
+														class data
+														{
+															singleType="STRING";
+															value="SmokeShell";
+														};
+													};
+													class Item20
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_RangeTable_82mm";
+														};
+													};
+													class Item21
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Flashlight_XL50";
+														};
+													};
+													class Item22
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_M26_Clacker";
+														};
+													};
+													class Item23
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Clacker";
+														};
+													};
+													class Item24
+													{
+														class data
+														{
+															singleType="STRING";
+															value="Chemlight_blue";
+														};
+													};
+													class Item25
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Chemlight_HiBlue";
+														};
+													};
+													class Item26
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ACE_Chemlight_IR";
+														};
+													};
+													class Item27
+													{
+														class data
+														{
+															singleType="STRING";
+															value="B_IR_Grenade";
+														};
+													};
+													class Item28
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ItemWatch";
+														};
+													};
+													class Item29
+													{
+														class data
+														{
+															singleType="STRING";
+															value="ItemCompass";
+														};
+													};
+												};
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1200;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_isRepairVehicle";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ace_cargo_space";
+							expression="[_this, _value] call ace_cargo_fnc_setSpace";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=22;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_tagging_stencilVehicle";
+							expression="[_this, _value] call ace_tagging_fnc_stencilVehicle";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Hotel";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=50;
+								};
+							};
+						};
+						nAttributes=8;
+					};
+				};
 			};
 			id=1379;
-			atlOffset=-0.058095932;
+			atlOffset=-0.29612064;
 		};
 		class Item1
 		{
@@ -3530,6 +4194,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -3541,7 +4218,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -3554,7 +4231,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -3567,7 +4244,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item5
@@ -3619,6 +4296,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -3630,7 +4320,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -3643,7 +4333,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -3656,7 +4346,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item6
@@ -3708,6 +4398,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -3719,7 +4422,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -3732,7 +4435,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -3745,7 +4448,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -4292,6 +4995,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
@@ -4303,7 +5019,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -4316,7 +5032,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -4329,7 +5045,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -4342,7 +5058,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="sss_key";
 							expression="if (_value isNotEqualTo '') then {_this setVariable ['sss_key', _value, true]};";
@@ -4355,7 +5071,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
 							property="ENH_unitTraits_medic";
 							expression="if !(isClass (configFile >> 'CfgPatches' >> 'ace_common')) then {[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]}";
@@ -4368,7 +5084,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute6
+						class Attribute7
 						{
 							property="SR_StaticRadioFrequency";
 							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
@@ -4381,7 +5097,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=7;
+						nAttributes=8;
 					};
 				};
 				class Item1
@@ -4422,6 +5138,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
@@ -4433,7 +5162,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -4446,7 +5175,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -4459,7 +5188,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -4472,7 +5201,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
 							property="ENH_unitTraits_medic";
 							expression="if !(isClass (configFile >> 'CfgPatches' >> 'ace_common')) then {[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]}";
@@ -4485,7 +5214,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute6
+						class Attribute7
 						{
 							property="SR_StaticRadioFrequency";
 							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
@@ -4498,7 +5227,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=7;
+						nAttributes=8;
 					};
 				};
 				class Item2
@@ -4540,6 +5269,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
@@ -4551,7 +5293,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -4564,7 +5306,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -4577,7 +5319,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -4590,7 +5332,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
 							property="ENH_unitTraits_medic";
 							expression="if !(isClass (configFile >> 'CfgPatches' >> 'ace_common')) then {[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]}";
@@ -4603,7 +5345,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute6
+						class Attribute7
 						{
 							property="SR_StaticRadioFrequency";
 							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
@@ -4616,7 +5358,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=7;
+						nAttributes=8;
 					};
 				};
 				class Item3
@@ -4657,6 +5399,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
@@ -4668,7 +5423,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -4681,7 +5436,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -4694,7 +5449,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -4707,7 +5462,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
 							property="ENH_unitTraits_medic";
 							expression="if !(isClass (configFile >> 'CfgPatches' >> 'ace_common')) then {[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]}";
@@ -4720,7 +5475,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute6
+						class Attribute7
 						{
 							property="SR_StaticRadioFrequency";
 							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
@@ -4733,7 +5488,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=7;
+						nAttributes=8;
 					};
 				};
 				class Item4
@@ -4775,6 +5530,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
@@ -4786,7 +5554,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -4799,7 +5567,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -4812,7 +5580,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -4825,7 +5593,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
 							property="ENH_unitTraits_medic";
 							expression="if !(isClass (configFile >> 'CfgPatches' >> 'ace_common')) then {[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]}";
@@ -4838,7 +5606,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute6
+						class Attribute7
 						{
 							property="SR_StaticRadioFrequency";
 							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
@@ -4851,7 +5619,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=7;
+						nAttributes=8;
 					};
 				};
 			};
@@ -5402,6 +6170,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -5413,7 +6194,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -5426,7 +6207,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -5439,7 +6220,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item6
@@ -5490,6 +6271,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -5501,7 +6295,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -5514,7 +6308,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -5527,7 +6321,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -5578,6 +6372,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -5589,7 +6396,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -5602,7 +6409,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -5615,7 +6422,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -6558,18 +7365,31 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=1;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -6579,19 +7399,6 @@ class Mission
 								{
 									singleType="STRING";
 									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
 								};
 							};
 						};
@@ -6610,6 +7417,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
 							class Value
@@ -6621,20 +7441,20 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 				class Item7
@@ -6660,18 +7480,31 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=1;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -6681,19 +7514,6 @@ class Mission
 								{
 									singleType="STRING";
 									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male06ENG";
 								};
 							};
 						};
@@ -6712,6 +7532,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
 							class Value
@@ -6723,20 +7556,20 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 				class Item8
@@ -6762,18 +7595,31 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=1;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -6783,19 +7629,6 @@ class Mission
 								{
 									singleType="STRING";
 									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male06ENG";
 								};
 							};
 						};
@@ -6814,6 +7647,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
 							class Value
@@ -6825,20 +7671,20 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 			};
@@ -7463,18 +8309,31 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=1;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -7484,19 +8343,6 @@ class Mission
 								{
 									singleType="STRING";
 									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
 								};
 							};
 						};
@@ -7515,6 +8361,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
 							class Value
@@ -7526,20 +8385,20 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 				class Item7
@@ -7565,18 +8424,31 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=1;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -7586,19 +8458,6 @@ class Mission
 								{
 									singleType="STRING";
 									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male06ENG";
 								};
 							};
 						};
@@ -7617,6 +8476,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
 							class Value
@@ -7628,20 +8500,20 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 				class Item8
@@ -7667,18 +8539,31 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=1;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -7688,19 +8573,6 @@ class Mission
 								{
 									singleType="STRING";
 									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male06ENG";
 								};
 							};
 						};
@@ -7719,6 +8591,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
 							class Value
@@ -7730,20 +8615,20 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 			};
@@ -8364,18 +9249,31 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=1;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -8385,19 +9283,6 @@ class Mission
 								{
 									singleType="STRING";
 									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
 								};
 							};
 						};
@@ -8416,6 +9301,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
 							class Value
@@ -8427,20 +9325,20 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 				class Item7
@@ -8465,18 +9363,31 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=1;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -8486,19 +9397,6 @@ class Mission
 								{
 									singleType="STRING";
 									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male06ENG";
 								};
 							};
 						};
@@ -8517,6 +9415,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
 							class Value
@@ -8528,20 +9439,20 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 				class Item8
@@ -8566,18 +9477,31 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=1;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="sfp_ranks_branch";
 							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
@@ -8587,19 +9511,6 @@ class Mission
 								{
 									singleType="STRING";
 									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male06ENG";
 								};
 							};
 						};
@@ -8618,6 +9529,19 @@ class Mission
 						};
 						class Attribute4
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
 							class Value
@@ -8629,20 +9553,20 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
-						nAttributes=6;
+						nAttributes=7;
 					};
 				};
 			};
@@ -9197,6 +10121,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -9208,7 +10145,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -9221,7 +10158,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -9234,7 +10171,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item6
@@ -9286,6 +10223,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -9297,7 +10247,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -9310,7 +10260,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -9323,7 +10273,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -9375,6 +10325,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -9386,7 +10349,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -9399,7 +10362,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -9412,7 +10375,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -10269,6 +11232,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -10280,7 +11256,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -10293,7 +11269,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -10306,7 +11282,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -10358,6 +11334,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -10369,7 +11358,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -10382,7 +11371,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -10395,7 +11384,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item8
@@ -10447,6 +11436,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -10458,7 +11460,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -10471,7 +11473,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -10484,7 +11486,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -11105,6 +12107,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -11116,7 +12131,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -11129,7 +12144,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -11142,7 +12157,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -11194,6 +12209,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -11205,7 +12233,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -11218,7 +12246,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -11231,7 +12259,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item8
@@ -11282,6 +12310,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -11293,7 +12334,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -11306,7 +12347,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -11319,7 +12360,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -11913,6 +12954,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -11924,7 +12978,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -11937,7 +12991,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -11950,7 +13004,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -12001,6 +13055,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -12012,7 +13079,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -12025,7 +13092,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -12038,7 +13105,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item8
@@ -12089,6 +13156,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -12100,7 +13180,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -12113,7 +13193,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -12126,7 +13206,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -12680,6 +13760,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -12691,7 +13784,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -12704,7 +13797,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -12717,7 +13810,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item6
@@ -12769,6 +13862,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -12780,7 +13886,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -12793,7 +13899,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -12806,7 +13912,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -12858,6 +13964,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -12869,7 +13988,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -12882,7 +14001,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -12895,7 +14014,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -13780,6 +14899,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -13791,7 +14923,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -13804,7 +14936,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -13817,7 +14949,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -13869,6 +15001,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -13880,7 +15025,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -13893,7 +15038,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -13906,7 +15051,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item8
@@ -13958,6 +15103,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -13969,7 +15127,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -13982,7 +15140,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -13995,7 +15153,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -14990,6 +16148,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -15001,7 +16172,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -15014,7 +16185,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -15027,7 +16198,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -15079,6 +16250,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -15090,7 +16274,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -15103,7 +16287,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -15116,7 +16300,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item8
@@ -15168,6 +16352,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -15179,7 +16376,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -15192,7 +16389,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -15205,7 +16402,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -15801,6 +16998,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -15812,7 +17022,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -15825,7 +17035,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -15838,7 +17048,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item7
@@ -15889,6 +17099,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -15900,7 +17123,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -15913,7 +17136,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -15926,7 +17149,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item8
@@ -15978,6 +17201,19 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -15989,7 +17225,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -16002,7 +17238,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="ENH_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -16015,7 +17251,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 			};
@@ -24381,7 +25617,7 @@ class Mission
 								behaviour="SAFE";
 							};
 							id=1931;
-							atlOffset=-17.66;
+							atlOffset=0.00054740906;
 						};
 						class Item1
 						{
@@ -24466,7 +25702,7 @@ class Mission
 						};
 					};
 					id=1930;
-					atlOffset=-4.0873623;
+					atlOffset=0.0028743744;
 				};
 				class Item13
 				{
@@ -24489,7 +25725,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""94#9#2026731125057246"",""44#2#20266121236248""]";
+									value="[""52#15#202681185539831"",""44#2#20266121236248""]";
 								};
 							};
 						};
@@ -26124,7 +27360,7 @@ class Mission
 				};
 			};
 			id=1808;
-			atlOffset=-0.12081337;
+			atlOffset=-0.12589455;
 		};
 		class Item20
 		{
@@ -27131,7 +28367,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""44#10#2026731125057247"",""80#57#20267281692515"",""6#60#202672816106254"",""34#61#202672816106254"",""50#62#202672816106254""]";
+									value="[""79#16#202681185539831"",""80#57#20267281692515"",""6#60#202672816106254"",""34#61#202672816106254"",""50#62#202672816106254""]";
 								};
 							};
 						};
@@ -27609,7 +28845,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""44#10#2026731125057247"",""80#57#20267281692515"",""6#60#202672816106254"",""34#61#202672816106254"",""50#62#202672816106254""]";
+									value="[""79#16#202681185539831"",""80#57#20267281692515"",""6#60#202672816106254"",""34#61#202672816106254"",""50#62#202672816106254""]";
 								};
 							};
 						};
@@ -27798,7 +29034,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Mission Components";
-			state=1;
 			class Entities
 			{
 				items=15;
@@ -37590,7 +38825,7 @@ class Mission
 							fillName="SolidFull";
 							a=7.4388089;
 							b=5.0069132;
-							angle=215.55777;
+							angle=215.55774;
 							id=6602;
 							atlOffset=-0.02041626;
 							class CustomAttributes
@@ -37622,7 +38857,7 @@ class Mission
 							fillName="SolidFull";
 							a=3.3348589;
 							b=3.6934414;
-							angle=215.55775;
+							angle=215.55772;
 							id=6603;
 							atlOffset=3.3867893;
 							class CustomAttributes
@@ -39909,7 +41144,7 @@ class Mission
 							fillName="SolidFull";
 							a=6.3380842;
 							b=2.9961421;
-							angle=215.55775;
+							angle=215.55772;
 							id=6604;
 							class CustomAttributes
 							{
@@ -41148,7 +42383,7 @@ class Mission
 						};
 					};
 					id=6653;
-					atlOffset=2.5352154;
+					atlOffset=-0.99656868;
 				};
 				class Item10
 				{
@@ -51139,7 +52374,7 @@ class Mission
 				};
 			};
 			id=3261;
-			atlOffset=-0.38616753;
+			atlOffset=-0.43694687;
 		};
 		class Item22
 		{
@@ -53154,7 +54389,7 @@ class Mission
 			class Item0
 			{
 				linkID=0;
-				item0=1393;
+				item0=1394;
 				item1=143;
 				class CustomData
 				{
@@ -53164,8 +54399,8 @@ class Mission
 			class Item1
 			{
 				linkID=1;
-				item0=1394;
-				item1=143;
+				item0=1832;
+				item1=1874;
 				class CustomData
 				{
 					type="Sync";
@@ -53174,8 +54409,8 @@ class Mission
 			class Item2
 			{
 				linkID=2;
-				item0=1395;
-				item1=143;
+				item0=1833;
+				item1=1874;
 				class CustomData
 				{
 					type="Sync";
@@ -53184,8 +54419,8 @@ class Mission
 			class Item3
 			{
 				linkID=3;
-				item0=1396;
-				item1=143;
+				item0=1939;
+				item1=1938;
 				class CustomData
 				{
 					type="Sync";
@@ -53194,8 +54429,8 @@ class Mission
 			class Item4
 			{
 				linkID=4;
-				item0=1832;
-				item1=1874;
+				item0=1941;
+				item1=1940;
 				class CustomData
 				{
 					type="Sync";
@@ -53204,8 +54439,8 @@ class Mission
 			class Item5
 			{
 				linkID=5;
-				item0=1833;
-				item1=1874;
+				item0=1992;
+				item1=1998;
 				class CustomData
 				{
 					type="Sync";
@@ -53214,8 +54449,8 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=1939;
-				item1=1938;
+				item0=1993;
+				item1=1998;
 				class CustomData
 				{
 					type="Sync";
@@ -53224,8 +54459,8 @@ class Mission
 			class Item7
 			{
 				linkID=7;
-				item0=1941;
-				item1=1940;
+				item0=1994;
+				item1=1998;
 				class CustomData
 				{
 					type="Sync";
@@ -53234,7 +54469,7 @@ class Mission
 			class Item8
 			{
 				linkID=8;
-				item0=1992;
+				item0=1995;
 				item1=1998;
 				class CustomData
 				{
@@ -53244,8 +54479,8 @@ class Mission
 			class Item9
 			{
 				linkID=9;
-				item0=1993;
-				item1=1998;
+				item0=1983;
+				item1=1999;
 				class CustomData
 				{
 					type="Sync";
@@ -53254,8 +54489,8 @@ class Mission
 			class Item10
 			{
 				linkID=10;
-				item0=1994;
-				item1=1998;
+				item0=1984;
+				item1=1999;
 				class CustomData
 				{
 					type="Sync";
@@ -53264,8 +54499,8 @@ class Mission
 			class Item11
 			{
 				linkID=11;
-				item0=1995;
-				item1=1998;
+				item0=1985;
+				item1=1999;
 				class CustomData
 				{
 					type="Sync";
@@ -53274,7 +54509,7 @@ class Mission
 			class Item12
 			{
 				linkID=12;
-				item0=1983;
+				item0=1986;
 				item1=1999;
 				class CustomData
 				{
@@ -53284,8 +54519,8 @@ class Mission
 			class Item13
 			{
 				linkID=13;
-				item0=1984;
-				item1=1999;
+				item0=1998;
+				item1=2000;
 				class CustomData
 				{
 					type="Sync";
@@ -53294,8 +54529,8 @@ class Mission
 			class Item14
 			{
 				linkID=14;
-				item0=1985;
-				item1=1999;
+				item0=1999;
+				item1=2000;
 				class CustomData
 				{
 					type="Sync";
@@ -53304,8 +54539,8 @@ class Mission
 			class Item15
 			{
 				linkID=15;
-				item0=1986;
-				item1=1999;
+				item0=1935;
+				item1=1936;
 				class CustomData
 				{
 					type="Sync";
@@ -53314,8 +54549,8 @@ class Mission
 			class Item16
 			{
 				linkID=16;
-				item0=1998;
-				item1=2000;
+				item0=1937;
+				item1=1935;
 				class CustomData
 				{
 					type="Sync";
@@ -53324,8 +54559,8 @@ class Mission
 			class Item17
 			{
 				linkID=17;
-				item0=1999;
-				item1=2000;
+				item0=1937;
+				item1=1814;
 				class CustomData
 				{
 					type="Sync";
@@ -53334,8 +54569,8 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=1935;
-				item1=1936;
+				item0=1858;
+				item1=1874;
 				class CustomData
 				{
 					type="Sync";
@@ -53344,8 +54579,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=1937;
-				item1=1935;
+				item0=2433;
+				item1=2432;
 				class CustomData
 				{
 					type="Sync";
@@ -53354,8 +54589,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=1937;
-				item1=1814;
+				item0=2435;
+				item1=2434;
 				class CustomData
 				{
 					type="Sync";
@@ -53364,8 +54599,8 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=1858;
-				item1=1874;
+				item0=84;
+				item1=2000;
 				class CustomData
 				{
 					type="Sync";
@@ -53374,8 +54609,8 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=2433;
-				item1=2432;
+				item0=1936;
+				item1=86;
 				class CustomData
 				{
 					type="Sync";
@@ -53384,8 +54619,8 @@ class Mission
 			class Item23
 			{
 				linkID=23;
-				item0=2435;
-				item1=2434;
+				item0=3;
+				item1=2000;
 				class CustomData
 				{
 					type="Sync";
@@ -53394,7 +54629,7 @@ class Mission
 			class Item24
 			{
 				linkID=24;
-				item0=84;
+				item0=1681;
 				item1=2000;
 				class CustomData
 				{
@@ -53404,8 +54639,8 @@ class Mission
 			class Item25
 			{
 				linkID=25;
-				item0=1936;
-				item1=86;
+				item0=1766;
+				item1=2000;
 				class CustomData
 				{
 					type="Sync";
@@ -53414,8 +54649,8 @@ class Mission
 			class Item26
 			{
 				linkID=26;
-				item0=3;
-				item1=2000;
+				item0=7032;
+				item1=143;
 				class CustomData
 				{
 					type="Sync";
@@ -53424,8 +54659,8 @@ class Mission
 			class Item27
 			{
 				linkID=27;
-				item0=1681;
-				item1=2000;
+				item0=7033;
+				item1=143;
 				class CustomData
 				{
 					type="Sync";
@@ -53434,8 +54669,8 @@ class Mission
 			class Item28
 			{
 				linkID=28;
-				item0=1766;
-				item1=2000;
+				item0=7034;
+				item1=143;
 				class CustomData
 				{
 					type="Sync";
