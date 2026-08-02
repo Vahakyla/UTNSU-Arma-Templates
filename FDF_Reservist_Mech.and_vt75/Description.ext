@@ -31,6 +31,7 @@ disableChannels[]=  // allow text only on side chat
 	{4, true, true},	// Vehicle, text, voice
 	{5, true, true}		// Direct, voice only
 };
+
 //Gearscript
 class CfgFunctions {
 

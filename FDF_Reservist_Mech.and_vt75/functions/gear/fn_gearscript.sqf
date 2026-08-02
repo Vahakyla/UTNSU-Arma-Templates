@@ -19,7 +19,6 @@ _unit setVariable ["BIS_enableRandomization", false];
 _unit setVariable ["FW_Loadout", _type, true];
 
 removeHeadgear _unit;
-removeGoggles _unit;
 removeVest _unit;
 removeBackpack _unit;
 removeUniform _unit;
