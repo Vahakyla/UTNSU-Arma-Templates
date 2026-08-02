@@ -368,6 +368,7 @@
 		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack _backpack;
 		_unit addItemToBackpack "ACE_EntrenchingTool";
+		for "_i" from 1 to 5 do {_unit addItemToBackpack "NFCW_100Rnd_762x39_KK62_Mag";};
 		_unit addHeadgear _helmet;
 
 		comment "Add weapons";
