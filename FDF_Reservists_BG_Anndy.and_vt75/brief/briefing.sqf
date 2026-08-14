@@ -6,7 +6,6 @@ player createDiarySubject ["Diary", "Diary"];
 
 player createDiaryRecord ["Diary", ["Setting up an alternate TFAR channel", LoadFile "brief\text\Alt channel.txt"]];
 player createDiaryRecord ["Diary", ["Quartermaster", LoadFile "brief\text\QM.txt"]];
-player createDiaryRecord ["Diary", ["Muster Zone script", LoadFile "brief\text\Muster.txt"]];
 player createDiaryRecord ["Diary", ["Recce Sighting Report", LoadFile "brief\text\Recce.txt"]];
 player createDiaryRecord ["Diary", ["Summary & Questions", LoadFile "brief\text\Summary.txt"]];
 player createDiaryRecord ["Diary", ["Map trace", LoadFile "brief\text\Map Trace.txt"]];

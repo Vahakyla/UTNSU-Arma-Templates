@@ -2,7 +2,7 @@
 <br/>
 <br/>1. Hotel squad
 <br/>
-<br/>Hotel squad is responsible for logistics and will keep the platoons supplied with ammunition and medical supplies, and ferry later reinforcment units to the front line. 
+<br/>Hotel squad is responsible for logistics and will keep the platoons supplied with ammunition and medical supplies. 
 <br/>It will also handle CASEVAC and MEDEVAC to HQ.
 <br/>
 <br/><font color='#99cc00'>Medical</font>

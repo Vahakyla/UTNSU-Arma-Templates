@@ -1,31 +1,32 @@
 <font color='#FFA500' size='18'>Ground and Prelims:</font>
 <br/>
-<br/>Area of operations is highway 941 and the surrounding woods, up until the limits imposed by 3rd company area of operations to the north and 2nd company area of operations to the south. The terrain in the woods is rough and hilly.
-<br/>The road itself is mostly flat, save for three notable hills. 
-<br/>There are no civilians in the area.
+<br/>Ground in the Area of Operations (AO) is heavily wooded Finnish woodlands. One dirt path forms the MSR through the AO. 
+<br/>The MSR is flanked with lakes, marsh, and heavy woods on both sides that prevent access to most vehicles except via the MSR. Hastily built defensive fortifications along the MSR have been prepared.
 <br/>
-<br/>Weather: Afternoon
+<br/>Weather: Clear.
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – En Forces:</font>
 <br/>
-<br/>Exact force composition is unknown, but heavy enemy forces have been sighted. A large force of tanks and MBTs is expected on the road, while sizeable infantry forces are expected to advance through the woods to the north and south.
-<br/>They will be supported by indirect fire and close air support.
+<br/>Enemy elements primarily consist of BRDMs, BTRs, and light infantry.
 <br/>
-<br/>The enemy is expected to make a frontal assault on our position in an attempt to break through our defenses.
+<br/>Enemy forces are from an unknown larger Russian unit that has been skirmishing with BG Annddy for part of a day.
 <br/>
 <br/>Air Threat: Med.
 <br/>CBRN Threat: Neg.
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – FF</font>
 <br/>
-<br/>1st company consisting of three rifle platoons Alpha, Bravo and Charlie, supported by AT squad Papa, Mortar squad Tango, Logistics squad Hotel and 155mm battalion artillery.
+<br/>2UP - Protect the ¼ Mechanized’s flank from attacks from the east.
+<br/>
+<br/>1 UP - Prevent the Russians from infiltrating through the woods IVO Voho.
+<br/>
+<br/>1 Coy Group Atts & Dets:
+<br/>N/A, artillery unavailable
 <br/>
 <br/>Combat Support: 
-<br/>2x Batteries of 155mm Howitzers (HE, Smoke, WP, Guided)
-<br/>
-<br/>Detachment from Brigade Anti-Tank company.
+<br/>Company logistics
 <br/>
 <br/><font color='#FFA500' size='18'>Mission</font>
 <br/>
-<br/>Intent is to halt and repel the enemy offensive in full. In the event of defenses being insufficient, orderly fighting withdrawal should be executed with the goal of maximizing enemy force attrition.
+<br/>DEFEND the MSR against Russian assault. INFLICT as many casualties as able.
 <br/>
