@@ -292,6 +292,7 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
+		_unit linkItem "TFAR_anprc148jem";
 	};
 		
 	case "RFL": {
@@ -579,7 +580,7 @@
 	
 	// "Vehicles";
 	
-	case "TCOM": {
+	case "VCOM": {
 	
 		comment "Vehicle Commander";
 		comment "Add containers";
@@ -604,6 +605,7 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
+		_unit linkItem "TFAR_anprc148jem";
 	};
 	
 	case "VCREW": {

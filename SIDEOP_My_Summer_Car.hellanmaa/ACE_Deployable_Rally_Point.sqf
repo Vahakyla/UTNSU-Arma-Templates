@@ -139,7 +139,7 @@ if (isServer) then { publicVariable "DRP_allowedDeployNames"; };
 // Set how many rally points can exist at once.
 // When this cap is reached, the oldest rally for that side is removed and replaced by the new one.
 if (isNil "DRP_maxRallies") then {
-    DRP_maxRallies = 3;
+    DRP_maxRallies = 2;
 };
 
 // BASE MARKER & DISTANCE RESTRICTION
@@ -161,7 +161,7 @@ if (isServer) then { publicVariable "DRP_minDistanceFromBase"; };
 // ENEMY PROXIMITY RESTRICTION
 // Rally point cant be deployed if enemies are closer than this (meters).
 if (isNil "DRP_minEnemyDistance") then {
-    DRP_minEnemyDistance = 100;
+    DRP_minEnemyDistance = 50;
 };
 missionNamespace setVariable ["DRP_minEnemyDistance", DRP_minEnemyDistance];
 if (isServer) then { publicVariable "DRP_minEnemyDistance"; };

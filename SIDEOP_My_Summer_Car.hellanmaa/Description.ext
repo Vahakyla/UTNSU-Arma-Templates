@@ -6,7 +6,7 @@ briefingName = "Under the North Star: Uprising";
 author = "Air Goons Wargames";
 
 //Overview text and picture for the mission list (admin sees when selecting missions, also shown when slotting in)
-overviewText = "FDF Reservists in action.";
+overviewText = "FDF Reservists to the rescue.";
 
 //Loading screen texts and picture for loading the mission
 OnLoadName = "UTNS: Uprising";
@@ -20,7 +20,7 @@ disabledai = 1; //Disable AI taking over un-taken player slots
 class Header {
         gameType = COOP;
         minPlayers = 2;
-        maxPlayers = 130;
+        maxPlayers = 86;
 };
 disableChannels[]=  // allow text only on side chat
 {
