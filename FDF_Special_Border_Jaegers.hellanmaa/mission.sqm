@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=62448;
+		nextID=62449;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2571;
+		nextID=2583;
 	};
 	class Camera
 	{
-		pos[]={146.95384,78.78141,49.113075};
-		dir[]={-0.83907229,-0.54319042,-0.032752614};
-		up[]={-0.54279834,0.83959782,-0.021189753};
-		aside[]={-0.039010305,-1.2128039e-06,0.99932468};
+		pos[]={132.29749,71.901337,51.007698};
+		dir[]={-0.77095711,-0.62798107,-0.1065524};
+		up[]={-0.62207186,0.77822053,-0.085975826};
+		aside[]={-0.13691039,3.9860606e-07,0.99062759};
 	};
 };
 binarizationWanted=0;
@@ -74,13 +74,14 @@ addons[]=
 	"A3_Weapons_F_Explosives",
 	"ace_explosives",
 	"ace_arsenal",
-	"A3_Weapons_F_Orange"
+	"A3_Weapons_F_Orange",
+	"Flex_CUP_FIN_Equipment"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=31;
+		items=32;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -294,6 +295,11 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item31
+		{
+			className="Flex_CUP_FIN_Equipment";
+			name="Flex_CUP_FIN_Equipment";
+		};
 	};
 };
 dlcs[]=
@@ -319,23 +325,10 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category2
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -359,9 +352,22 @@ class CustomAttributes
 				};
 			};
 		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
 		nAttributes=2;
 	};
-	class Category3
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -463,7 +469,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			dataType="Group";
@@ -476,14 +482,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={105.88962,46.068409,29.60519};
-						angles[]={0.027397651,1.4333506,6.2798095};
+						position[]={105.89,46.068428,29.605};
+						angles[]={0.027401671,1.4333516,6.2798171};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
-						skill=1;
+						skill=0.49833947;
 						rank="CAPTAIN";
 						init="[this, ""OFF""] call Gib_fnc_Gearscript;";
 						name="Leader1";
@@ -596,14 +602,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -661,14 +667,14 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -680,8 +686,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={103.41158,45.942368,29.212711};
-						angles[]={0.034726024,1.4333441,6.274559};
+						position[]={103.412,45.942394,29.212999};
+						angles[]={0.034732051,1.4333516,6.2745633};
 					};
 					side="West";
 					flags=5;
@@ -801,14 +807,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -866,14 +872,14 @@ class Mission
 						};
 						class Attribute5
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -885,8 +891,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={100.93513,45.818157,28.870213};
-						angles[]={6.268187,1.4333441,0.047464538};
+						position[]={100.935,45.81815,28.869999};
+						angles[]={6.2681928,1.4333516,0.047472958};
 					};
 					side="West";
 					flags=4;
@@ -894,8 +900,9 @@ class Mission
 					{
 						skill=1;
 						rank="LIEUTENANT";
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Company Senior Medic";
+						isPlayer=1;
 						isPlayable=1;
 						stance="Up";
 						class Inventory
@@ -1028,14 +1035,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -1080,14 +1087,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -1443,7 +1450,6 @@ class Mission
 						angles[]={0,6.1330523,0};
 					};
 					name="zCurator1";
-					isPlayer=1;
 					isPlayable=1;
 					description="Game Master 1";
 					id=1007;
@@ -3436,7 +3442,7 @@ class Mission
 							name="respawn_west";
 							type="Empty";
 							colorName="ColorPink";
-							angle=171.48018;
+							angle=171.48013;
 							id=53586;
 							class CustomAttributes
 							{
@@ -4285,14 +4291,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -4337,14 +4343,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -4363,7 +4369,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -4531,14 +4537,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -4583,14 +4589,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -4609,7 +4615,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (AR)";
 						isPlayable=1;
 						class Inventory
@@ -4719,14 +4725,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -4771,14 +4777,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -4797,7 +4803,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Medic)";
 						isPlayable=1;
 						class Inventory
@@ -4931,14 +4937,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -4983,14 +4989,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -5009,7 +5015,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (EOD)";
 						isPlayable=1;
 						class Inventory
@@ -5172,14 +5178,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -5224,14 +5230,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -5250,7 +5256,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Scout)";
 						isPlayable=1;
 						class Inventory
@@ -5361,14 +5367,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -5413,14 +5419,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -5581,14 +5587,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -5633,14 +5639,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -5659,7 +5665,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Asst. Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -5827,14 +5833,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -5879,14 +5885,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -5905,7 +5911,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (AR)";
 						isPlayable=1;
 						class Inventory
@@ -6015,14 +6021,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -6067,14 +6073,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -6093,7 +6099,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Medic)";
 						isPlayable=1;
 						class Inventory
@@ -6227,14 +6233,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -6279,14 +6285,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -6305,7 +6311,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (EOD)";
 						isPlayable=1;
 						class Inventory
@@ -6468,14 +6474,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -6520,14 +6526,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -6546,7 +6552,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Scout)";
 						isPlayable=1;
 						class Inventory
@@ -6657,14 +6663,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -6709,14 +6715,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -6910,14 +6916,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -6962,14 +6968,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -6988,7 +6994,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -7156,14 +7162,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -7208,14 +7214,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -7234,7 +7240,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (AR)";
 						isPlayable=1;
 						class Inventory
@@ -7344,14 +7350,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -7396,14 +7402,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -7422,7 +7428,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Medic)";
 						isPlayable=1;
 						class Inventory
@@ -7555,14 +7561,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -7607,14 +7613,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -7633,7 +7639,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (EOD)";
 						isPlayable=1;
 						class Inventory
@@ -7795,14 +7801,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -7847,14 +7853,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -7873,7 +7879,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Scout)";
 						isPlayable=1;
 						class Inventory
@@ -7984,14 +7990,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -8036,14 +8042,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -8203,14 +8209,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -8255,14 +8261,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -8281,7 +8287,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Asst. Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -8448,14 +8454,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -8500,14 +8506,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -8526,7 +8532,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (AR)";
 						isPlayable=1;
 						class Inventory
@@ -8635,14 +8641,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -8687,14 +8693,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -8713,7 +8719,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Medic)";
 						isPlayable=1;
 						class Inventory
@@ -8846,14 +8852,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -8898,14 +8904,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -8924,7 +8930,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (EOD)";
 						isPlayable=1;
 						class Inventory
@@ -9087,14 +9093,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -9139,14 +9145,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -9165,7 +9171,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Scout)";
 						isPlayable=1;
 						class Inventory
@@ -9276,14 +9282,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -9328,14 +9334,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -9528,14 +9534,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -9580,14 +9586,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -9606,7 +9612,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -9773,14 +9779,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -9825,14 +9831,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -9851,7 +9857,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (AR)";
 						isPlayable=1;
 						class Inventory
@@ -9960,14 +9966,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -10012,14 +10018,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -10038,7 +10044,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Medic)";
 						isPlayable=1;
 						class Inventory
@@ -10171,14 +10177,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -10223,14 +10229,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -10249,7 +10255,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (EOD)";
 						isPlayable=1;
 						class Inventory
@@ -10411,14 +10417,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -10463,14 +10469,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -10489,7 +10495,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Scout)";
 						isPlayable=1;
 						class Inventory
@@ -10600,14 +10606,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -10652,14 +10658,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -10819,14 +10825,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -10871,14 +10877,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -10897,7 +10903,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Asst. Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -11064,14 +11070,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -11116,14 +11122,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -11142,7 +11148,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (AR)";
 						isPlayable=1;
 						class Inventory
@@ -11252,14 +11258,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -11304,14 +11310,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -11330,7 +11336,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Medic)";
 						isPlayable=1;
 						class Inventory
@@ -11463,14 +11469,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -11515,14 +11521,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -11541,7 +11547,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (EOD)";
 						isPlayable=1;
 						class Inventory
@@ -11703,14 +11709,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -11755,14 +11761,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -11781,7 +11787,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Scout)";
 						isPlayable=1;
 						class Inventory
@@ -11891,14 +11897,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -11943,14 +11949,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -12142,14 +12148,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -12194,14 +12200,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -12220,7 +12226,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -12387,14 +12393,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -12439,14 +12445,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -12465,7 +12471,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (AR)";
 						isPlayable=1;
 						class Inventory
@@ -12575,14 +12581,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -12627,14 +12633,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -12653,7 +12659,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Medic)";
 						isPlayable=1;
 						class Inventory
@@ -12786,14 +12792,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -12838,14 +12844,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -12864,7 +12870,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (EOD)";
 						isPlayable=1;
 						class Inventory
@@ -13027,14 +13033,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -13079,14 +13085,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -13105,7 +13111,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Scout)";
 						isPlayable=1;
 						class Inventory
@@ -13215,14 +13221,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -13267,14 +13273,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -13434,14 +13440,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -13486,14 +13492,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -13512,7 +13518,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Asst. Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -13679,14 +13685,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -13731,14 +13737,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -13757,7 +13763,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (AR)";
 						isPlayable=1;
 						class Inventory
@@ -13867,14 +13873,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -13919,14 +13925,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -13945,7 +13951,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Medic)";
 						isPlayable=1;
 						class Inventory
@@ -14078,14 +14084,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -14130,14 +14136,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -14156,7 +14162,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (EOD)";
 						isPlayable=1;
 						class Inventory
@@ -14318,14 +14324,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -14370,14 +14376,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -14396,7 +14402,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "backpackContainer player setObjectTexture [0,""\Flex_CUP_FIN_Equipment\Data\Backpacks\FIN_backpack_compact_co.paa""]";
 						description="Jaeger (Scout)";
 						isPlayable=1;
 						class Inventory
@@ -14507,14 +14513,14 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="SR_StaticRadioFrequency";
-							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+							property="ENH_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
 							class Value
 							{
 								class data
 								{
-									singleType="SCALAR";
-									value=50;
+									singleType="BOOL";
+									value=1;
 								};
 							};
 						};
@@ -14559,14 +14565,14 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="ENH_doStop";
-							expression="if (!is3DEN && _value) then {doStop _this}";
+							property="SR_StaticRadioFrequency";
+							expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 							class Value
 							{
 								class data
 								{
-									singleType="BOOL";
-									value=1;
+									singleType="SCALAR";
+									value=50;
 								};
 							};
 						};
@@ -14597,6 +14603,23 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={102.427,45.783142,25.093166};
+				angles[]={6.268187,0,0.027490135};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=62448;
+			type="Flex_CUP_FIN_Kitbag";
+			atlOffset=3.8146973e-06;
 		};
 	};
 	class Connections

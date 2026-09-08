@@ -9,20 +9,16 @@
 	"Flex_CUP_FIN_Combat_Uniform_Pads",
 	"Flex_CUP_FIN_Combat_Uniform_Pads_Gloves",
 	"Flex_CUP_FIN_Combat_Uniform_Pads_Rolled",
-	"Flex_CUP_FIN_Combat_Uniform_Rolled",
+	"Flex_CUP_FIN_Combat_Uniform_Rolled"
 	] select floor random 11;
 	
 	_hat = [
 	"Flex_CUP_FIN_Boonie_Wood",
-	"Flex_CUP_FIN_Patrol_cap"
-	] select floor random 2;
-	
-	_offhat = [
-	"Flex_CUP_FIN_Beret_Army",
-	"Flex_CUP_FIN_Boonie_Wood",
-	"Flex_CUP_FIN_Patrol_cap"
-	] select floor random 3;
-	
+	"H_Booniehat_oli",
+	"SP_BoonieHat_Green",
+	"CFP_BoonieHat_M81"
+	] select floor random 4;
+		
 	switch (_type) do {
 	// "Company Command";
 	
@@ -44,7 +40,7 @@
 		for "_i" from 1 to 8 do {_unit addItemToVest "NFCW_30Rnd_762x39_RK62_Mag";};
 		_unit addBackpack "TFAR_rt1523g_big_bwmod";
 		for "_i" from 1 to 3 do {_unit addItemToBackpack "16Rnd_9x21_Mag";};
-		_unit addHeadgear _offhat;
+		_unit addHeadgear _hat;
 
 		comment "Add weapons";
 		_unit addWeapon "bnae_rk95r_virtual";
