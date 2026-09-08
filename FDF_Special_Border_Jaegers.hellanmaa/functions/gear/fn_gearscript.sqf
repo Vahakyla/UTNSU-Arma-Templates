@@ -25,4 +25,4 @@ removeUniform _unit;
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
 
-#include "..\..\loadouts\FDF Reservists BGA.sqf"
+#include "..\..\loadouts\FDF Special Border Jaegers.sqf"
