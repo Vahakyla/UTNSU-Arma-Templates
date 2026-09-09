@@ -1,0 +1,60 @@
+<font color='#FFA500' size='18'>Execution</font>
+<br/>
+<br/><font color='#99cc00'>Commander's Intent</font>
+<br/>
+<br/>Perform an elastic defense along the MSR. Conduct raids and ambushes along the MSR forward of fortified positions.
+<br/>
+<br/><font color='#99cc00'>Scheme of Maneuvers</font>
+<br/>
+<br/>The company will divide into defensive and raiding parties. 
+<br/>
+<br/>ALPHA PL will form an elastic defense along PLs ANDOR, BIX, CINTA, and DEDRA. 
+<br/>
+<br/>BRAVO and CHARLIE PL will raid the MSR forward of occupied defensive positions and patrol the flanking forests
+<br/>
+<br/><font color='#99cc00'>Tasks</font>
+<br/>
+<br/>ALPHA PL:
+<br/>Setup initial defensive positions along PLs ANDOR, BIX, CINTA, DEDRA, and FERRIX.
+<br/>Requisition AT mines and semi-fixed defensive emplacements as available from HOTEL.
+<br/>Start on PL BIX and then move forward or backward at your discretion along the MSR to a new PL after every significant encounter to avoid artillery and deny enemy recon
+<br/>
+<br/>BRAVO PL:
+<br/>IF manned to at least squad strength, as CHARLIE PL but west of the MSR. OTHERWISE, consolidate into CHARLIE PL.
+<br/>
+<br/>CHARLIE PL:
+<br/>Setup fortified positions near RP GORST. Objective is two-fold: prevent Russian infantry flanking east the MSR through the forest and, when able, set ambushes and raid the MSR.
+<br/>
+<br/>HOTEL:
+<br/>Setup supply caches along each PL and at RP GORST. Provide ALPHA PL with mines and semi-fixed defensive emplacements upon request.
+<br/>
+<font color='#FFA500' size='18'>Co-ord Instructions</font>
+<br/>
+<br/>2200 (GAME) / 1600 (REAL) - Server online for prescouting (within reason)
+<br/>2245 (GAME) / 1650 (REAL) - Company Briefing
+<br/>2315 (GAME) / 1705 (REAL) - Departure from Coy admin area
+<br/>2330 (GAME) / 1900 (REAL) - Estimated end operation
+<br/>
+<br/><font color='#99cc00'>Locations:</font>
+<br/>
+<br/>Coy HQ: Typically colocated with ALPHA PL.
+<br/>
+<br/><font color='#99cc00'>Routes, Boundaries and Report Lines:</font>
+<br/>
+<br/>As marked.
+<br/>
+<br/><font color='#99cc00'>Action on:</font>
+<br/>
+<br/>Lost/Lost Comms, send runner.
+<br/>MASCAS: Contact COY to coordinate medical support
+<br/>CASEVAC: Extract to current CCP
+<br/>
+<font color='#FFA500' size='18'>Signals</font>
+<br/>
+<br/>Strict radio discipline is not required but please preface each message with this line;
+<br/>
+<br/>“(Recipient Callsign), Message From (Sender Callsign).”
+<br/>And keep messages brief and concise.
+<br/>
+<br/>Company CO will be reachable on Company Net.
+<br/>
