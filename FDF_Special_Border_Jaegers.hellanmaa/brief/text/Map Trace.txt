@@ -1,4 +1,0 @@
-<font color='#FFA500' size='18'>Map Trace</font>
-<br/>
-<img image='brief\images\maptrace3.jpg' width='1024' height='1024'/><br/>
-<br/>
