@@ -70,4 +70,32 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["ACE_morphine", 20];
 		_vehicle addItemCargoGlobal ["ACE_tourniquet", 10];
 	};
+	
+	// "Crates";
+	
+	case "CRATE": {
+		comment "Supply crate";
+		_vehicle addItemCargoGlobal ["CUP_30Rnd_556x45_G36_wdl",100];
+		_vehicle addItemCargoGlobal ["NFCW_30Rnd_762x39_RK62_Mag",100];
+		_vehicle addItemCargoGlobal ["16Rnd_9x21_Mag",30];
+		_vehicle addItemCargoGlobal ["CUP_5Rnd_86x70_L115A1",50];
+		_vehicle addItemCargoGlobal ["NFCW_30Rnd_762x39_RK62_Tracer_Mag",50];
+		_vehicle addItemCargoGlobal ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M",20];
+		_vehicle addItemCargoGlobal ["NFCW_M43Grenade",30];
+		_vehicle addItemCargoGlobal ["NFCW_M61SmokeGrenade",20];
+		_vehicle addItemCargoGlobal ["SmokeShellGreen",20];
+		_vehicle addItemCargoGlobal ["SmokeShellRed",20];
+		_vehicle addWeaponCargoGlobal ["CUP_launch_M72A6",10];
+		_vehicle addWeaponCargoGlobal ["DemoCharge_Remote_Mag",10];
+	};
+	
+	case "MEDICAL": {
+		_vehicle addItemCargoGlobal ["ACE_morphine",40];
+		_vehicle addItemCargoGlobal ["ACE_epinephrine",25];
+		_vehicle addItemCargoGlobal ["ACE_tourniquet",30];
+		_vehicle addItemCargoGlobal ["ACE_fieldDressing",200];
+		_vehicle addItemCargoGlobal ["ACE_bloodIV",10];
+		_vehicle addItemCargoGlobal ["ACE_bloodIV_500",10];
+		_vehicle addItemCargoGlobal ["ACE_painkillers",10];
+	};
 };

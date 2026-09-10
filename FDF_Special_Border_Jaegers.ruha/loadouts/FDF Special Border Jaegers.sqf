@@ -56,6 +56,7 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
+		_unit linkItem "CUP_NVG_PVS15_green_WP";
 	};
 
 	// "Detachment";
@@ -96,6 +97,7 @@
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
 		_unit linkItem "TFAR_anprc152";
+		_unit linkItem "CUP_NVG_PVS15_green_WP";
 	};
 	
 	case "CM": {
@@ -139,6 +141,7 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
+		_unit linkItem "CUP_NVG_PVS15_green_WP";
 	};
 		
 	case "TL": {
@@ -180,6 +183,7 @@
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
 		_unit linkItem "TFAR_anprc152";
+		_unit linkItem "CUP_NVG_PVS15_green_WP";
 	};
 		
 	case "RFL": {
@@ -215,6 +219,7 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
+		_unit linkItem "CUP_NVG_PVS15_green_WP";
 	};
 	
 	case "AR": {
@@ -250,6 +255,7 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
+		_unit linkItem "CUP_NVG_PVS15_green_WP";
 	};
 				
 	case "BOOM": {
@@ -288,6 +294,7 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
+		_unit linkItem "CUP_NVG_PVS15_green_WP";
 	};
 	
 	case "SCOUT": {
@@ -325,5 +332,6 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
+		_unit linkItem "CUP_NVG_PVS15_green_WP";
 	};
 };
