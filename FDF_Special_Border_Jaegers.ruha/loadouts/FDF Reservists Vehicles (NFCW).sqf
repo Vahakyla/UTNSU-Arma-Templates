@@ -86,8 +86,8 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["NFCW_M61SmokeGrenade",20];
 		_vehicle addItemCargoGlobal ["SmokeShellGreen",20];
 		_vehicle addItemCargoGlobal ["SmokeShellRed",20];
-		_vehicle addWeaponCargoGlobal ["CUP_launch_M72A6",10];
-		_vehicle addWeaponCargoGlobal ["DemoCharge_Remote_Mag",10];
+		_vehicle addWeaponCargoGlobal ["CUP_launch_M72A6",12];
+		_vehicle addWeaponCargoGlobal ["DemoCharge_Remote_Mag",6];
 	};
 	
 	case "MEDICAL": {
