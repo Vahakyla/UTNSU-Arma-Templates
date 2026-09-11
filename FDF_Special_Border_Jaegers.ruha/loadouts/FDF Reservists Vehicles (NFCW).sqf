@@ -77,9 +77,10 @@ switch (_type) do {
 		comment "Supply crate";
 		_vehicle addItemCargoGlobal ["CUP_30Rnd_556x45_G36_wdl",100];
 		_vehicle addItemCargoGlobal ["NFCW_30Rnd_762x39_RK62_Mag",100];
-		_vehicle addItemCargoGlobal ["16Rnd_9x21_Mag",30];
+		_vehicle addItemCargoGlobal ["16Rnd_9x21_Mag",40];
 		_vehicle addItemCargoGlobal ["CUP_5Rnd_86x70_L115A1",50];
 		_vehicle addItemCargoGlobal ["NFCW_30Rnd_762x39_RK62_Tracer_Mag",50];
+		_vehicle addItemCargoGlobal ["CUP_30Rnd_TE1_Red_Tracer_556x45_G36_wdl",50];
 		_vehicle addItemCargoGlobal ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M",20];
 		_vehicle addItemCargoGlobal ["NFCW_M43Grenade",30];
 		_vehicle addItemCargoGlobal ["NFCW_M61SmokeGrenade",20];
