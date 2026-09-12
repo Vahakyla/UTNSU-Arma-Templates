@@ -88,9 +88,9 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["SmokeShellRed",20];
 		_vehicle addWeaponCargoGlobal ["CUP_launch_M72A6",12];
 		_vehicle addWeaponCargoGlobal ["DemoCharge_Remote_Mag",4];
-		_vehicle addWeaponCargoGlobal ["NFCW_TM_65_77_Mag",4];
-		_this addMagazineCargoGlobal ["APERSBoundingMine_Range_Mag",10];
-		_this addMagazineCargoGlobal ["ClaymoreDirectionalMine_Remote_Mag",10];
+		_vehicle addWeaponCargoGlobal ["NFCW_TM_65_77_Mag",6];
+		_vehicle addWeaponCargoGlobal ["APERSBoundingMine_Range_Mag",10];
+		_vehicle addWeaponCargoGlobal ["ClaymoreDirectionalMine_Remote_Mag",10];
 	};
 	
 	case "MEDICAL": {
