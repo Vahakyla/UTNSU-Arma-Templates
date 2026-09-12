@@ -48,7 +48,7 @@
 		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
 		_unit addPrimaryWeaponItem "CUP_optic_ACOG";
 		_unit addWeapon "hgun_P07_F";
-		_unit addHandgunItem "CUP_muzzle_snds_M9";
+		_unit addHandgunItem "muzzle_snds_L";
 		_unit addHandgunItem "16Rnd_9x21_Mag";
 		_unit addWeapon "Binocular";
 
@@ -90,7 +90,7 @@
 		_unit addPrimaryWeaponItem "CUP_optic_ACOG";
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "16Rnd_9x21_Mag";
-		_unit addHandgunItem "CUP_muzzle_snds_M9";
+		_unit addHandgunItem "muzzle_snds_L";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
@@ -135,7 +135,7 @@
 		_unit addPrimaryWeaponItem "CUP_acc_Flashlight_wdl";
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "16Rnd_9x21_Mag";
-		_unit addHandgunItem "CUP_muzzle_snds_M9";
+		_unit addHandgunItem "muzzle_snds_L";
 		
 		// "Add items";
 		_unit linkItem "ItemMap";
@@ -175,7 +175,7 @@
 		_unit addPrimaryWeaponItem "CUP_acc_Flashlight_wdl";
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "16Rnd_9x21_Mag";
-		_unit addHandgunItem "CUP_muzzle_snds_M9";
+		_unit addHandgunItem "muzzle_snds_L";
 		_unit addWeapon "Binocular";
 
 		comment "Add items";
@@ -213,7 +213,7 @@
 		_unit addPrimaryWeaponItem "CUP_acc_Flashlight_wdl";
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "16Rnd_9x21_Mag";
-		_unit addHandgunItem "CUP_muzzle_snds_M9";
+		_unit addHandgunItem "muzzle_snds_L";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
@@ -249,7 +249,7 @@
 		_unit addPrimaryWeaponItem "CUP_optic_CompM4";
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "16Rnd_9x21_Mag";
-		_unit addHandgunItem "CUP_muzzle_snds_M9";
+		_unit addHandgunItem "muzzle_snds_L";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
@@ -288,7 +288,7 @@
 		_unit addPrimaryWeaponItem "CUP_acc_Flashlight_wdl";
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "16Rnd_9x21_Mag";
-		_unit addHandgunItem "CUP_muzzle_snds_M9";
+		_unit addHandgunItem "muzzle_snds_L";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
@@ -326,7 +326,7 @@
 		_unit addPrimaryWeaponItem "CUP_bipod_VLTOR_Modpod_black";		
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "16Rnd_9x21_Mag";
-		_unit addHandgunItem "CUP_muzzle_snds_M9";
+		_unit addHandgunItem "muzzle_snds_L";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
