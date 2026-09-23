@@ -1,0 +1,13 @@
+<font color='#FFA500' size='18'>Recce Sighting Report (SALUTE)</font>
+<br/>Strength - Number of vehicles and unit size (Fire Team (4); Section (8); Platoon (30))
+<br/>
+<br/>Activity -  Static / Dug In / Moving (Dir)...
+<br/>
+<br/>Locations - Grid Ref of Centre of Mass
+<br/>
+<br/>Unit - Identifiable markings / insignia or uniforms worn
+<br/>
+<br/>Time - Time of observation
+<br/>
+<br/>Equipment - Weapons / vehicles / specialist equipment
+<br/>

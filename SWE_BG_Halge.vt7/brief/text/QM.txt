@@ -1,0 +1,16 @@
+<font color='#FFA500' size='18'>Quartermaster</font>
+<br/>
+<br/>The Quartermaster allows logistics units to request supplies from battalion to be transported to front-line units.
+<br/>
+<br/><font color='#99cc00'>How it works:</font>
+<br/>
+<br/>Approach the supply tent and use the radio on the table next to the coffee mug, either with ACE interact or a scroll action. Then select what supplies you need and it will spawn behind you.
+<br/>Alternatively, press Ctrl + Y to access Battalion Quartermaster remotely, or use ACE self-interact. Remember to notify Logi division about any transports that need to be made.
+<br/>
+<br/>Use ACE to carry and load the box into a transport vehicle. If it's too heavy to be moved, bring the truck closer to load it.
+<br/>
+<br/>Use the deploy option from the ACE cargo menu to select where you want to put down the box when unloading it.
+<br/>
+<br/><font color='#99cc00'>Notes:</font>
+<br/>
+<br/>Only the COY XO and Supply Officer can access the Quartermaster to request supplies.
