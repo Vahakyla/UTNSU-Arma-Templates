@@ -9,5 +9,5 @@
 <br/>
 <br/>Casualties are to be stabilized in situ and then brought back to Platoon headquarters if further medical treatment is required; (They will take longer than 2-3 minutes to wake up or will not wake up at all without the platoon medic’s intervention.)
 <br/>
-<br/>ACE Basic. Battle Casualty Replacements (BCR) as per SOP (Respawn at Waiting Area at Battalion HQ for wave respawn, deployment to Assembly Area marker location once respawn countdown completes.)
+<br/>ACE Basic. Battle Casualty Replacements (BCR) as per SOP (Respawn at Assembly Area, use flagpole to teleport to rally point if placed.)
 <br/>

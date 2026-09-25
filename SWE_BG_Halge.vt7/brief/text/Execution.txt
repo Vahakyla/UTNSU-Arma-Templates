@@ -2,52 +2,36 @@
 <br/>
 <br/><font color='#99cc00'>Commander's Intent</font>
 <br/>
-<br/>Commander's intent is to establish the teams at their respective objectives and to strike them simultaneously. 
-<br/>Following the strikes, teams will regroup and exit the AO to the west.
+<br/>Perform an elastic defense along the MSR with one fixed hardpoint where many of the dirt paths intersect the MSR.
 <br/>
 <br/><font color='#99cc00'>Scheme of Maneuvers</font>
 <br/>
-<br/>Teams must keep to the woods when moving to avoid detection by enemy forces.
+<br/>The company will divide into ad-hoc units generally consisting of both armored and mechanized units.
 <br/>
-<br/>Alpha, Bravo and CO will strike the supply depot. Delta and Golf will strike the hotel. 
+<br/>A forward unit will defend the MSR to the east while units that are resting and rearming will defend against Russian infiltrators.
 <br/>
-<br/>Charlie, Echo and XO will set up the ambush for the supply convoys.
+<font color='#FFA500' size='18'>Tasks</font>
 <br/>
-<br/>Teams should recon as much as possible to detect enemy forces while waiting to begin the strikes. Recon units should be used as much as possible to avoid exposing the whole team to the objectives.
+<br/>Divide into the follow ad-hoc squads:
+<br/>COMMAND (QJ1 + QJ2)
+<br/>ALPHA (EA10/AQ1 + FA10 + HA10)
+<br/>BRAVO (EB10/BQ1 + FB10)
+<br/>CHARLIE (GB10/BQ2 + HB10)
 <br/>
-<br/>The supply depot is most easily approached from the east and north. 
+<br/>Initially deploy ALPHA and BRAVO forward to the north and south of position BOBBY respectively and CHARLIE to position ALEX, AMOS, or NAOMI at SL’s discretion. 
+<br/>Units near position BOBBY will focus on enemy units incoming from the east along the MSR. Units in the rear will focus on resupplying and defending against enemy infiltrators from the north or south. 
+<br/>Frontline squads will be rotated with a rearward squad after heavy engagements. Command squad will be kept as a reserve near position NAOMI.
 <br/>
-<br/>Following the strike, Alpha and Bravo will move south west towards the hotel, and then west towards the ambush site to regroup with the other teams at the ambush site.
+<br/>Infantry shall be deployed in fireteams to screen and spot for the Strf 90 and 122s. Str 90s and 122s to provide overwatch for the infantry and along the MSR or other paths and move often enough to avoid Russian artillery.
 <br/>
-<br/>Delta and Golf will move west to the ambush site after their strike as well. 
-<br/>
-<br/>After regrouping, teams will cross the river at the location indicated on the map while covering each other, move south west along the river and then west to leave the AO westwards.
-<br/>
-<br/>Charlie and Echo should recon from 031005 and set up the first ambush from 031003 or further south, from the east side of the road to avoid detection.
-<br/>
-<br/>After executing an ambush, Charlie and Echo will set up a new ambush site further up or down the road as the situation allows to prepare for the next convoy without staying in the same position.
-<br/>
-<br/>In the event of an objective becoming untenable, teams should break contact and move to the next closest objective to regroup with the teams there.
-<br/>
-<br/><font color='#99cc00'>Scheme of Maneuvers</font>
-<br/>
-<br/>Teams are outnumbered and outgunned, thus should not engage unless absolutely necessary and keep moving to avoid enemy reinforcements.
-<br/>
-<br/>Strikes will be executed simultaneously, triggered by the arrival of the first enemy convoy at the ambush site.
-<br/>
-<br/>When striking the supply depot, Alpha should attempt to move into the location while avoiding detection, plant EOD (fuse timers of 2 minutes or more recommended) and withdraw before detonation. 
-<br/>
-<br/>Bravo will provide cover. The supply depot also contains many fuel tanks, gas canisters, etc. that can be targeted by explosive weaponry as necessary.
-<br/>
-<br/>When striking the hotel, Delta and Golf should send AT to attempt to eliminate possible enemy manned vehicles in the parking lot south west of the hotel
-<br/>and then immediately attack the buildings from the east and north east to quickly clear the site, eliminate as many enemy officers as possible, and leave before enemy reinforcements arrive.
+<br/>Command will deploy one rally point just west of position NAOMI and one just west of position BOBBY.
 <br/>
 <font color='#FFA500' size='18'>Co-ord Instructions</font>
 <br/>
-<br/>0300 (GAME) / 1600 (REAL) - Server online
-<br/>0345 (GAME) / 1650 (REAL) - Company Briefing
-<br/>0405 (GAME) / 1705 (REAL) - Departure from Assembly area
-<br/>0600 (GAME) / 1900 (REAL) - Estimated end operation
+<br/>1700 (GAME) / 1600 (REAL) - Server online
+<br/>1750 (GAME) / 1650 (REAL) - Company Briefing
+<br/>1805 (GAME) / 1705 (REAL) - Departure from Assembly area
+<br/>2000 (GAME) / 1900 (REAL) - Estimated end operation
 <br/>
 <br/><font color='#99cc00'>Sustainment:</font>
 <br/>

@@ -2,19 +2,26 @@
 <br/>
 <br/><font color='#99cc00'>Command Cascade</font>
 <br/>
-<br/>OC > 1COY > XO > A10
+<br/>Comd Cascade: OC QJ1, QJ2, AQ1, BQ1
 <br/>
 <br/><font color='#99cc00'>Signal</font>
-<br/>COmmand Net -  60
+<br/>Command Net -  60
 <br/>
 <br/>Alpha Team Net: 61 / 31
 <br/>
 <br/>Bravo Team Net: 62 / 32
 <br/>
-<br/>Charlie Team Net: 63 / 33
+<br/>Fire Support: 63
 <br/>
-<br/>Delta Team Net 64 / 34
+<br/>Logistics Net 64 / 34
 <br/>
-<br/>Echo Team Net 65 / 35
+<br/>Squad Leader Alternatives:
 <br/>
-<br/>Golf Team Net 66 / 36
+<br/>Alpha Squad 1 - 31.1
+<br/>
+<br/>Alpha Squad 2 - 31.3
+<br/>
+<br/>Bravo Squad 1 - 32.1
+<br/>
+<br/>Bravo Squad 3 - 32.3
+<br/>

@@ -78,15 +78,13 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
 		for "_i" from 1 to 9 do {_unit addItemToVest "sfp_30Rnd_556x45_Stanag";};
 		_unit addBackpack "sfp_ra180";
-		_unit addItemToBackpack "ACE_RangeTable_82mm";
-		_unit addItemToBackpack "ACE_PlottingBoard";
 		_unit addHeadgear "sfp_m90w_cap";
 
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "sfp_optic_aimpoint";
 		_unit addPrimaryWeaponItem "sfp_30Rnd_556x45_Stanag";
-		_unit addWeapon "Binocular";
+		_unit addWeapon "ACE_VectorDay";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
@@ -586,6 +584,7 @@
 		comment "Add weapons";
 		_unit addWeapon "sfp_ak5dmk2";
 		_unit addPrimaryWeaponItem "sfp_optic_aimpoint";
+		_unit addPrimaryWeaponItem "sfp_dbal2";
 		_unit addPrimaryWeaponItem "sfp_30Rnd_556x45_Stanag";
 		_unit addWeapon "Binocular";
 
@@ -614,6 +613,7 @@
 		comment "Add weapons";
 		_unit addWeapon "sfp_ak5dmk2";
 		_unit addPrimaryWeaponItem "sfp_optic_aimpoint";
+		_unit addPrimaryWeaponItem "sfp_dbal2";
 		_unit addPrimaryWeaponItem "sfp_30Rnd_556x45_Stanag";
 
 		comment "Add items";
@@ -642,6 +642,7 @@
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "sfp_optic_aimpoint";
+		_unit addPrimaryWeaponItem "sfp_dbal2";
 		_unit addPrimaryWeaponItem "sfp_30Rnd_556x45_Stanag";
 
 		comment "Add items";
@@ -669,6 +670,7 @@
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "sfp_optic_aimpoint";
+		_unit addPrimaryWeaponItem "sfp_dbal2";
 		_unit addPrimaryWeaponItem "sfp_30Rnd_556x45_Stanag";
 
 		comment "Add items";

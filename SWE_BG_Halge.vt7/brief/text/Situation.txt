@@ -1,34 +1,33 @@
 <font color='#FFA500' size='18'>Ground and Prelims:</font>
 <br/>
-<br/>Area of operations is the woods and area surrounding Highway 82 to the east and west. 
-<br/>The terrain is rough and hilly in the woods, interspersed with flat open areas (grey on the map). Weather is forecast to be rainy and foggy.
+<br/>Ground in the Area of Operations (AO) is moderately wooded Finnish forest. 
+<br/>One road, the Suopajärvantie, forms the MSR and runs east/west across the AO. Smaller dirt paths run north/south through the MSR. The Laisentiajoki river (pretend it’s there) forms the western edge of the AO.
 <br/>
-<br/>Weather: Rain and Fog.
+<br/>Weather: Clear
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – En Forces:</font>
 <br/>
-<br/>Exact force composition is unknown. Enemy presence is moderate to high, with mostly motorized troops traveling on the roads and guarding the objectives. 
+<br/>Enemy elements consist of typical Russian motorized equipment (BRDMs, BTRs, BMPs) and may be reinforced with armor (T-72, T-90).
 <br/>
-<br/>Enemy may have indirect fire and air support.
+<br/>Enemy forces are from an unknown Russian unit, likely a Russian motorized battalion reinforced with other recon and armor units.
 <br/>
 <br/>Air Threat: Med.
 <br/>CBRN Threat: Neg.
 <br/>
 <br/><font color='#FFA500' size='18'>Situation – FF</font>
 <br/>
-<br/>Special Border Jaeger Unit "Kettu" consisting of 6 teams Alpha, Bravo, Charlie, Delta, Echo and Golf.
+<br/>2UP - Hold the ground on the east bank of the Ounasjoki river to enable other units to move south and envelop Rovaniemi.
 <br/>
-<br/>Kettu Atts & Dets:
-<br/>N/A, artillery, CAS is unavailable
+<br/>1 UP - Defend the eastern flank of the 4th battalion.
 <br/>
-<br/>Combat Support: 
-<br/>N/A, Company logistics is unavailable due to location.
+<br/>1 Coy Group Atts & Dets:
+<br/>
+<br/>One battery of 4x Archers
+<br/>
+<br/>Combat support:
+<br/>Company logistics and TOLO
 <br/>
 <br/><font color='#FFA500' size='18'>Mission</font>
 <br/>
-<br/>1. Destroy the supply depot north west of the assembly area.
-<br/>
-<br/>2. Eliminate enemy officers lodging in the hotel west of the assembly area.
-<br/>
-<br/>3. Ambush any supply convoy traveling south west on highway 82.
+<br/>DEFEND the beach head on the east side of the Ounasjoki.
 <br/>
