@@ -72,7 +72,7 @@
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};
 		_unit addItemToUniform "ACE_Flashlight_XL50";
 		_unit addItemToUniform "ACE_MapTools";
-		_unit addVest "sfp_kroppsskydd94";
+		_unit addVest "sfp_kroppsskydd12";
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "sfp_handgrenade_shgr2000";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
@@ -632,7 +632,7 @@
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};		
 		_unit addItemToUniform "ACE_Flashlight_XL50";
-		_unit addVest "sfp_kroppsskydd94";
+		_unit addVest "sfp_kroppsskydd12";
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "sfp_handgrenade_shgr2000";};
 		for "_i" from 1 to 9 do {_unit addItemToVest "sfp_30Rnd_556x45_Stanag";};
@@ -660,7 +660,7 @@
 		for "_i" from 1 to 10 do {_unit addItemToUniform "ACE_fieldDressing";};
 		for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_tourniquet";};		
 		_unit addItemToUniform "ACE_Flashlight_XL50";
-		_unit addVest "sfp_kroppsskydd94";
+		_unit addVest "sfp_kroppsskydd12";
 		for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "sfp_handgrenade_shgr2000";};
 		for "_i" from 1 to 9 do {_unit addItemToVest "sfp_30Rnd_556x45_Stanag";};
