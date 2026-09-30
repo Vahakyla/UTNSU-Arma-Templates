@@ -1,0 +1,47 @@
+
+//Mission name
+briefingName = "Under the North Star";
+
+//Mission Maker
+author = "Air Goons Wargames";
+
+//Overview text and picture for the mission list (admin sees when selecting missions, also shown when slotting in)
+overviewText = "FDF Reservists beer run.";
+
+//Loading screen texts and picture for loading the mission
+OnLoadName = "UTNS: Uprising";
+OnLoadMission = "Beeeeeer!";
+loadscreen = "fdf.jpg";
+
+saving = 0; //Set saving to 0 so that you can exit the mission without saving and causing dumb bugs when reloading
+disabledai = 1; //Disable AI taking over un-taken player slots
+
+//gametype
+class Header {
+        gameType = COOP;
+        minPlayers = 2;
+        maxPlayers = 59;
+};
+disableChannels[]=  // allow text only on side chat
+{
+	{0, false, true},	// Global, text, voice
+	{1, false, true},	// Side, text, voice
+	{2, true, true},	// Command, text, voice
+	{3, false, true},	// Group, text, voice
+	{4, true, true},	// Vehicle, text, voice
+	{5, true, true}		// Direct, voice only
+};
+
+//Gearscript
+class CfgFunctions {
+
+  class Gib {
+    class Gear {
+      class gearScript {};
+      class vehGearScript {};
+    };
+  };
+};
+
+// Enable CBA settings loading
+cba_settings_hasSettingsFile = 1;
