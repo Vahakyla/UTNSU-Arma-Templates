@@ -571,7 +571,7 @@
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
-		_unit linkItem "CUP_NVG_PVS15_green_WP";
+		_unit linkItem "CUP_NVG_PVS14_WP";
 	};
 		
 	case "SCOUT": {
@@ -593,12 +593,12 @@
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon "Binocular";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
-		_unit linkItem "CUP_NVG_PVS15_green_WP";
+		_unit linkItem "CUP_NVG_PVS14_WP";
 	};
 };
