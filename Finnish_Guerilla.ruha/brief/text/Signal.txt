@@ -1,0 +1,31 @@
+<font color='#FFA500' size='18'>Command and Signals</font>
+<br/>
+<br/><font color='#99cc00'>Command Cascade</font>
+<br/>
+<br/>OC > 1COY > XO > A10
+<br/>
+<br/><font color='#99cc00'>Signal</font>
+<br/>Company Net -  40
+<br/>
+<br/>HQ Net: 44
+<br/>CO - 0A - 50
+<br/>XO - 0B - 50.1
+<br/>
+<br/>1PL Platoon Net: 41
+<br/>1PL - A10 - 51
+<br/>1PL - A11 - 51.1
+<br/>1PL - A2 - 51.2
+<br/>
+<br/>2PL Platoon Net: 42
+<br/>2PL - A20 - 52
+<br/>2PL - A21 - 52.1
+<br/>2PL - A22 - 52.2
+<br/>
+<br/>3PL Platoon Net: 43
+<br/>3PL - A30 - 53
+<br/>3PL - A31 - 53.1
+<br/>3PL - A32 - 53.2
+<br/>
+<br/>Fire Support - 0C - 57
+<br/>
+<br/>Logistics - A50 - 55

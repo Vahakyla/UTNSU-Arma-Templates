@@ -1,0 +1,13 @@
+<font color='#FFA500' size='18'>Service Support</font>
+<br/>
+<br/><font color='#99cc00'>Combat Supplies (CSUPS)</font>
+<br/>
+<br/>
+<br/>
+<br/><font color='#99cc00'>Medical</font>
+<br/>
+<br/>ACE Basic. Battle Casualty Replacements (BCR) as per SOP (Respawn at Waiting Area for wave respawn, deployment to Assembly Area marker location once respawn countdown completes.)
+<br/>
+<br/><font color='#99cc00'>Combat Service Support (CSS)</font>
+<br/>
+<br/>

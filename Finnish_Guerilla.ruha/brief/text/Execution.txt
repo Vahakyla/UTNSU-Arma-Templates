@@ -1,0 +1,53 @@
+<font color='#FFA500' size='18'>Execution</font>
+<br/>
+<br/><font color='#99cc00'>Commander's Intent</font>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/><font color='#99cc00'>Scheme of Maneuvers</font>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/><font color='#99cc00'>Main Effort</font>
+<br/>
+<br/>
+<br/>
+<br/><font color='#99cc00'>Tasks</font>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<font color='#FFA500' size='18'>Co-ord Instructions</font>
+<br/>
+<br/>0345 (GAME) / 1345 (REAL) - Company Briefing
+<br/>0415 (GAME) / 1415 (REAL) - Latest time for Company departure from staging area.
+<br/>0430 (GAME) / 1430 (REAL) - Likely arrival of enemy forces
+<br/>
+<br/><font color='#99cc00'>Locations:</font>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/><font color='#99cc00'>Routes, Boundaries and Report Lines:</font>
+<br/>
+<br/>
+<br/>
+<br/><font color='#99cc00'>Combat Support:</font>
+<br/>
+<br/>
+<br/>
+<br/><font color='#99cc00'>Action on:</font>
+<br/>
+<br/>Lost/Lost Comms, send runner to CCP.
+<br/>MASCAS: Contact COY to coordinate medical support
+<br/>CASEVAC: Extract to current CCP
+<br/>
