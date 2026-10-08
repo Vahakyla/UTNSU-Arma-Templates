@@ -5,7 +5,7 @@
 <br/>OC > 1COY > XO > A10
 <br/>
 <br/><font color='#99cc00'>Signal</font>
-<br/>Company Net -  40
+<br/>Unit Net -  60
 <br/>
 <br/>HQ Net: 44
 <br/>CO - 0A - 50

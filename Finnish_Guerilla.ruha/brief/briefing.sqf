@@ -9,9 +9,6 @@ player createDiaryRecord ["Diary", ["Recce Sighting Report", LoadFile "brief\tex
 player createDiaryRecord ["Diary", ["Summary & Questions", LoadFile "brief\text\Summary.txt"]];
 player createDiaryRecord ["Diary", ["Map trace", LoadFile "brief\text\Map Trace.txt"]];
 player createDiaryRecord ["Diary", ["Command & Signals", LoadFile "brief\text\Signal.txt"]];
-player createDiaryRecord ["Diary", ["Service Support", LoadFile "brief\text\Service Support.txt"]];
-player createDiaryRecord ["Diary", ["Execution", LoadFile "brief\text\Execution.txt"]];
-player createDiaryRecord ["Diary", ["Situation", LoadFile "brief\text\Situation.txt"]];
 
 //More info: https://community.bistudio.com/wiki/createDiaryRecord
 
