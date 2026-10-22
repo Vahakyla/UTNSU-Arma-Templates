@@ -1,0 +1,49 @@
+<font color='#FFA500' size='18'>Execution</font>
+<br/>
+<br/><font color='#99cc00'>Commander's Intent</font>
+<br/>
+<br/>Perform an elastic defense along the MSR with one fixed hardpoint where many of the dirt paths intersect the MSR.
+<br/>
+<br/><font color='#99cc00'>Scheme of Maneuvers</font>
+<br/>
+<br/>The company will divide into ad-hoc units generally consisting of both armored and mechanized units.
+<br/>
+<br/>A forward unit will defend the MSR to the east while units that are resting and rearming will defend against Russian infiltrators.
+<br/>
+<font color='#FFA500' size='18'>Tasks</font>
+<br/>
+<br/>Divide into the follow ad-hoc squads:
+<br/>COMMAND (QJ1 + QJ2)
+<br/>ALPHA (EA10/AQ1 + FA10 + HA10)
+<br/>BRAVO (EB10/BQ1 + FB10)
+<br/>CHARLIE (GB10/BQ2 + HB10)
+<br/>
+<br/>Initially deploy ALPHA and BRAVO forward to the north and south of position BOBBY respectively and CHARLIE to position ALEX, AMOS, or NAOMI at SL’s discretion. 
+<br/>Units near position BOBBY will focus on enemy units incoming from the east along the MSR. Units in the rear will focus on resupplying and defending against enemy infiltrators from the north or south. 
+<br/>Frontline squads will be rotated with a rearward squad after heavy engagements. Command squad will be kept as a reserve near position NAOMI.
+<br/>
+<br/>Infantry shall be deployed in fireteams to screen and spot for the Strf 90 and 122s. Str 90s and 122s to provide overwatch for the infantry and along the MSR or other paths and move often enough to avoid Russian artillery.
+<br/>
+<br/>Command will deploy one rally point just west of position NAOMI and one just west of position BOBBY.
+<br/>
+<font color='#FFA500' size='18'>Co-ord Instructions</font>
+<br/>
+<br/>1700 (GAME) / 1600 (REAL) - Server online
+<br/>1750 (GAME) / 1650 (REAL) - Company Briefing
+<br/>1805 (GAME) / 1705 (REAL) - Departure from Assembly area
+<br/>2000 (GAME) / 1900 (REAL) - Estimated end operation
+<br/>
+<br/><font color='#99cc00'>Sustainment:</font>
+<br/>
+<br/>Casualties are to be stabilized on site.
+<br/>
+<br/>CO and XO have the ability to place rally points for team reinforcements which will be set up near the objective sites.
+<br/>
+<br/><font color='#99cc00'>Routes, Boundaries and Report Lines:</font>
+<br/>
+<br/>As marked.
+<br/>
+<font color='#FFA500' size='18'>Signals</font>
+<br/>
+<br/>Team must radio before approaching any objectives to avoid friendly fire.
+<br/>

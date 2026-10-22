@@ -1,0 +1,8 @@
+<font color='#FFA500' size='18'>Setting up an alternate TFAR channel</font>
+<br/>
+<br/>1) Go to a channel you wont use (usually channel 9) 
+<br/>2) Set its frequency (Command, other lead elements, etc) 
+<br/>3) Set the channel as your Alternative Channel (arrow keys). 
+<br/>4) Set the channel to one of your ears (arrow keys). 
+<br/>5) Go back to your Teams Channel and set that to your other ear 
+<br/>6) Now you listen to both channels and talk to your team with Caps Lock(CH1) , talk to Command(Alt Channel) with T 
