@@ -24,6 +24,8 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["ACE_epinephrine", 10];
 		_vehicle addItemCargoGlobal ["ACE_morphine", 20];
 		_vehicle addItemCargoGlobal ["ACE_tourniquet", 10];
+		_vehicle addItemCargoGlobal ["ACE_rope12", 1];
+		_vehicle addItemCargoGlobal ["ACE_rope6", 1];
 	};
 	
 	case "CV90HQ": {
@@ -39,6 +41,8 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["ACE_epinephrine", 10];
 		_vehicle addItemCargoGlobal ["ACE_morphine", 20];
 		_vehicle addItemCargoGlobal ["ACE_tourniquet", 10];
+		_vehicle addItemCargoGlobal ["ACE_rope12", 1];
+		_vehicle addItemCargoGlobal ["ACE_rope6", 1];
 	};
 	
 	case "SUPPORT": {
@@ -52,54 +56,7 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["ACE_epinephrine", 10];
 		_vehicle addItemCargoGlobal ["ACE_morphine", 20];
 		_vehicle addItemCargoGlobal ["ACE_tourniquet", 10];
-	};
-	
-	// "Crates";
-	case "SQUAD": {
-		comment "Squad Supplies";
-			_vehicle addItemCargoGlobal ["sfp_30Rnd_556x45_Stanag",30];
-			_vehicle addItemCargoGlobal ["sfp_30Rnd_556x45_Stanag_tracer",15];
-			_vehicle addItemCargoGlobal ["sfp_200Rnd_556x45_ksp90",5];
-			_vehicle addItemCargoGlobal ["sfp_handgrenade_shgr2000",12];
-			_vehicle addItemCargoGlobal ["sfp_grg_he_mag",2];
-			_vehicle addItemCargoGlobal ["sfp_grg_heat_mag",2];
-			_vehicle addItemCargoGlobal ["SmokeShell",10];
-			_vehicle addItemCargoGlobal ["SmokeShellGreen",6];
-			_vehicle addItemCargoGlobal ["SmokeShellPurple",6];
-			_vehicle addItemCargoGlobal ["SmokeShellRed",6];
-			_vehicle addItemCargoGlobal ["CUP_1Rnd_HE_M203",8];
-			_vehicle addWeaponCargoGlobal ["sfp_pskott86",4];
-	};
-	
-	case "PSKOTT": {
-		comment "Pskott 86";
-			_vehicle addItemCargoGlobal ["sfp_pskott86",20];
-	};
-	
-	case "RB57": {
-		comment "NLAW";
-			_vehicle addItemCargoGlobal ["sfp_rb57",10];
-	};
-	
-	case "GRG": {
-		comment "CG";
-			_vehicle addItemCargoGlobal ["sfp_grg_he_mag",10];
-			_vehicle addItemCargoGlobal ["sfp_grg_heat_mag",10];
-	};
-	
-	case "MEDICAL": {
-		comment "Meds";
-			_vehicle addItemCargoGlobal ["ACE_morphine",40];
-			_vehicle addItemCargoGlobal ["ACE_epinephrine",25];
-			_vehicle addItemCargoGlobal ["ACE_tourniquet",30];
-			_vehicle addItemCargoGlobal ["ACE_fieldDressing",100];
-			_vehicle addItemCargoGlobal ["ACE_painkillers",10];
-	};
-	
-	case "BLOOD": {
-		comment "Blood bank";
-			_vehicle addItemCargoGlobal ["ACE_bloodIV",10];
-			_vehicle addItemCargoGlobal ["ACE_bloodIV_500",10];
-			_vehicle addItemCargoGlobal ["ACE_bloodIV_250",10];
+		_vehicle addItemCargoGlobal ["ACE_rope12", 6];
+		_vehicle addItemCargoGlobal ["ACE_rope6", 6];
 	};
 };
