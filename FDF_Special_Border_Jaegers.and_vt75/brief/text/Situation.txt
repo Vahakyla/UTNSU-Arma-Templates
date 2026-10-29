@@ -1,0 +1,34 @@
+<font color='#FFA500' size='18'>Ground and Prelims:</font>
+<br/>
+<br/>Area of operations is the woods and area surrounding Highway 82 to the east and west. 
+<br/>The terrain is rough and hilly in the woods, interspersed with flat open areas (grey on the map). Weather is forecast to be rainy and foggy.
+<br/>
+<br/>Weather: Rain and Fog.
+<br/>
+<br/><font color='#FFA500' size='18'>Situation – En Forces:</font>
+<br/>
+<br/>Exact force composition is unknown. Enemy presence is moderate to high, with mostly motorized troops traveling on the roads and guarding the objectives. 
+<br/>
+<br/>Enemy may have indirect fire and air support.
+<br/>
+<br/>Air Threat: Med.
+<br/>CBRN Threat: Neg.
+<br/>
+<br/><font color='#FFA500' size='18'>Situation – FF</font>
+<br/>
+<br/>Special Border Jaeger Unit "Kettu" consisting of 6 teams Alpha, Bravo, Charlie, Delta, Echo and Golf.
+<br/>
+<br/>Kettu Atts & Dets:
+<br/>N/A, artillery, CAS is unavailable
+<br/>
+<br/>Combat Support: 
+<br/>N/A, Company logistics is unavailable due to location.
+<br/>
+<br/><font color='#FFA500' size='18'>Mission</font>
+<br/>
+<br/>1. Destroy the supply depot north west of the assembly area.
+<br/>
+<br/>2. Eliminate enemy officers lodging in the hotel west of the assembly area.
+<br/>
+<br/>3. Ambush any supply convoy traveling south west on highway 82.
+<br/>

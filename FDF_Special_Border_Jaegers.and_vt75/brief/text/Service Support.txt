@@ -1,0 +1,13 @@
+<font color='#FFA500' size='18'>Service Support</font>
+<br/>
+<br/>1. Hotel squad
+<br/>
+<br/>Hotel squad is responsible for logistics and will keep the platoons supplied with ammunition and medical supplies. 
+<br/>It will also handle CASEVAC and MEDEVAC to HQ.
+<br/>
+<br/><font color='#99cc00'>Medical</font>
+<br/>
+<br/>Casualties are to be stabilized in situ and then brought back to Platoon headquarters if further medical treatment is required; (They will take longer than 2-3 minutes to wake up or will not wake up at all without the platoon medic’s intervention.)
+<br/>
+<br/>ACE Basic. Battle Casualty Replacements (BCR) as per SOP (Respawn at Waiting Area at Battalion HQ for wave respawn, deployment to Assembly Area marker location once respawn countdown completes.)
+<br/>
