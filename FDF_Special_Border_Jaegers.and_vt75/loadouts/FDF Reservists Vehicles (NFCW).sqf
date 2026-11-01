@@ -93,8 +93,8 @@ switch (_type) do {
 	
 	case "BOOMCRATE": {
 		comment "Boom crate";
-		_vehicle addWeaponCargoGlobal ["CUP_launch_M72A6",6];
-		_vehicle addItemCargoGlobal ["DemoCharge_Remote_Mag",4];
+		_vehicle addWeaponCargoGlobal ["CUP_launch_M72A6",8];
+		_vehicle addItemCargoGlobal ["DemoCharge_Remote_Mag",12];
 		_vehicle addItemCargoGlobal ["NFCW_TM_65_77_Mag",6];
 		_vehicle addItemCargoGlobal ["APERSBoundingMine_Range_Mag",10];
 		_vehicle addItemCargoGlobal ["ClaymoreDirectionalMine_Remote_Mag",10];
