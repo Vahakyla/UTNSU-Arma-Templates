@@ -25,6 +25,4 @@ removeUniform _unit;
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
 
-#include "..\..\loadouts\FDF Jaeger.sqf"
-#include "..\..\loadouts\FDF Utti Jaeger MP5.sqf"
-#include "..\..\loadouts\VIP.sqf"
+#include "..\..\loadouts\FDF Reservists (NFCW).sqf"

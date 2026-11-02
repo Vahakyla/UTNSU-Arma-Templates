@@ -1,0 +1,1 @@
+[] call BIS_fnc_showMissionStatus

@@ -13,6 +13,11 @@ OnLoadName = "UTNS: Uprising";
 OnLoadMission = "Perkele";
 loadscreen = "fdf.jpg";
 
+respawn = "BASE";
+respawnDelay = 30;
+respawnDialog = 0;
+respawnTemplatesWest[] = {"Counter", "spectator"};
+
 saving = 0; //Set saving to 0 so that you can exit the mission without saving and causing dumb bugs when reloading
 disabledai = 1; //Disable AI taking over un-taken player slots
 
@@ -20,7 +25,7 @@ disabledai = 1; //Disable AI taking over un-taken player slots
 class Header {
         gameType = COOP;
         minPlayers = 2;
-        maxPlayers = 66;
+        maxPlayers = 104;
 };
 disableChannels[]=  // allow text only on side chat
 {
@@ -40,8 +45,6 @@ class CfgFunctions {
       class vehGearScript {};
     };
   };
-  
-#include "cfgFunctions.hpp"
 };
 
 // Enable CBA settings loading

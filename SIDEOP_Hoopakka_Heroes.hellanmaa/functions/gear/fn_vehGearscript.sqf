@@ -15,4 +15,4 @@ if (!local _vehicle) exitWith {};
 	clearBackpackCargoGlobal _vehicle;
 
 
-#include "..\..\loadouts\FDF Jaeger Vehicles (NFCW).sqf"
+#include "..\..\loadouts\FDF Reservists Vehicles (NFCW).sqf"
