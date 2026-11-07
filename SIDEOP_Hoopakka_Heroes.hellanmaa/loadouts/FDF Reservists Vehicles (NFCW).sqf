@@ -62,27 +62,27 @@ switch (_type) do {
 	
 	case "SQUADCRATE": {
 		comment "Squad supply crate";
-		_vehicle addMagazineCargoGlobal ["NFCW_30Rnd_762x39_RK62_Mag",30];
-		_vehicle addMagazineCargoGlobal ["NFCW_30Rnd_762x39_RK62_Tracer_Mag",10];
+		_vehicle addMagazineCargoGlobal ["NFCW_30Rnd_762x39_RK62_Mag",48];
+		_vehicle addMagazineCargoGlobal ["NFCW_30Rnd_762x39_RK62_Tracer_Mag",20];
 		_vehicle addMagazineCargoGlobal ["NFCW_100Rnd_762x39_KK62_Mag",5];
 		_vehicle addMagazineCargoGlobal ["NFCW_M43Grenade",12];
 		_vehicle addMagazineCargoGlobal ["NFCW_M61SmokeGrenade",12];
 		_vehicle addMagazineCargoGlobal ["SmokeShellGreen",6];
 		_vehicle addMagazineCargoGlobal ["SmokeShellRed",6];
-		_vehicle addItemCargoGlobal ["ACE_morphine",15];
+		_vehicle addItemCargoGlobal ["ACE_morphine",20];
 		_vehicle addItemCargoGlobal ["ACE_epinephrine",10];
-		_vehicle addItemCargoGlobal ["ACE_tourniquet",12];
-		_vehicle addItemCargoGlobal ["ACE_fieldDressing",20];
-		_vehicle addWeaponCargoGlobal ["CUP_launch_M72A6",4];
+		_vehicle addItemCargoGlobal ["ACE_tourniquet",16];
+		_vehicle addItemCargoGlobal ["ACE_fieldDressing",32];
+		_vehicle addWeaponCargoGlobal ["CUP_launch_M72A6",6];
 	};
 	
 	case "MEDICALCRATE": {
 		comment "Mortar Ammo Carrier";
-		_vehicle addItemCargoGlobal ["ACE_morphine",40];
-		_vehicle addItemCargoGlobal ["ACE_epinephrine",25];
-		_vehicle addItemCargoGlobal ["ACE_tourniquet",30];
-		_vehicle addItemCargoGlobal ["ACE_fieldDressing",50];
-		_vehicle addItemCargoGlobal ["ACE_painkillers",10];
+		_vehicle addItemCargoGlobal ["ACE_morphine",50];
+		_vehicle addItemCargoGlobal ["ACE_epinephrine",30];
+		_vehicle addItemCargoGlobal ["ACE_tourniquet",40];
+		_vehicle addItemCargoGlobal ["ACE_fieldDressing",100];
+		_vehicle addItemCargoGlobal ["ACE_painkillers",20];
 	};
 	
 	case "BLOODCRATE": {
@@ -90,6 +90,17 @@ switch (_type) do {
 		_vehicle addItemCargoGlobal ["ACE_bloodIV",5];
 		_vehicle addItemCargoGlobal ["ACE_bloodIV_500",5];
 		_vehicle addItemCargoGlobal ["ACE_bloodIV_250",5];
+	};
+	
+	case "AACRATE": {
+		comment "Squad supply crate";
+		_vehicle addMagazineCargoGlobal ["CUP_Strela_M",8];
+		_vehicle addWeaponCargoGlobal ["CUP_launch_9K32Strela",2];
+	};
+	
+	case "LAWCRATE": {
+		comment "Squad supply crate";
+		_vehicle addWeaponCargoGlobal ["CUP_launch_APILAS",10];
 	};
 	
 	case "MINEPALLET": {

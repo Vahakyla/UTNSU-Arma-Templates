@@ -1,4 +1,4 @@
-[west,(50)] call BIS_fnc_respawnTickets;
+[west,(76)] call BIS_fnc_respawnTickets;
 
 // Handler to enable voice for characters who have been KO'd
 ["ace_unconscious", {
