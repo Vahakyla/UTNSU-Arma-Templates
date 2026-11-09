@@ -444,7 +444,6 @@
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";		
-		_unit addWeapon "CUP_m252_carry";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
@@ -476,7 +475,6 @@
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "NFCW_30Rnd_762x39_RK62_Mag";
-		_unit addWeapon "ace_csw_carryMortarBaseplate";
 
 		comment "Add items";
 		_unit linkItem "ItemMap";
